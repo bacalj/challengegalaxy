@@ -17,9 +17,7 @@
         <div class="clues">
             <a-clue 
                 v-for="clue in clues" 
-                :img="clue.img"
-                :sbsvg="clue.sbsvg"
-                :text="clue.text" 
+                :content="clue.content"
                 :key="clue.id">
             </a-clue>
         </div>
@@ -71,6 +69,13 @@ export default {
 
 .challenge-container {
     padding:20px;
+    border:3px solid blue;
+    width:600px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.clues {
     text-align:center;
 }
 </style>

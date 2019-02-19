@@ -7,15 +7,23 @@ export const state = () => ({
     clues:[
         {
             id: 1,
-            content: 'when_green_flag_clicked',
+            content: '/pngs/when_green_flag_clicked.png',
         },
         {
             id: 2,
-            content: 'change_y_by_neg_10',
+            content: 'svgs/change_y_by_neg_10.svg',
         },
         {
             id: 3, 
-            content: 'repeat_until'
+            content: 'svgs/repeat_until.svg'
+        },
+        {
+            id: 4,
+            content: 'pngs/hex_fit.png'
+        },
+        {
+            id:5,
+            content: 'extra challenge can you make it bounce?'
         }
     ]
 })
