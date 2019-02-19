@@ -4,6 +4,14 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
 
+  generate: {
+      routes: [
+          '/challenges/gravityone',
+          '/challenges/gravitytwo',
+          '/challenges/gravityone?lang=sp',
+          '/challenges/gravitytwo?lang=sp'
+      ]
+  },
   /*
   ** Headers of the page
   */
