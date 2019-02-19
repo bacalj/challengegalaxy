@@ -1,10 +1,11 @@
 <template>
-    <div class="clue" @click="toggleClue">
-        <div v-if="!revealed" class="clue-cover">
+    <div class="clue column" @click="toggleClue">
+        <div v-if="!revealed" class="clue-cover box">
             ?
         </div>
         <div v-if="revealed" class="clue-content">
             <img v-if="contentType == 'image'" :src="content">
+            <p v-if="contentType == 'text'">{{ content }}</p>
         </div>
     </div>
 </template>
@@ -42,16 +43,4 @@ export default {
 </script>
 
 <style scoped>
-.clue {
-    padding:5px;
-}
-
-.clue-cover {
-    display:inline;
-    height:30px;
-    width:30px;
-    border:1px solid silver;
-    padding:5px;
-    box-sizing: border-box;
-}
 </style>
