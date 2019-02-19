@@ -14,7 +14,7 @@
 
 
 
-        <div class="clues">
+        <div class="clues columns">
             <a-clue 
                 v-for="clue in clues" 
                 :content="clue.content"
@@ -61,21 +61,4 @@ export default {
 </script>
         
 <style scoped>
-
-.challenge-title {
-    font-weight: bold;
-    font-size:20px;
-}
-
-.challenge-container {
-    padding:20px;
-    border:3px solid blue;
-    width:600px;
-    margin:0 auto;
-    text-align: center;
-}
-
-.clues {
-    text-align:center;
-}
 </style>
