@@ -11,9 +11,9 @@
 import Sbsvg from '~/components/Sbsvg.vue'
 
 export default {
-  components: {
-    Sbsvg
-  }
+    components: {
+        Sbsvg
+    }
 }
 </script>
 
