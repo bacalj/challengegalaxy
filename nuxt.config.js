@@ -6,10 +6,7 @@ module.exports = {
 
   generate: {
       routes: [
-          '/challenges/gravityone',
-          '/challenges/gravitytwo',
-          '/challenges/gravityone?lang=sp',
-          '/challenges/gravitytwo?lang=sp'
+          '/challenges/hat-landing'
       ]
   },
   /*
