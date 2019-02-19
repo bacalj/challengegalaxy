@@ -1,12 +1,29 @@
 <template>
-    <div>
-        <h1>{{ challenge.title }}</h1>
-        <a-clue 
-            v-for="clue in clues" 
-            :img="clue.img"
-            :text="clue.text" 
-            :key="clue.id">
-        </a-clue>
+    <div class="challenge-container">
+        <h1 class="challenge-title">
+            {{ challenge.title }}
+        </h1>
+
+        <div class="goal-text">
+            {{ challenge.goalText }}
+        </div>
+
+        <div class="goal-image">
+            <img :src="challenge.goalImg">
+        </div>
+
+
+
+        <div class="clues">
+            <a-clue 
+                v-for="clue in clues" 
+                :img="clue.img"
+                :sbsvg="clue.sbsvg"
+                :text="clue.text" 
+                :key="clue.id">
+            </a-clue>
+        </div>
+
     </div>
 </template>
 
@@ -37,13 +54,23 @@ export default {
     },
 
     mounted(){
-        /* if we have a translation, load it, else english */
+        /* if we have a translation, load it, otherwise english */
         if (this.$store.state.langs.includes(this.$route.query.lang)){
             this.lang = this.$route.query.lang;
         } 
     }
 }
 </script>
-            
+        
 <style scoped>
+
+.challenge-title {
+    font-weight: bold;
+    font-size:20px;
+}
+
+.challenge-container {
+    padding:20px;
+    text-align:center;
+}
 </style>

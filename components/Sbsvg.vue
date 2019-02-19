@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <img :src="srcstring" alt="image of a scratch block">
+    <div class="sbsvg-wrap">
+        <img :src="srcstring" :alt="altstring">
     </div>
 </template>
 
@@ -13,6 +13,10 @@ export default {
     computed:{
         srcstring(){
             return `/scratchblocksvgs/${this.sbid}.svg`
+        },
+
+        altstring(){
+            return `a scratch block called ${this.sbid}`
         }
     }
 }
