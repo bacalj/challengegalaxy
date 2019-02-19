@@ -24,7 +24,7 @@
                     <div class="navbar-dropdown">
 
                         <nuxt-link class="navbar-item"
-                            v-for="challenge in challengesInMenu" 
+                            v-for="challenge in this.$store.state.challengeslist.published" 
                             :to="challenge.link"
                             :key="challenge.id"
                         >{{challenge.title}}
@@ -38,19 +38,6 @@
 </template>
 
 <script>
-export default {
-    mounted(){
-        console.log(this.$store.state);
-    },
-
-    data(){
-        return {
-            challengesInMenu:[
-                { id: 'hat-landing', link: '/challenges/hat-landing', title: "Hat Landing" }
-            ]
-        }
-    }
-}
 </script>
 
 <style scoped>
