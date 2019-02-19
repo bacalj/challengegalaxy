@@ -48,6 +48,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCSS: {
+        allChunks: true
+    },
     postcss: {
       preset: {
         features: {
