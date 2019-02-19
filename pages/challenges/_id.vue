@@ -36,26 +36,17 @@ export default {
     data(){
         return {
             id: this.$route.params.id,
-            lang: 'en',
-            availLangs: this.$store.state.availLangs
         }
     },
 
     computed:{
         challenge(){
-            return this.$store.state[this.lang][this.id]
+            return this.$store.state.en[this.id]
         },
 
         clues(){
             return this.challenge.clues
         }
-    },
-
-    mounted(){
-        /* if we have a translation, load it, otherwise english */
-        if (this.$store.state.langs.includes(this.$route.query.lang)){
-            this.lang = this.$route.query.lang;
-        } 
     }
 }
 </script>
