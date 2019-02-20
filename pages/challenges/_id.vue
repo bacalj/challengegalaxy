@@ -1,26 +1,29 @@
 <template>
-    <div class="challenge-container">
-        <h1 class="challenge-title">
-            {{ challenge.title }}
-        </h1>
+    <div class="challenge-container container">
 
-        <div class="goal-text">
-            {{ challenge.goalText }}
-        </div>
+        <section class="challenge-intro-section section">
+            <h1 class="challenge-title title">
+                {{ challenge.title }}
+            </h1>
 
-        <div class="goal-image">
-            <img :src="challenge.goalImg">
-        </div>
+            <div class="goal-text subtitle">
+                {{ challenge.goalText }}
+            </div>
 
+            <div class="goal-image image">
+                <img :src="challenge.goalImg">
+            </div>
+        </section>
 
-
-        <div class="clues columns">
-            <a-clue 
-                v-for="clue in clues" 
-                :content="clue.content"
-                :key="clue.id">
-            </a-clue>
-        </div>
+        <section class="clues-section section">
+            <div class="clues columns">
+                <a-clue 
+                    v-for="clue in clues" 
+                    :content="clue.content"
+                    :key="clue.id">
+                </a-clue>
+            </div>
+        </section>
 
     </div>
 </template>
@@ -52,4 +55,5 @@ export default {
 </script>
         
 <style scoped>
+
 </style>

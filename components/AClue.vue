@@ -3,7 +3,7 @@
         <div v-if="!revealed" class="clue-cover box">
             ?
         </div>
-        <div v-if="revealed" class="clue-content">
+        <div v-if="revealed" class="clue-content image">
             <img v-if="contentType == 'image'" :src="content">
             <p v-if="contentType == 'text'">{{ content }}</p>
         </div>
