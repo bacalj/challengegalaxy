@@ -43,7 +43,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.clue {
-    border:1px solid $gaga;
-}
+
 </style>

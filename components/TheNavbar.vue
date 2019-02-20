@@ -6,13 +6,13 @@
                 <!-- <img src="/pngs/cglogo.png"> -->
                 <h1>ChallengeGalaxy</h1>
             </a>
-            <!-- <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a> -->
+            </a>
         </div>
-        <div class="navbar-menu is-active">
+        <div class="navbar-menu" :class="{ 'is-active': mobileMenuOpen }">
             <div class="navbar-start">
          
             </div>
@@ -38,6 +38,19 @@
 </template>
 
 <script>
+export default {
+    data(){
+        return {
+            mobileMenuOpen:false
+        }
+    },
+
+    methods:{
+        toggleMobileMenu(){
+            this.mobileMenuOpen = !this.mobileMenuOpen;
+        }
+    }
+}
 </script>
 
 <style scoped>
