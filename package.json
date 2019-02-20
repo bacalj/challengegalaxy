@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.1",
+    "@nuxtjs/style-resources": "^0.1.2",
     "cross-env": "^5.2.0",
     "node-sass": "^4.11.0",
     "nuxt": "^2.4.0",
