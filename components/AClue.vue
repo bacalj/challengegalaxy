@@ -42,5 +42,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.clue {
+    border:1px solid $gaga;
+}
 </style>
