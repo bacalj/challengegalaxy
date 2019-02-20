@@ -1,7 +1,7 @@
 <template>
     <div class="clue column" @click="toggleClue">
-        <div v-if="!revealed" class="clue-cover box">
-            ?
+        <div v-if="!revealed" class="clue-cover button is-info is-medium is-fullwidth is-rounded">
+            <b>?</b>
         </div>
         <div v-if="revealed" class="clue-content image">
             <img v-if="contentType == 'image'" :src="content">
