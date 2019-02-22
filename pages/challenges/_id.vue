@@ -64,7 +64,7 @@ export default {
 }
 .challenge-container {
     max-width: 480px;
-    padding-bottom:30px;
+    padding-bottom:60px;
 }
 .challenge-intro-section {
     margin-bottom: 1em;
