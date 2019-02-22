@@ -1,29 +1,31 @@
 <template>
     <div class="step column">
         <button class="button step-toggler is-primary"  @click="toggleStep()">{{ stepToggleText }}</button>
-        <div v-show="stepOpen" class="step-wrap">
-            <section class="intro-section section has-background-info">
-                <div class="step-text subtitle">
-                    {{ text }}
-                </div>
-                <div class="columns is-mobile">
-                    <div class="column">
-                        <div class="step-image image">
-                            <img :src="img">
+        <transition name="slide-fade">
+            <div v-show="stepOpen" class="step-wrap">
+                <section class="intro-section section has-background-info">
+                    <div class="step-text subtitle">
+                        {{ text }}
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column">
+                            <div class="step-image image">
+                                <img :src="img">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="clues-section section has-background-grey-lighter">
-                <div class="clues columns is-mobile">
-                    <a-clue 
-                        v-for="clue in clues" 
-                        :content="clue.content"
-                        :key="clue.id">
-                    </a-clue>
-                </div>
-            </section>
-        </div>
+                </section>
+                <section class="clues-section section has-background-grey-lighter">
+                    <div class="clues columns is-mobile">
+                        <a-clue 
+                            v-for="clue in clues" 
+                            :content="clue.content"
+                            :key="clue.id">
+                        </a-clue>
+                    </div>
+                </section>
+            </div>
+        </transition>
     </div>
 </template>
 
@@ -86,6 +88,17 @@ export default {
     left:-12px;
     top:10px;
     border-radius:50px;
+}
+
+.slide-fade-enter-active {
+    transition: all .2s ease;
+}
+.slide-fade-leave-active {
+    transition: all .2s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateY(-10px);
+    opacity: 0;
 }
 
 </style>
