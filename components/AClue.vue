@@ -28,7 +28,7 @@ export default {
 
     mounted(){
         const contentDetector = this.content.slice(-4);
-        const imageTypes = ['.png', '.svg', '.jpg'];
+        const imageTypes = ['.png', '.svg', '.jpg', '.gif'];
         if (imageTypes.includes(contentDetector)){
             this.contentType = 'image';
         } else {
@@ -43,5 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.clue {
+    flex-basis: auto;
+}
 </style>
