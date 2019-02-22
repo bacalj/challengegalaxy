@@ -58,13 +58,16 @@ export default {
         
 <style scoped>
 
-body {
-    background-color:aliceblue;
+.contained {
+    max-width:480px;
 }
 .challenge-container {
     max-width: 480px;
+    padding-bottom:30px;
 }
 .challenge-intro-section {
     margin-bottom: 1em;
+    padding:1.7rem;
+    border-radius:15px;
 }
 </style>

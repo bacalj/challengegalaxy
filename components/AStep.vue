@@ -1,6 +1,6 @@
 <template>
     <div class="step column">
-        <button class="button step-toggler is-info"  @click="toggleStep()">{{ stepToggleText }}</button>
+        <button class="button step-toggler is-primary"  @click="toggleStep()">{{ stepToggleText }}</button>
         <div v-show="stepOpen" class="step-wrap">
             <section class="intro-section section has-background-info">
                 <div class="step-text subtitle">
@@ -68,6 +68,7 @@ export default {
 .step {
     .intro-section {
         padding: 1.5rem 1.5rem 3rem;
+        border-radius:15px 15px 0px 0px;
    }
    .goal-text {
        color: #ffffff;
@@ -75,12 +76,16 @@ export default {
    .clues {
         flex-flow: wrap;
     }
+    .clues-section {
+        border-radius: 0px 0px 15px 15px;
+    }
 }
 
 .step-toggler {
     position: relative;
     left:-12px;
-    top:5px;
+    top:10px;
+    border-radius:50px;
 }
 
 </style>
