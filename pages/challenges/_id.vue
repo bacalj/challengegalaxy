@@ -26,6 +26,7 @@
             :clues="step.clues"
             :img="step.stepImg"
             :text="step.stepText"
+            :num="step.stepNum"
             :key="step.id">
         </a-step>
     </div>

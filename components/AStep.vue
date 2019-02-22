@@ -1,6 +1,6 @@
 <template>
     <div class="step column">
-        <button class="button step-toggler is-primary"  @click="toggleStep()">{{ stepToggleText }}</button>
+        <button class="button step-toggler is-primary"  @click="toggleStep()">Step: {{ num }}</button>
         <transition name="slide-fade">
             <div v-show="stepOpen" class="step-wrap">
                 <section class="intro-section section has-background-info">
@@ -50,6 +50,7 @@ export default {
     },
 
     mounted(){
+
     },
 
     computed:{
@@ -62,6 +63,7 @@ export default {
         'img',
         'text',
         'clues',
+        'num'
     ]
 }
 </script>
