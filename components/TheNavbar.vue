@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="header">
     <nav class="navbar is-info" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
@@ -54,6 +54,13 @@ export default {
 </script>
 
 <style scoped>
+.header {
+    background-color: #209cee;
+}
+.navbar {
+    max-width: 640px;
+    margin: 0 auto;
+}
 .navbar-brand img {
     height: 90px;
 }

@@ -13,13 +13,25 @@
 
         <section class="challenge-intro-section section has-background-info">
             <div class="columns is-mobile">
-                <div class="column is-three-fifths is-offset-one-fifth">
+                <div class="column">
                     <div class="goal-image image">
                         <img :src="challenge.goalImg">
                     </div>
                 </div>
             </div>
         </section>
+
+        <a-step 
+            v-for="step in steps" 
+            :clues="step.clues"
+            :img="step.stepImg"
+            :text="step.stepText"
+            :key="step.id">
+        </a-step>
+
+<!-- 
+
+
 
         <section class="clues-section section has-background-grey-lighter">
             <div class="clues columns is-mobile">
@@ -29,17 +41,17 @@
                     :key="clue.id">
                 </a-clue>
             </div>
-        </section>
+        </section> -->
 
     </div>
 </template>
 
 <script>
-import AClue from '~/components/AClue.vue'
+import AStep from '~/components/AStep.vue'
 
 export default {
     components:{
-        AClue,
+        AStep,
     },
 
     data(){
@@ -52,14 +64,18 @@ export default {
         challenge(){
             return this.$store.state.en[this.id]
         },
-
-        clues(){
-            return this.challenge.clues
-        }
+        steps(){
+            return this.challenge.steps
+        },
     }
 }
 </script>
         
 <style scoped>
-
+.challenge-container {
+    max-width: 480px;
+}
+.challenge-intro-section {
+    margin-bottom: 3em;
+}
 </style>
