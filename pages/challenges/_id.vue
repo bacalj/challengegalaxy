@@ -28,21 +28,6 @@
             :text="step.stepText"
             :key="step.id">
         </a-step>
-
-<!-- 
-
-
-
-        <section class="clues-section section has-background-grey-lighter">
-            <div class="clues columns is-mobile">
-                <a-clue 
-                    v-for="clue in clues" 
-                    :content="clue.content"
-                    :key="clue.id">
-                </a-clue>
-            </div>
-        </section> -->
-
     </div>
 </template>
 
