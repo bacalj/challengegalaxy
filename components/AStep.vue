@@ -1,6 +1,6 @@
 <template>
     <div class="step column">
-        <button @click="toggleStep()">{{ stepToggleText }}</button>
+        <button class="button step-toggler is-info"  @click="toggleStep()">{{ stepToggleText }}</button>
         <div v-show="stepOpen" class="step-wrap">
             <section class="intro-section section has-background-info">
                 <div class="step-text subtitle">
@@ -75,6 +75,12 @@ export default {
    .clues {
         flex-flow: wrap;
     }
+}
+
+.step-toggler {
+    position: relative;
+    left:-12px;
+    top:5px;
 }
 
 </style>

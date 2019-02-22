@@ -57,10 +57,14 @@ export default {
 </script>
         
 <style scoped>
+
+body {
+    background-color:aliceblue;
+}
 .challenge-container {
     max-width: 480px;
 }
 .challenge-intro-section {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 </style>
