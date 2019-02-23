@@ -1,14 +1,14 @@
 <template>
     <div class="clue" @click="toggleClue">
-        <transition name="simple-fade">
-            <div v-if="!revealed" class="clue-cover button is-primary is-medium is-fullwidth">
-                <b>?</b>
-            </div>
-        </transition>
-        <transition name="simple-fade">
-            <div v-if="revealed" class="clue-content">
-                <img v-if="contentType == 'image'" :src="content">
-                <p v-if="contentType == 'text'">{{ content }}</p>
+        <!-- <transition name="fade"> -->
+        <div class="clue-cover button is-primary is-medium is-fullwidth" :class="{ 'flat-bottom' : revealed }">
+            <b>?</b>
+        </div>
+        <!-- </transition> -->
+        <transition name="fade">
+            <div v-if="revealed" class="clue-content" :class="{ 'image': isImage }">
+                <img v-if="this.isImage" :src="content">
+                <div v-if="this.isText">{{ content }}</div>
             </div>
         </transition>
     </div>
@@ -39,6 +39,16 @@ export default {
             this.contentType = 'text'
         }
     },
+
+    computed:{
+        isImage(){
+            return this.contentType == 'image';
+        },
+
+        isText(){
+            return this.contentType == 'text';
+        }
+    },
     
     props:[
         'content'
@@ -51,13 +61,44 @@ export default {
     flex-basis: auto;
     padding:8px;
 }
-.simple-fade-enter-active {
-    transition: all .2s ease;
+
+.clue-content {
+    padding:8px;
+    border:2px solid #00d1b2;
 }
-.simple-fade-leave-active {
-    transition: all .2s ease;
+
+.flat-bottom {
+    border-radius: 3px 3px 0px 0px;
 }
-.simple-fade-enter, .simple-fade-leave-to {
+
+/* about to enter */
+.fade-enter {
     opacity: 0;
+    height:0px;
 }
+
+.fade-enter-active {
+    transition: all .5s;
+}
+
+.fade-enter-to { 
+    opacity: 1 
+}
+
+
+/* about to leave */
+.fade-leave {
+    opacity: .1;
+}
+
+.fade-leave-active { 
+    transition: height .1s; 
+    transition: opacity .1s;
+}
+
+.fade-leave-to { 
+    height:0px;
+    opacity: 0; 
+}
+
 </style>
