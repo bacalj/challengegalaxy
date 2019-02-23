@@ -1,12 +1,12 @@
 <template>
-    <div class="clue column" @click="toggleClue">
+    <div class="clue" @click="toggleClue">
         <transition name="simple-fade">
-            <div v-if="!revealed" class="clue-cover button is-info is-medium is-fullwidth is-rounded">
+            <div v-if="!revealed" class="clue-cover button is-primary is-medium is-fullwidth">
                 <b>?</b>
             </div>
         </transition>
         <transition name="simple-fade">
-            <div v-if="revealed" class="clue-content image">
+            <div v-if="revealed" class="clue-content">
                 <img v-if="contentType == 'image'" :src="content">
                 <p v-if="contentType == 'text'">{{ content }}</p>
             </div>
@@ -49,8 +49,8 @@ export default {
 <style lang="scss" scoped>
 .clue {
     flex-basis: auto;
+    padding:8px;
 }
-
 .simple-fade-enter-active {
     transition: all .2s ease;
 }

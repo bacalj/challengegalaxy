@@ -15,8 +15,8 @@
                         </div>
                     </div>
                 </section>
-                <section class="clues-section section has-background-grey-lighter">
-                    <div class="clues columns is-mobile">
+                <section class="clues-section has-background-grey-lighter">
+                    <div class="clues">
                         <a-clue 
                             v-for="clue in clues" 
                             :content="clue.content"
@@ -79,6 +79,7 @@ export default {
    }
    .clues {
         flex-flow: wrap;
+        padding:8px;
     }
     .clues-section {
         border-radius: 0px 0px 15px 15px;
