@@ -1,8 +1,8 @@
 <template>
     <div class="clue" @click="toggleClue">
         <!-- <transition name="fade"> -->
-        <div class="clue-cover button is-primary is-medium is-fullwidth" :class="{ 'flat-bottom' : revealed }">
-            <b>?</b>
+        <div class="clue-cover" :class="{ 'flat-bottom' : revealed }">
+            <b>{{ cover }}</b>
         </div>
         <!-- </transition> -->
         <transition name="fade">
@@ -51,7 +51,8 @@ export default {
     },
     
     props:[
-        'content'
+        'content',
+        'cover'
     ]
 }
 </script>
@@ -62,9 +63,25 @@ export default {
     padding:8px;
 }
 
+.clue-cover {
+    background-color: hsl(0, 0%, 86%);
+    padding: 10px 20px;
+    text-align:center;
+    border-radius:3px;
+    cursor: pointer;
+    &:hover {
+        background-color:whitesmoke;
+    }
+}
+
+.clue-cover.flat-bottom:hover {
+    background-color: hsl(0, 0%, 86%);
+}
+
 .clue-content {
-    padding:8px;
-    border:2px solid #00d1b2;
+    padding:20px;
+    background-color: hsl(0, 0%, 86%);
+    border-radius:0px 0px 3px 3px;
 }
 
 .flat-bottom {

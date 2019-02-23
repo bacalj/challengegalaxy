@@ -15,11 +15,12 @@
                         </div>
                     </div>
                 </section>
-                <section class="clues-section has-background-grey-lighter">
+                <section class="clues-section has-background-info">
                     <div class="clues">
                         <a-clue 
                             v-for="clue in clues" 
                             :content="clue.content"
+                            :cover="clue.cover"
                             :key="clue.id">
                         </a-clue>
                     </div>
@@ -71,7 +72,8 @@ export default {
 <style lang="scss" scoped>
 .step {
     .intro-section {
-        padding: 1.5rem 1.5rem 3rem;
+        //padding: 1.5rem 1.5rem 3rem;
+        padding:1.5rem;
         border-radius:15px 15px 0px 0px;
    }
    .goal-text {

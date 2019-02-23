@@ -14,17 +14,21 @@ export const state = () => ({
             clues:[
                 {
                     id: 1,
+                    cover: 'foo',
                     content: '/gifs/paint_a_sprite.gif',
                 },
                 {
+                    cover: 'bar',
                     id: 2,
                     content: '/pngs/change_y_by_neg_10.png',
                 },
                 {
+                    cover: 'yaya',
                     id: 3, 
                     content: '/pngs/repeat_until.png'
                 },
                 {
+                    cover: 'gaga',
                     id: 4, 
                     content: '/pngs/touching.png'
                 }
