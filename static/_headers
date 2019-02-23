@@ -1,2 +1,2 @@
 /*
-    Access-Control-Allow-Origin: https://scratch.mit.edu
+    Access-Control-Allow-Origin: *
