@@ -8,6 +8,7 @@ export const state = () => ({
     steps: [
         {
             id: 1,
+            stepNum: '1',
             stepImg: '/gifs/hat_landing.gif',
             stepText: 'This is step 1.',
             clues:[
@@ -31,6 +32,7 @@ export const state = () => ({
         },
         {
             id: 2,
+            stepNum: '2',
             stepImg: '/gifs/hat_landing.gif',
             stepText: 'This is step 2.',
             clues:[

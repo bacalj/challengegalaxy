@@ -26,23 +26,9 @@
             :clues="step.clues"
             :img="step.stepImg"
             :text="step.stepText"
+            :num="step.stepNum"
             :key="step.id">
         </a-step>
-
-<!-- 
-
-
-
-        <section class="clues-section section has-background-grey-lighter">
-            <div class="clues columns is-mobile">
-                <a-clue 
-                    v-for="clue in clues" 
-                    :content="clue.content"
-                    :key="clue.id">
-                </a-clue>
-            </div>
-        </section> -->
-
     </div>
 </template>
 
@@ -72,10 +58,17 @@ export default {
 </script>
         
 <style scoped>
+
+.contained {
+    max-width:480px;
+}
 .challenge-container {
     max-width: 480px;
+    padding-bottom:60px;
 }
 .challenge-intro-section {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
+    padding:1.7rem;
+    border-radius:15px;
 }
 </style>
