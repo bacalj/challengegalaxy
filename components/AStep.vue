@@ -1,5 +1,8 @@
 <template>
     <div class="step column">
+        <div class="scratchblocks-test">
+
+        </div>
         <button class="button step-toggler is-primary"  @click="toggleStep()">Step: {{ num }}</button>
         <transition name="slide-fade">
             <div v-show="stepOpen" class="step-wrap">

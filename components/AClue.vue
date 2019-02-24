@@ -1,12 +1,12 @@
 <template>
     <div class="clue" @click="toggleClue">
         <!-- <transition name="fade"> -->
-        <div class="clue-cover" :class="{ 'flat-bottom' : revealed }">
+        <div class="clue-cover contained" :class="{ 'flat-bottom' : revealed }">
             <b>{{ cover }}</b>
         </div>
         <!-- </transition> -->
         <transition name="fade">
-            <div v-if="revealed" class="clue-content" :class="{ 'image': isImage }">
+            <div v-if="revealed" class="clue-content contained" :class="{ 'image': isImage }">
                 <img v-if="this.isImage" :src="content">
                 <div v-if="this.isText">{{ content }}</div>
             </div>
@@ -47,6 +47,10 @@ export default {
 
         isText(){
             return this.contentType == 'text';
+        },
+
+        isScratchblock(){
+            return 'is scratchblock';
         }
     },
     
@@ -63,9 +67,13 @@ export default {
     padding:8px;
 }
 
+.contained {
+    max-width: 480px;
+}
+
 .clue-cover {
     background-color: hsl(0, 0%, 86%);
-    padding: 10px 20px;
+    padding: 10px;
     text-align:center;
     border-radius:3px;
     cursor: pointer;

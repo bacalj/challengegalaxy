@@ -23,9 +23,9 @@ export const state = () => ({
                     content: '/pngs/change_y_by_neg_10.png',
                 },
                 {
-                    cover: 'yaya',
+                    cover: 'testing scratchblock',
                     id: 3, 
-                    content: '/pngs/repeat_until.png'
+                    content: '<pre>foo</pre>'
                 },
                 {
                     cover: 'gaga',
