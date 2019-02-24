@@ -1,8 +1,10 @@
 <template>
     <div class="step column">
-        <div class="scratchblocks-test">
-
-        </div>
+        <!-- <div class="scratchblocks-test">
+            <p>
+                <code class="b">when flag clicked</code>
+            </p>
+        </div> -->
         <button class="button step-toggler is-primary"  @click="toggleStep()">Step: {{ num }}</button>
         <transition name="slide-fade">
             <div v-show="stepOpen" class="step-wrap">
@@ -36,6 +38,10 @@
 <script>
 import AClue from '~/components/AClue.vue'
 
+// if (process.client) {
+//     var scratchblocks = require('scratchblocks')
+// }
+
 export default {
     components:{
         AClue,
@@ -54,7 +60,7 @@ export default {
     },
 
     mounted(){
-
+        //window.scratchblocks.renderMatching("code.b", {inline: true});
     },
 
     computed:{
