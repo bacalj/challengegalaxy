@@ -86,6 +86,11 @@ export default {
     background-color: hsl(0, 0%, 86%);
 }
 
+.clue img {
+    width: auto;
+    max-width: 100%;
+}
+
 .clue-content {
     padding:20px;
     background-color: hsl(0, 0%, 86%);
