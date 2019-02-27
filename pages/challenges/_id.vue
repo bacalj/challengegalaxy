@@ -14,7 +14,10 @@
         <section class="challenge-intro-section section has-background-info">
             <div class="columns is-mobile">
                 <div class="column">
-                    <div class="goal-image image">
+                    <div class="challenge-project" v-if="challenge.scratchprojid">
+                        <iframe width="100%" :src="'https://scratch.mit.edu/projects/' + challenge.scratchprojid + '/embed'" scrolling="no"></iframe>
+                    </div>
+                    <div v-if="challenge.goalImg" class="goal-image image">
                         <img :src="challenge.goalImg">
                     </div>
                 </div>
@@ -70,5 +73,21 @@ export default {
     margin-bottom: 1em;
     padding:1.7rem;
     border-radius:15px;
+}
+.challenge-project {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    height: 0;
+    background-image: url('/jpgs/loading.jpg');  
+}
+.challenge-project iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 </style>

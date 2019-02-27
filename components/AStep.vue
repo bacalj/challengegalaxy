@@ -75,6 +75,9 @@ export default {
    .goal-text {
        color: #ffffff;
    }
+   .step-text {
+       color: #ffffff;
+   }
    .clues {
         flex-flow: wrap;
         padding:8px;
