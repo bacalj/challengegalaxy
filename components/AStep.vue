@@ -82,6 +82,9 @@ export default {
     .clues-section {
         border-radius: 0px 0px 15px 15px;
     }
+    img {
+        border-radius: 4px;
+    }
 }
 
 .step-toggler {

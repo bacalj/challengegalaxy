@@ -8,7 +8,7 @@
         <transition name="fade">
             <div v-if="revealed" class="clue-content contained" :class="{ 'image': isImage }">
                 <img v-if="this.isImage" :src="content">
-                <div v-if="this.isText">{{ content }}</div>
+                <div v-if="this.isText" v-html="content"></div>
             </div>
         </transition>
     </div>
@@ -84,6 +84,12 @@ export default {
 
 .clue-cover.flat-bottom:hover {
     background-color: hsl(0, 0%, 86%);
+}
+
+.clue img {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .clue-content {
