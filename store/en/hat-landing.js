@@ -10,7 +10,7 @@ export const state = () => ({
             id: 1,
             stepNum: '1',
             stepImg: '/gifs/hat_landing.gif',
-            stepLabel: '<i class="fas fa-igloo"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i>',
             stepText: 'This is step 1.',
             clues:[
                 {
