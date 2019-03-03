@@ -4,7 +4,7 @@
         <div class="clue-cover contained" :class="{ 'flat-bottom' : revealed }" v-html="cover"></div>
         <!-- </transition> -->
         <transition name="fade">
-            <div v-if="revealed" class="clue-content contained" :class="{ 'image': isImage }">
+            <div v-show="revealed" class="clue-content contained" :class="{ 'image': isImage }">
                 <img v-if="this.isImage" :src="content">
                 <div v-if="this.isText" v-html="content"></div>
             </div>

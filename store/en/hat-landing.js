@@ -25,7 +25,7 @@ export const state = () => ({
                 {
                     cover: 'testing scratchblock',
                     id: 3, 
-                    content: '<pre>foo</pre>'
+                    content: '<pre class="blocks">when green flag clicked</pre>'
                 },
                 {
                     cover: 'gaga',

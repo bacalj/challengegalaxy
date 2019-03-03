@@ -48,6 +48,12 @@ export default {
             id: this.$route.params.id,
         }
     },
+    
+    mounted(){
+        window.setTimeout(function(){ 
+            scratchblocks.renderMatching("pre.blocks",{style:"scratch3"}); 
+        }, 4000);  
+    },
 
     computed:{
         challenge(){

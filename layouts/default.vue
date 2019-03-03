@@ -9,11 +9,16 @@
 <script>
 import TheFooter from '~/components/TheFooter.vue'
 import TheNavbar from '~/components/TheNavbar.vue'
+
+if (process.client){
+    var scratchblocks = require('scratchblocks')
+}
+
 export default {
      components:{
         TheNavbar,
         TheFooter
-    } 
+    }
 }
 </script>
 
