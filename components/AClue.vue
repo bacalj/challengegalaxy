@@ -1,9 +1,7 @@
 <template>
     <div class="clue" @click="toggleClue">
         <!-- <transition name="fade"> -->
-        <div class="clue-cover contained" :class="{ 'flat-bottom' : revealed }">
-            <b>{{ cover }}</b>
-        </div>
+        <div class="clue-cover contained" :class="{ 'flat-bottom' : revealed }" v-html="cover"></div>
         <!-- </transition> -->
         <transition name="fade">
             <div v-if="revealed" class="clue-content contained" :class="{ 'image': isImage }">
