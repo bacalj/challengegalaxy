@@ -30,6 +30,7 @@
             :img="step.stepImg"
             :text="step.stepText"
             :num="step.stepNum"
+            :label="step.stepLabel"
             :key="step.id">
         </a-step>
     </div>
