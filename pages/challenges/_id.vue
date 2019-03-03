@@ -52,7 +52,11 @@ export default {
     mounted(){
         window.setTimeout(function(){ 
             scratchblocks.renderMatching("pre.blocks",{style:"scratch3"}); 
-        }, 4000);  
+            const sbs = document.querySelectorAll('pre.blocks');
+            sbs.forEach( ( pre ) => {
+                pre.setAttribute("style", "background-color:#dbdbdb; padding:0px;");
+            })
+        }, 100);  
     },
 
     computed:{

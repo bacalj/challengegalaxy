@@ -4,9 +4,9 @@
         <div class="clue-cover contained" :class="{ 'flat-bottom' : revealed }" v-html="cover"></div>
         <!-- </transition> -->
         <transition name="fade">
-            <div v-show="revealed" class="clue-content contained" :class="{ 'image': isImage }">
-                <img v-if="this.isImage" :src="content">
-                <div v-if="this.isText" v-html="content"></div>
+            <div v-show="revealed" class="clue-content contained" :class="{ 'image': isImage, 'scratchblock-clue' : isScratchblock }">
+                <img v-show="this.isImage" :src="content">
+                <div v-show="this.isText" v-html="content"></div>
             </div>
         </transition>
     </div>
@@ -31,6 +31,7 @@ export default {
     mounted(){
         const contentDetector = this.content.slice(-4);
         const imageTypes = ['.png', '.svg', '.jpg', '.gif'];
+
         if (imageTypes.includes(contentDetector)){
             this.contentType = 'image';
         } else {
@@ -48,7 +49,7 @@ export default {
         },
 
         isScratchblock(){
-            return 'is scratchblock';
+            return this.content.includes('<pre class="blocks">');
         }
     },
     
@@ -60,6 +61,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .clue {
     flex-basis: auto;
     padding:8px;
@@ -96,6 +98,11 @@ export default {
     border-radius:0px 0px 3px 3px;
 }
 
+.scratchblock-clue {
+    text-align:center;
+}
+
+
 .flat-bottom {
     border-radius: 3px 3px 0px 0px;
 }
@@ -113,7 +120,6 @@ export default {
 .fade-enter-to { 
     opacity: 1 
 }
-
 
 /* about to leave */
 .fade-leave {

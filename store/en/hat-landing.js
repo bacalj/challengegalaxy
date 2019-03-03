@@ -31,6 +31,11 @@ export const state = () => ({
                     cover: 'gaga',
                     id: 4, 
                     content: '/pngs/touching.png'
+                },
+                {
+                    cover: 'another scratchblock',
+                    id: 5,
+                    content: '<pre class="blocks">move (10) steps</pre>'
                 }
             ]
         },
