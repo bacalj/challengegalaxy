@@ -1,6 +1,6 @@
 <template>
     <div>
-        hey why r u here - choose a challenge
+        <h1>Find a challenge!</h1>
     </div>
 </template>
 
