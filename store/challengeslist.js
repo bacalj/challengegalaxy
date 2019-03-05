@@ -1,9 +1,9 @@
 export const state = () => ({
     published:[
         { 
-            id: 'hat-landing', 
-            link: 'challenges/hat-landing', 
-            title: 'Hat Landing'
+            id: 'maze', 
+            link: 'challenges/maze', 
+            title: 'Maze'
         }
     ]
 })
