@@ -36,7 +36,7 @@ export const state = () => ({
                 {
                     cover: 'another scratchblock',
                     id: 5,
-                    content: '<pre class="blocks">when green flag clicked\nforever\nturn cw (15) degrees\nsay [Hello!] for (2) secs\nif <mouse down?> then\nchange [mouse clicks v] by (1)\nend</pre>'
+                    content: '<pre class="blocks">when green flag clicked\nforever\nturn cw (15) degrees\nsay [Hello!] for (2) secs\nif &lt;mouse down?&gt; then\nchange [mouse clicks v] by (1)\nend\n</pre>'
                 }
             ]
         },
