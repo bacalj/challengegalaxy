@@ -19,23 +19,13 @@ export const state = () => ({
                     content: '/gifs/paint_a_sprite.gif',
                 },
                 {
-                    cover: 'bar',
-                    id: 2,
-                    content: '/pngs/change_y_by_neg_10.png',
-                },
-                {
-                    cover: 'testing scratchblock',
-                    id: 3, 
+                    cover: '<i class="fas fa-lightbulb"></i>',
+                    id: 2, 
                     content: '<pre class="blocks">when green flag clicked</pre>'
                 },
                 {
-                    cover: 'gaga',
-                    id: 4, 
-                    content: '/pngs/touching.png'
-                },
-                {
                     cover: 'another scratchblock',
-                    id: 5,
+                    id: 3,
                     content: '<pre class="blocks">when green flag clicked\nforever\nturn cw (15) degrees\nsay [Hello!] for (2) secs\nif &lt;mouse down?&gt; then\nchange [mouse clicks v] by (1)\nend\n</pre>'
                 }
             ]
@@ -59,6 +49,4 @@ export const state = () => ({
 
         }
     ],
-
-    
 })
