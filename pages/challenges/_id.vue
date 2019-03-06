@@ -33,6 +33,14 @@
             :label="step.stepLabel"
             :key="step.id">
         </a-step>
+
+        <div v-if="challenge.studio">
+            <button class="button step-button is-primary">Share!</button>
+            <section class="challenge-studio column has-background-info">
+                <div>Add your project to the Studio and see how other people made their projects.</div>
+                <a class="button is-primary step-toggler" target="_blank" v-bind:href="challenge.studio">Studio</a>  
+            </section>
+        </div>
     </div>
 </template>
 
@@ -81,7 +89,7 @@ export default {
     padding-bottom:60px;
 }
 .challenge-intro-section {
-    margin-bottom: 1em;
+    margin: 0.75rem;
     padding:1.7rem;
     border-radius:15px;
 }
@@ -100,5 +108,19 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
+}
+section {
+    padding:1.7rem;
+    border-radius:15px;
+}
+.challenge-studio {
+    margin: 0.75rem;
+    color: #ffffff;
+}
+.step-button {
+    position: relative;
+    top:25px;
+    border-radius:50px;
+    font-weight: 600;
 }
 </style>

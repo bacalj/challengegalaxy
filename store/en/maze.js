@@ -3,6 +3,7 @@ export const state = () => ({
     title: 'Maze 1',
     goalText: 'Make a maze game',
     scratchprojid: 291566653,
+    studio: 'https://scratch.mit.edu/studios/6026971/projects/',
 
     steps: [
         {
