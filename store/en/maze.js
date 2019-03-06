@@ -74,5 +74,29 @@ export const state = () => ({
                 },
             ]
         },
+        {
+            id: 3,
+            stepNum: '3',
+            stepImg: '/gifs/maze_glitch.gif',
+            stepLabel: '<i class="fas fa-bug"></i><i class="fas fa-ban"></i>',
+            stepText: 'Glitch!',
+            clues:[
+                {
+                    cover: '<i class="fas fa-crosshairs"></i>',
+                    id: 1,
+                    content: '<pre class="blocks">distance to [mouse pointer v]</pre>'
+                },
+                {
+                    cover: '<i class="fas fa-greater-than"></i>',
+                    id: 2,
+                    content: '<pre class="blocks">&lt; () > () &gt;</pre>'
+                },
+                {
+                    cover: '<i class="fas fa-arrows-alt"></i>',
+                    id: 3,
+                    content: 'Only move if the distance to the mouse pointer is greater than?'
+                },
+            ]
+        }
     ],
 })
