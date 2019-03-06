@@ -2,7 +2,7 @@ export const state = () => ({
     id: 'maze',
     title: 'Maze 1',
     goalText: 'Make a maze game',
-    scratchprojid: 22314685,
+    scratchprojid: 291566653,
 
     steps: [
         {
@@ -95,6 +95,30 @@ export const state = () => ({
                     cover: '<i class="fas fa-arrows-alt"></i>',
                     id: 3,
                     content: 'Only move if the distance to the mouse pointer is greater than?'
+                },
+            ]
+        },
+        {
+            id: 4,
+            stepNum: '4',
+            stepImg: '/gifs/maze_win.gif',
+            stepLabel: '<i class="fas fa-award"></i>',
+            stepText: 'You win!',
+            clues:[
+                {
+                    cover: '<i class="fas fa-clock"></i>',
+                    id: 1,
+                    content: '<pre class="blocks">when green flag clicked\nforever</pre>'
+                },
+                {
+                    cover: '<i class="fas fa-hand-point-right"></i>✨<i class="fas fa-hand-point-left"></i>',
+                    id: 2,
+                    content: '<pre class="blocks">touching color ( ) ?</pre>'
+                },
+                {
+                    cover: '<i class="fas fa-microphone"></i>',
+                    id: 3,
+                    content: '<pre class="blocks">say ()</pre>'
                 },
             ]
         }
