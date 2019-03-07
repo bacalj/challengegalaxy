@@ -1,10 +1,26 @@
 <template>
     <div class="clue" @click="toggleClue">
-        <!-- <transition name="fade"> -->
-        <div class="clue-cover contained" :class="{ 'flat-bottom' : revealed }" v-html="cover"></div>
-        <!-- </transition> -->
+
+        <div class="lock-and-key" v-if="this.haslock">
+            <div class="lock-form" v-show="lockFormOpen">
+                Type this backwards to open: {{ lockCombo.split("").reverse().join("") }}
+                <input @keyup="unlockIfComboCorrect" v-model="lockEntryText">
+            </div>
+        
+            <button class="the-lock lock-info" @click="handleLockClick">
+                <span v-if="lockedState"><i class="fas fa-lock"></i></span>
+                <span v-else><i class="fas fa-lock-open"></i></span>
+            </button>
+        </div>
+     
+        <div class="clue-cover contained" :class="{ 'flat-bottom' : revealed, 'is-locked' : lockedState }" v-html="cover"></div>
+  
         <transition name="fade">
-            <div v-show="revealed" class="clue-content contained" :class="{ 'image': isImage, 'scratchblock-clue' : isScratchblock }">
+            <div 
+                v-show="revealed && !lockedState" 
+                class="clue-content contained" 
+                :class="{ 'image': isImage, 'scratchblock-clue' : isScratchblock }"
+            >
                 <img v-show="this.isImage" :src="content">
                 <div v-show="this.isText" v-html="content"></div>
             </div>
@@ -18,13 +34,52 @@ export default {
     data(){
         return {
             revealed: false,
-            contentType:'unknown'
+            contentType:'unknown',
+            lockedState: false,
+            lockFormOpen: false,
+            lockCombo: '123',
+            lockEntryText: 'Type the code to open the lock'
         }
     },
 
     methods:{
         toggleClue(){
-            this.revealed = !this.revealed;
+            if ( this.lockedState == false ){
+                this.revealed = !this.revealed;
+            }
+        },
+
+        unlockIfComboCorrect(){
+            if(this.lockEntryText == this.lockCombo){
+                this.unlock();
+            }
+        },
+
+        showLockForm(){
+            this.lockFormOpen = true;
+        },
+
+        closeLockForm(){
+            this.lockFormOpen = false;
+        },
+
+        unlock(){
+            this.lockedState = false;
+        },
+
+        relock(){
+            this.revealed = false;
+            this.lockEntryText = 'Type this backwards to open';
+            this.lockedState = true;
+        },
+
+        handleLockClick(){
+            if ( this.lockFormOpen == true ){
+                this.relock();
+                this.closeLockForm();
+            } else {
+                this.showLockForm();
+            }
         }
     },
 
@@ -36,6 +91,10 @@ export default {
             this.contentType = 'image';
         } else {
             this.contentType = 'text'
+        }
+        
+        if ( this.haslock ){
+            this.relock();
         }
     },
 
@@ -50,12 +109,17 @@ export default {
 
         isScratchblock(){
             return this.content.includes('<pre class="blocks">');
+        },
+
+        realCombo(){
+            return '321';
         }
     },
     
     props:[
         'content',
-        'cover'
+        'cover',
+        'haslock'
     ]
 }
 </script>
@@ -86,6 +150,27 @@ export default {
     background-color: hsl(0, 0%, 86%);
 }
 
+// .clue-cover.is-locked::after {
+//     position: relative;
+//     font-style: normal;
+//     font-variant: normal;
+//     text-rendering: auto;
+//     -webkit-font-smoothing: antialiased;
+//     content:" 🔒";
+//     font-weight: 400;
+// }
+
+.is-locked {
+    color:#333;
+}
+.lock-info {
+   position: absolute;
+   padding:6px;
+   border:0px;
+   right:28px;
+   background-color: hsl(0, 0%, 86%);
+   border-radius:10px;
+}
 .clue img {
     width: auto;
     max-width: 100%;
