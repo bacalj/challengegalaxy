@@ -1,12 +1,11 @@
 <template>
     <div class="clue" @click="toggleClue">
-
         <div class="lock-and-key" v-if="this.haslock">
             <div class="lock-form" v-show="lockFormOpen">
                 Type this backwards to open: {{ lockCombo.split("").reverse().join("") }}
                 <input @keyup="unlockIfComboCorrect" v-model="lockEntryText">
             </div>
-        
+            
             <button class="the-lock lock-info" @click="handleLockClick">
                 <span v-if="lockedState"><i class="fas fa-lock"></i></span>
                 <span v-else><i class="fas fa-lock-open"></i></span>
@@ -37,7 +36,7 @@ export default {
             contentType:'unknown',
             lockedState: false,
             lockFormOpen: false,
-            lockCombo: 'z',
+            lockCombo: '',
             lockEntryText: 'Type the code...'
         }
     },
