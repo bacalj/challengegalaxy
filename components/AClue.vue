@@ -37,8 +37,8 @@ export default {
             contentType:'unknown',
             lockedState: false,
             lockFormOpen: false,
-            lockCombo: '123',
-            lockEntryText: 'Type the code to open the lock'
+            lockCombo: 'z',
+            lockEntryText: 'Type the code...'
         }
     },
 
@@ -69,7 +69,7 @@ export default {
 
         relock(){
             this.revealed = false;
-            this.lockEntryText = 'Type this backwards to open';
+            this.lockEntryText = 'Type the code...';
             this.lockedState = true;
         },
 
@@ -79,6 +79,13 @@ export default {
                 this.closeLockForm();
             } else {
                 this.showLockForm();
+            }
+        },
+
+        setCombo(){
+            const str = 'galaxy';
+            for ( var i = 0; i < 4; i++ ){
+                this.lockCombo += str.charAt(Math.floor(Math.random() * str.length))
             }
         }
     },
@@ -95,6 +102,7 @@ export default {
         
         if ( this.haslock ){
             this.relock();
+            this.setCombo();
         }
     },
 
@@ -109,10 +117,6 @@ export default {
 
         isScratchblock(){
             return this.content.includes('<pre class="blocks">');
-        },
-
-        realCombo(){
-            return '321';
         }
     },
     
