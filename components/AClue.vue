@@ -3,7 +3,7 @@
         <div class="lock-and-key" v-if="this.haslock">
             <div class="lock-form" v-show="lockFormOpen">
                 Type this backwards to open: {{ lockCombo.split("").reverse().join("") }}
-                <input @keyup="unlockIfComboCorrect" v-model="lockEntryText">
+                <input @keyup="unlockIfComboCorrect" v-model="lockEntryText" placeholder="Type the code...">
             </div>
             
             <button class="the-lock lock-info" @click="handleLockClick">
@@ -37,7 +37,7 @@ export default {
             lockedState: false,
             lockFormOpen: false,
             lockCombo: '',
-            lockEntryText: 'Type the code...'
+            lockEntryText: ''
         }
     },
 
@@ -68,7 +68,7 @@ export default {
 
         relock(){
             this.revealed = false;
-            this.lockEntryText = 'Type the code...';
+            this.lockEntryText = '';
             this.lockedState = true;
         },
 
