@@ -25,7 +25,7 @@
                             v-for="clue in clues" 
                             :content="clue.content"
                             :cover="clue.cover"
-                            :haslock="clue.haslock"
+                            :type="clue.type"
                             :key="clue.id">
                         </a-clue>
                     </div>

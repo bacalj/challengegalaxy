@@ -1,8 +1,8 @@
 <template>
-    <div class="clue" @click="toggleClue">
-        <div class="lock-and-key" v-if="this.haslock">
+    <div class="clue" @click="toggleClue" :class="type">
+        <div class="lock-and-key" v-if="hasLock">
             <div class="lock-form" v-show="lockFormOpen">
-                Type this backwards to open: {{ lockCombo.split("").reverse().join("") }}
+                Type this backwards to unlock: {{ lockCombo.split("").reverse().join("") }}
                 <input @keyup="unlockIfComboCorrect" v-model="lockEntryText" placeholder="Type the code...">
             </div>
             
@@ -98,7 +98,7 @@ export default {
             this.contentType = 'text'
         }
         
-        if ( this.haslock ){
+        if ( this.type == 'locked' ){
             this.relock();
             this.setCombo();
         }
@@ -115,13 +115,16 @@ export default {
 
         isScratchblock(){
             return this.content.includes('<pre class="blocks">');
+        },
+        hasLock() {
+            return this.type == 'locked';
         }
     },
     
     props:[
         'content',
         'cover',
-        'haslock'
+        'type'
     ]
 }
 </script>
@@ -147,6 +150,26 @@ export default {
         background-color:whitesmoke;
     }
 }
+.clue-cover:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    margin-right: 1rem;
+}
+.clue.code .clue-cover:before {
+    content: '\f121';
+}
+.clue.idea .clue-cover:before {
+    content: '\f0eb';
+}
+.clue.info .clue-cover:before {
+    content: '\f129';
+}
+.clue.extra .clue-cover:before {
+    content: '\f069';
+}
 
 .clue-cover.flat-bottom:hover {
     background-color: hsl(0, 0%, 86%);
@@ -161,6 +184,10 @@ export default {
 //     content:" 🔒";
 //     font-weight: 400;
 // }
+.lock-form {
+    color: white;
+    margin-bottom: 10px;
+}
 
 .is-locked {
     color:#333;

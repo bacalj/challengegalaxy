@@ -14,15 +14,35 @@ export const state = () => ({
             stepText: 'This is step 1.',
             clues:[
                 {
-                    cover: '<i class="fas fa-lightbulb"></i>',
+                    cover: 'Before you start',
+                    id: 1, 
+                    content: '<pre class="blocks">when green flag clicked</pre>',
+                    type: 'info'
+                },
+                {
+                    cover: 'Start here',
                     id: 2, 
-                    content: '<pre class="blocks">when green flag clicked</pre>'
+                    content: '<pre class="blocks">when green flag clicked</pre>',
+                    type: 'idea'
+                },
+
+                {
+                    cover: 'For how long?',
+                    id: 3, 
+                    content: '<pre class="blocks">forever</pre>',
+                    type: 'code'
                 },
                 {
                     cover: 'another scratchblock',
-                    id: 3,
+                    id: 4,
                     content: '<pre class="blocks">when green flag clicked\nforever\nturn cw (15) degrees\nsay [Hello!] for (2) secs\nif &lt;mouse down?&gt; then\nchange [mouse clicks v] by (1)\nend\n</pre>',
-                    haslock: true
+                    type: 'locked'
+                },
+                {
+                    cover: 'Bonus',
+                    id: 5,
+                    content: '<pre class="blocks">say [You are amazing!]</pre>',
+                    type: 'extra'
                 }
             ]
         }
