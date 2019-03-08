@@ -75,10 +75,7 @@ export default {
         },
 
         handleLockClick(){
-            if ( this.lockFormOpen == true ){
-                this.relock();
-                this.closeLockForm();
-            } else {
+            if ( this.lockedState) {
                 this.showLockForm();
             }
         },
