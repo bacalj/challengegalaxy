@@ -51,6 +51,8 @@ export default {
         unlockIfComboCorrect(){
             if(this.lockEntryText == this.lockCombo){
                 this.unlock();
+                this.closeLockForm();
+                this.revealed = true;
             }
         },
 
