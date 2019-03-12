@@ -3,14 +3,20 @@ export const state = () => ({
     title: 'Video Sensing!',
     goalImg: '/gifs/video-sensing-collect-gems.gif',
     goalText: 'Use your webcam to interact with Scratch!',
+    studio: 'https://scratch.mit.edu/studios/6050621/projects/',
 
     steps: [
         {
             id: 1,
-            stepImg: '/gifs/video-sensing-add-extension.gif',
-            stepLabel: '<i class="fas fa-info"></i> Add Extension',
-            stepText: 'Add the Video Sensing extension',
+            stepImg: '',
+            stepLabel: '<i class="fas fa-info"></i> Getting started',
+            stepText: "These challenges will help you learn to use video sensing in your projects. Feel free to use other sprites and/or sounds - it's your project! Try to use as few hints as possible.",
             clues:[
+                {
+                    id: 0,
+                    cover: '<i class="fas fa-info"></i> Add the Video Sensing extension',
+                    content: '/gifs/video-sensing-add-extension.gif'
+                }
             ]
         },
         {
