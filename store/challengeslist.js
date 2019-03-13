@@ -4,6 +4,11 @@ export const state = () => ({
             id: 'maze', 
             link: 'challenges/maze', 
             title: 'Maze'
+        },
+        { 
+            id: 'video-sensing', 
+            link: 'challenges/video-sensing', 
+            title: 'Video Sensing'
         }
     ]
 })
