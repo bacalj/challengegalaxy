@@ -22,6 +22,17 @@
                     </div>
                 </div>
             </div>
+            
+             <label>Zero Clues</label>
+             <input 
+                type="range" 
+                min=0
+                max=3
+                steps=1
+                v-model="cluesLevel"
+            >
+             <label>All Clues</label>
+ 
         </section>
 
         <a-step 
@@ -47,6 +58,7 @@ export default {
     data(){
         return {
             id: this.$route.params.id,
+            cluesLevel: 1
         }
     },
     

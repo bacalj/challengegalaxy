@@ -1,5 +1,6 @@
 <template>
-    <div class="clue" @click="toggleClue" :class="type">
+    <div class="clue" @click="toggleClue" :class="type" v-show="inLevel">
+
         <div class="lock-and-key" v-if="hasLock">
             <div class="lock-form" v-show="lockFormOpen">
                 Type this backwards to unlock: {{ lockCombo.split("").reverse().join("") }}
@@ -118,13 +119,19 @@ export default {
         },
         hasLock() {
             return this.type == 'locked';
+        },
+
+        inLevel(){
+            const setLevel = 2
+            return this.level >= setLevel;
         }
     },
     
     props:[
         'content',
         'cover',
-        'type'
+        'type',
+        'level'
     ]
 }
 </script>

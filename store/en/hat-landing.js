@@ -17,32 +17,37 @@ export const state = () => ({
                     cover: 'Before you start',
                     id: 1, 
                     content: '<pre class="blocks">when green flag clicked</pre>',
-                    type: 'info'
+                    type: 'info',
+                    showAtLevelAndAbove:"1"
                 },
                 {
                     cover: 'Start here',
                     id: 2, 
                     content: '<pre class="blocks">when green flag clicked</pre>',
-                    type: 'idea'
+                    type: 'idea',
+                    showAtLevelAndAbove:"1"
                 },
 
                 {
                     cover: 'For how long?',
                     id: 3, 
                     content: '<pre class="blocks">forever</pre>',
-                    type: 'code'
+                    type: 'code',
+                    showAtLevelAndAbove:"2"
                 },
                 {
                     cover: 'another scratchblock',
                     id: 4,
                     content: '<pre class="blocks">when green flag clicked\nforever\nturn cw (15) degrees\nsay [Hello!] for (2) secs\nif &lt;mouse down?&gt; then\nchange [mouse clicks v] by (1)\nend\n</pre>',
-                    type: 'locked'
+                    type: 'locked',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     cover: 'Bonus',
                     id: 5,
                     content: '<pre class="blocks">say [You are amazing!]</pre>',
-                    type: 'extra'
+                    type: 'extra',
+                    showAtLevelAndAbove:"1"
                 }
             ]
         }
