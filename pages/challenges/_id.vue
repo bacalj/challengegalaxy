@@ -42,6 +42,7 @@
             :text="step.stepText"
             :num="step.stepNum"
             :label="step.stepLabel"
+            :currentlevelsetting="challenge.cluesLevel"
             :key="step.id">
         </a-step>
     </div>

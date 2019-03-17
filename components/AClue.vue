@@ -1,6 +1,8 @@
 <template>
     <div class="clue" @click="toggleClue" :class="type" v-show="inLevel">
-
+        <pre>
+            {{ getLevelFromAbove }}
+        </pre>
         <div class="lock-and-key" v-if="hasLock">
             <div class="lock-form" v-show="lockFormOpen">
                 Type this backwards to unlock: {{ lockCombo.split("").reverse().join("") }}
@@ -103,6 +105,7 @@ export default {
             this.relock();
             this.setCombo();
         }
+
     },
 
     computed:{
@@ -117,13 +120,21 @@ export default {
         isScratchblock(){
             return this.content.includes('<pre class="blocks">');
         },
+        
         hasLock() {
             return this.type == 'locked';
         },
 
         inLevel(){
-            const setLevel = 2
-            return this.level >= setLevel;
+            //const currentSetLevel = 
+            //return this.level >= this.currentlevelsetting;
+            return true;
+        },
+
+        getLevelFromAbove(){
+            const cPath = this.$route.path;
+
+            return this.$store.state;
         }
     },
     
@@ -131,7 +142,9 @@ export default {
         'content',
         'cover',
         'type',
-        'level'
+        'level',
+        'currentlevelsetting',
+        'key'
     ]
 }
 </script>
