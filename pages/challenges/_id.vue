@@ -1,6 +1,6 @@
 <template>
     <div class="challenge-container container is-fullhd">
-
+        <LevelSlider />
         <section class="section challenge-heading has-background-white-ter">
             <h1 class="challenge-title title">
                 {{ challenge.title }}
@@ -22,6 +22,7 @@
                     </div>
                 </div>
             </div>
+ 
         </section>
 
         <a-step 
@@ -38,15 +39,17 @@
 
 <script>
 import AStep from '~/components/AStep.vue'
+import LevelSlider from '~/components/LevelSlider.vue'
 
 export default {
     components:{
         AStep,
+        LevelSlider
     },
 
     data(){
         return {
-            id: this.$route.params.id,
+            id: this.$route.params.id
         }
     },
     

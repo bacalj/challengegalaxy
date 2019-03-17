@@ -26,6 +26,7 @@
                             :content="clue.content"
                             :cover="clue.cover"
                             :type="clue.type"
+                            :level="clue.showAtLevelAndAbove"
                             :key="clue.id">
                         </a-clue>
                     </div>
