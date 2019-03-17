@@ -4,6 +4,7 @@ export const state = () => ({
 
 export const mutations = {
     setLevel(state, sliderVal){
-        state.prefs.levelSetTo = sliderVal;
+        console.log('tryit');
+        state.levelSetTo = sliderVal;
     }
 } 

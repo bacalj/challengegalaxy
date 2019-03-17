@@ -30,6 +30,7 @@
                 max=3
                 steps=1
                 v-model="cluesLevel"
+                v-on:input="setLevelInStore"
             >
              <label>All Clues</label>
  
@@ -80,6 +81,12 @@ export default {
         steps(){
             return this.challenge.steps
         },
+    },
+
+    methods:{
+        setLevelInStore(){
+            this.$store.commit('prefs/localprefs/setLevel', this.cluesLevel);
+        }
     }
 }
 </script>
