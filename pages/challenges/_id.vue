@@ -1,6 +1,6 @@
 <template>
     <div class="challenge-container container is-fullhd">
-
+        <LevelSlider />
         <section class="section challenge-heading has-background-white-ter">
             <h1 class="challenge-title title">
                 {{ challenge.title }}
@@ -22,17 +22,6 @@
                     </div>
                 </div>
             </div>
-            
-             <label>Zero Clues</label>
-             <input 
-                type="range" 
-                min=0
-                max=4
-                steps=1
-                v-model="cluesLevel"
-                v-on:input="setLevelInStore"
-            >
-             <label>All Clues</label>
  
         </section>
 
@@ -50,16 +39,17 @@
 
 <script>
 import AStep from '~/components/AStep.vue'
+import LevelSlider from '~/components/LevelSlider.vue'
 
 export default {
     components:{
         AStep,
+        LevelSlider
     },
 
     data(){
         return {
-            id: this.$route.params.id,
-            cluesLevel: 1
+            id: this.$route.params.id
         }
     },
     
@@ -80,12 +70,6 @@ export default {
         steps(){
             return this.challenge.steps
         },
-    },
-
-    methods:{
-        setLevelInStore(){
-            this.$store.commit('prefs/localprefs/setLevel', this.cluesLevel);
-        }
     }
 }
 </script>

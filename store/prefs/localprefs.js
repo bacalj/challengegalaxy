@@ -1,4 +1,5 @@
 export const state = () => ({
+    //eventually get this from auth and db
     levelSetTo: 1
 })
 

@@ -90,7 +90,7 @@ export default {
         },
 
         checkLevel(){
-            if (this.$store.state.prefs.localprefs.levelSetTo > this.level){
+            if (this.$store.state.prefs.localprefs.levelSetTo >= this.level){
                 return true;
             }
         }

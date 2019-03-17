@@ -47,7 +47,7 @@ export const state = () => ({
                     id: 5,
                     content: '<pre class="blocks">say [You are amazing!]</pre>',
                     type: 'extra',
-                    showAtLevelAndAbove:"1"
+                    showAtLevelAndAbove:"0"
                 }
             ]
         }
