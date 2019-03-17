@@ -1,8 +1,6 @@
 <template>
-    <div class="clue" @click="toggleClue" :class="type" v-show="inLevel">
-        <pre>
-            {{ getLevelFromAbove }}
-        </pre>
+    <div class="clue" @click="toggleClue" :class="type" v-show="checkLevel()">
+
         <div class="lock-and-key" v-if="hasLock">
             <div class="lock-form" v-show="lockFormOpen">
                 Type this backwards to unlock: {{ lockCombo.split("").reverse().join("") }}
@@ -40,7 +38,8 @@ export default {
             lockedState: false,
             lockFormOpen: false,
             lockCombo: '',
-            lockEntryText: ''
+            lockEntryText: '',
+            settingsLevel: 1
         }
     },
 
@@ -88,6 +87,12 @@ export default {
             for ( var i = 0; i < 4; i++ ){
                 this.lockCombo += str.charAt(Math.floor(Math.random() * str.length))
             }
+        },
+
+        checkLevel(){
+            if (this.$store.state.prefs.localprefs.levelSetTo > this.level){
+                return true;
+            }
         }
     },
 
@@ -106,6 +111,8 @@ export default {
             this.setCombo();
         }
 
+        this.settingsLevel = this.$store.state.prefs.localprefs.levelSetTo;
+
     },
 
     computed:{
@@ -123,18 +130,6 @@ export default {
         
         hasLock() {
             return this.type == 'locked';
-        },
-
-        inLevel(){
-            //const currentSetLevel = 
-            //return this.level >= this.currentlevelsetting;
-            return true;
-        },
-
-        getLevelFromAbove(){
-            const cPath = this.$route.path;
-
-            return this.$store.state;
         }
     },
     
@@ -142,9 +137,7 @@ export default {
         'content',
         'cover',
         'type',
-        'level',
-        'currentlevelsetting',
-        'key'
+        'level'
     ]
 }
 </script>

@@ -1,6 +1,5 @@
 <template>
     <div class="step column">
-        {{ currentlevelsetting }}
         <button class="button step-toggler is-primary"  @click="toggleStep()">
             <span v-if="label" v-html="label"></span>
             <span v-else>{{ num }}</span>
@@ -28,7 +27,6 @@
                             :cover="clue.cover"
                             :type="clue.type"
                             :level="clue.showAtLevelAndAbove"
-                            :currentlevelsetting="clue.currentlevelsetting"
                             :key="clue.id">
                         </a-clue>
                     </div>
@@ -69,8 +67,7 @@ export default {
         'text',
         'clues',
         'num',
-        'label',
-        'currentlevelsetting'
+        'label'
     ]
 }
 </script>

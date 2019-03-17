@@ -27,7 +27,7 @@
              <input 
                 type="range" 
                 min=0
-                max=3
+                max=4
                 steps=1
                 v-model="cluesLevel"
                 v-on:input="setLevelInStore"
@@ -43,7 +43,6 @@
             :text="step.stepText"
             :num="step.stepNum"
             :label="step.stepLabel"
-            :currentlevelsetting="challenge.cluesLevel"
             :key="step.id">
         </a-step>
     </div>
