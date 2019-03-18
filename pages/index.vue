@@ -1,9 +1,35 @@
 <template>
     <div>
-        <section class="container">
-            Welcome to ChallengeGalaxy!
+        <section class="hero is-fullheight">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <h1 class="title">
+                                Challenge Galaxy
+                            </h1>
+                            <h2 class="subtitle">
+                                Learn Scratch through these interactive challenges<br>
+                                Share with others around the world
+                            </h2>
+                            <div class="flex-row intro-buttons">
+                                <a class="button is-primary"
+                                 href="https://scratch.mit.edu" target="_blank">Open Scratch</a>
+                                <n-link class="button is-primary" to="/#featured">Find a challenge</n-link>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="video-player intro-video">
+                                <div class="wistia_embed wistia_async_j38ihh83m5" style="height:180px;width:320px">&nbsp;</div>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="featured section has-background-info">
+        <section class="featured section has-background-info has-text-centered">
+            <a name="featured" id="featured"></a>
+            <h2 class="title is-2">Featured Challenges</h2>
             <div class="tile is-ancestor">
                 <a-challenge
                     v-for="challenge in featured"
@@ -11,6 +37,7 @@
                     :key="challenge.id">
                 </a-challenge>
             </div>
+            <n-link to="/challenges" class="button is-warning is-medium">Explore more challenges</n-link>
         </section>
     </div>
 </template>
@@ -28,10 +55,40 @@ export default {
             featured: state => state.challengeslist.featured,
         }),
     },
+    head () {
+        return {
+            script: [
+                { src: 'https://fast.wistia.com/embed/medias/j38ihh83m5.jsonp' },
+                { src: 'https://fast.wistia.com/assets/external/E-v1.js' }
+            ]
+        }
+    }
 }
 </script>
 
 <style>
+.hero {
+    background-image: url("http://www.challengegalaxy.com/wp-content/themes/challenge-theme/assets/images/galaxy-1676711.jpg");
+}
+@media only screen and (max-width: 769px) {
+    .hero {
+        text-align: center;
+    }
+}
+.hero .title {
+    font-size: 2.5rem;
+}
+.title, .subtitle {
+    color: white;
+}
+.video-player {
+    border-radius: 5px;
+    border: 5px solid #333333;
+    overflow: hidden;
+    width: 320px;
+    height: 180px;
+    margin:0 auto;
+}
 .tile.is-ancestor {
     display: flex;
     flex-wrap: wrap;
