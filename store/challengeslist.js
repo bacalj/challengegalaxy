@@ -1,40 +1,14 @@
 export const state = () => ({
     published:[
         { 
-            id: 'hat-landing', 
-            link: 'challenges/hat-landing', 
-            title: 'Hat Landing'
+            id: 'maze', 
+            link: 'challenges/maze', 
+            title: 'Maze'
         },
         { 
-            id: 'hat-landing', 
-            link: 'challenges/hat-landing', 
-            title: 'Hat Landing'
-        },
-        { 
-            id: 'hat-landing', 
-            link: 'challenges/hat-landing', 
-            title: 'Hat Landing'
-        }
-        
-    ],
-    featured:[
-        { 
-            id: 'hat-landing'
-        },
-        { 
-            id: 'hat-landing'
-        },
-        { 
-            id: 'hat-landing'
-        },
-        { 
-            id: 'hat-landing'
-        },
-        { 
-            id: 'hat-landing'
-        },
-        { 
-            id: 'hat-landing'
+            id: 'video-sensing', 
+            link: 'challenges/video-sensing', 
+            title: 'Video Sensing'
         }
     ],
 })

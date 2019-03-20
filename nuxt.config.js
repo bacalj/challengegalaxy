@@ -17,7 +17,7 @@ module.exports = {
 
     generate: {
         routes: [
-            '/challenges/hat-landing'
+            '/challenges/maze'
         ]
     },
     /*
