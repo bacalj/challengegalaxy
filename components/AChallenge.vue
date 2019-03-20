@@ -26,16 +26,23 @@ export default {
     margin: 5px;
     min-width: 320px;
     max-width: 480px;
+    .title {
+        color: #363636;
+        font-size: 1.8rem;
+    }
+    .subtitle {
+        color: #363636;
+    }
+    .challenge .button {
+        display: block;
+        margin: auto;
+        width: 10rem;
+    }
 }
 @media only screen and (max-width: 683px) {
     .tile {
         margin: 20px auto;
     }
-}
-.challenge .button {
-    display: block;
-    margin: auto;
-    width: 10rem;
 }
 </style>
 

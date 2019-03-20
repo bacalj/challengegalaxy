@@ -4,6 +4,17 @@ const pkg = require('./package')
 module.exports = {
     mode: 'universal',
 
+    router: {
+        scrollBehavior: function (to, from, savedPosition) {
+            if (to.hash) {
+                return {
+                  selector: to.hash
+                  // , offset: { x: 0, y: 10 }
+                }
+              }
+        }
+      },
+
     generate: {
         routes: [
             '/challenges/hat-landing'

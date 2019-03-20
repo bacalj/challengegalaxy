@@ -4,7 +4,18 @@ export const state = () => ({
             id: 'hat-landing', 
             link: 'challenges/hat-landing', 
             title: 'Hat Landing'
+        },
+        { 
+            id: 'hat-landing', 
+            link: 'challenges/hat-landing', 
+            title: 'Hat Landing'
+        },
+        { 
+            id: 'hat-landing', 
+            link: 'challenges/hat-landing', 
+            title: 'Hat Landing'
         }
+        
     ],
     featured:[
         { 
