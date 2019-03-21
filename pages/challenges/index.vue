@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="featured section has-background-info has-text-centered">
+        <section class="featured section has-background-dark has-text-centered">
             <a name="featured" id="featured"></a>
             <h2 class="title is-2">Find a Challenge</h2>
             <div class="tile is-ancestor">

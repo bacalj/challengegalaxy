@@ -9,6 +9,11 @@ export const state = () => ({
             id: 'video-sensing', 
             link: 'challenges/video-sensing', 
             title: 'Video Sensing'
+        },
+        { 
+            id: 'hat-landing', 
+            link: 'challenges/hat-landing', 
+            title: 'Hat Landing'
         }
     ],
 
@@ -22,6 +27,11 @@ export const state = () => ({
             id: 'video-sensing', 
             link: 'challenges/video-sensing', 
             title: 'Video Sensing'
+        },
+        { 
+            id: 'hat-landing', 
+            link: 'challenges/hat-landing', 
+            title: 'Hat Landing'
         }
     ]
 })

@@ -2,6 +2,7 @@ export const state = () => ({
     id: 'maze',
     title: 'Maze 1',
     goalText: 'Make a maze game',
+    goalImg: '/gifs/maze_win.gif',
     scratchprojid: 291566653,
     studio: 'https://scratch.mit.edu/studios/6026971/projects/',
 

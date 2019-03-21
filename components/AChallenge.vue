@@ -1,11 +1,13 @@
 <template>
-    <div class="tile challenge box">
-        <div class="content">
-            <p class="title">{{ challenge.title }}</p>
-            <p class="subtitle">{{ challenge.goalText }}</p>
-            <img :src="challenge.goalImg">
-            <nuxt-link :to="'/challenges/' + challenge.id" class="button is-primary" >
-            Try this challenge</nuxt-link>
+    <div class="column">
+        <div class="challenge box">
+            <div class="content">
+                <p class="title">{{ challenge.title }}</p>
+                <p class="subtitle">{{ challenge.goalText }}</p>
+                <img :src="challenge.goalImg">
+                <nuxt-link :to="'/challenges/' + challenge.id" class="button is-primary" >
+                Try this challenge</nuxt-link>
+            </div>
         </div>
     </div>
 </template>
