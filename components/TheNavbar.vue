@@ -3,7 +3,7 @@
     <nav class="navbar is-info" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
-                <!-- <img src="/pngs/cglogo.png"> -->
+                <img src="/pngs/scratchcatspace2.png">
                 <h1>ChallengeGalaxy</h1>
             </a>
             <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
