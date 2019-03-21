@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="hero is-fullheight">
+        <section class="hero is-dark">
             <div class="hero-body">
                 <div class="container">
                     <div class="columns">
@@ -68,7 +68,7 @@ export default {
 
 <style>
 .hero {
-    background-image: url("http://www.challengegalaxy.com/wp-content/themes/challenge-theme/assets/images/galaxy-1676711.jpg");
+    //background-image: url("http://www.challengegalaxy.com/wp-content/themes/challenge-theme/assets/images/galaxy-1676711.jpg");
 }
 @media only screen and (max-width: 769px) {
     .hero {
