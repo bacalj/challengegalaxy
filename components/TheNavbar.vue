@@ -1,6 +1,6 @@
 <template>
 <div class="header">
-    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
                 <img src="/pngs/scratchcatspace2.png">
@@ -55,13 +55,12 @@ export default {
 
 <style scoped>
 .header {
-    background-color: #209cee;
+    
 }
 .navbar {
-    max-width: 640px;
     margin: 0 auto;
 }
 .navbar-brand img {
-    height: 90px;
+
 }
 </style>
