@@ -83,6 +83,10 @@ export default {
         
 <style scoped>
 
+.challenge-title {
+    margin-top:20px;
+}
+
 h1, .goal-text.subtitle {
     color:#efefef;
 }

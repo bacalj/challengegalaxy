@@ -96,12 +96,19 @@ export default {
         text-align: center;
     }
 }
+
+.hero {
+    margin-top:28px;
+}
+
 .hero .title {
     font-size: 2.5rem;
 }
+
 .title, .subtitle {
     color: white;
 }
+
 .video-player {
     border-radius: 5px;
     border: 5px solid #333333;

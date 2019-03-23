@@ -28,6 +28,7 @@
                 this.$store.commit('prefs/localprefs/setLevel', this.cluesLevel);
             }
         },
+
         mounted(){
             this.cluesLevel = this.$store.state.prefs.localprefs.levelSetTo;
         }
@@ -35,13 +36,24 @@
 </script>
 
 <style scoped>
+
+@media (min-width: 980px){
+    .level-slider {
+        transform:translateY(-17px);
+    }
+}
+
+
 .level-menu {
     text-align: center;
     color: #333333;
 }
+
 .level-slider input {
     width: 4rem;
+    top:3px;
 }
+
 .label {
     display: inline-block;
     z-index:1002;
