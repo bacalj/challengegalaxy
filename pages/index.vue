@@ -8,8 +8,20 @@
                             <h1 class="title">
                                 Challenge Galaxy
                             </h1>
-                            <a-star speed="fast" w="100px" h="100px" color="#fefefe"></a-star>
-                            <a-star speed="slow" w="50px" h="50px" color="#9012FE"></a-star>
+                            <!-- these will be abstracted into a function later -->
+                            <a-star speed="slow"    ystart="5%" xstart="0%"     w="10px"   h="10px" color="#fefefe"></a-star>
+                            <a-star speed="medium"  ystart="12%" xstart="11%"    w="25px"   h="25px" color="#9012FE"></a-star>
+                            <a-star speed="fast"    ystart="16%" xstart="15%"    w="50px"   h="50px" color="#fefefe"></a-star>
+                            <a-star speed="slow"    ystart="20%" xstart="18%"    w="10px"   h="10px" color="#9012FE"></a-star>
+                            <a-star speed="medium"  ystart="6%" xstart="23%"    w="25px"   h="25px" color="#fefefe"></a-star>
+                            <a-star speed="fast"    ystart="15%" xstart="34%"    w="50px"   h="50px" color="#9012FE"></a-star>
+                            <a-star speed="slow"    ystart="40%" xstart="56%"    w="10px"   h="10px" color="#fefefe"></a-star>
+                            <a-star speed="medium"  ystart="7%" xstart="43%"    w="25px"   h="25px" color="#9012FE"></a-star>
+                            <a-star speed="fast"    ystart="30%" xstart="65%"    w="50px"   h="50px" color="#fefefe"></a-star>
+                            <a-star speed="slow"    ystart="80%" xstart="74%"    w="10px"   h="10px" color="#9012FE"></a-star>
+                            <a-star speed="medium"  ystart="60%" xstart="81%"    w="25px"   h="25px" color="#fefefe"></a-star>
+                            <a-star speed="fast"    ystart="80%" xstart="98%"    w="50px"   h="50px" color="#9012FE"></a-star>
+                            
                             <h2 class="subtitle">
                                 Learn Scratch through these interactive challenges<br>
                                 Share with others around the world

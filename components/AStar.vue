@@ -4,6 +4,7 @@
             :class="speed"
             :width="w" 
             :height="h" 
+            :style="{ left: xstart, top: ystart }"
             viewBox="0 0 138 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <polygon 
@@ -21,7 +22,9 @@
             'color',
             'h',
             'w',
-            'speed'
+            'speed',
+            'xstart',
+            'ystart'
         ],
         computed:{
             speedClass(){
@@ -36,10 +39,10 @@
 @keyframes fall {
     0% {
         opacity:100%;
-        transform: translateY(-300px);
+        transform: translateY(-100px);
     }
 
-    20% {
+    30% {
         opactiy:0%;
     }
 
@@ -65,6 +68,7 @@
     z-index:0;
     animation-iteration-count:infinite;
     animation-timing-function: linear;
+    position:absolute;
 }
 
 </style>
