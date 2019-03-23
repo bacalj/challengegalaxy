@@ -1,6 +1,5 @@
 <template>
     <div class="challenge-container container is-fullhd">
-        <LevelSlider />
         <section class="section challenge-heading has-background-dark">
             <h1 class="challenge-title title">
                 {{ challenge.title }}
