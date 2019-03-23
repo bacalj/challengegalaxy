@@ -4,7 +4,9 @@
             <div class="content">
                 <p class="title">{{ challenge.title }}</p>
                 <p class="subtitle">{{ challenge.goalText }}</p>
-                <img :src="challenge.goalImg">
+                <figure class="image">
+                    <img :src="challenge.goalImg">
+                </figure>
                 <nuxt-link :to="'/challenges/' + challenge.id" class="button is-primary" >
                 Try this challenge</nuxt-link>
             </div>
@@ -40,6 +42,10 @@ export default {
         margin: auto;
         width: 10rem;
     }
+}
+
+.column .challenge.box {
+    height:100%;
 }
 @media only screen and (max-width: 683px) {
     .tile {
