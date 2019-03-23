@@ -1,6 +1,6 @@
 <template>
     <div class="level-slider">
-        <label class="zero-label">No Clues</label>
+        <div class="zero-label label">No Clues</div>
         <input 
             type="range" 
             min=0
@@ -9,7 +9,7 @@
             v-model="cluesLevel"
             v-on:input="setLevelInStore"
         >
-        <label class="all-label">All Clues</label>
+        <div class="all-label label">All Clues</div>
     </div>
 </template>
 
@@ -36,13 +36,26 @@
 <style scoped>
 .level-slider {
     position: fixed;
-    transform: rotateZ(270deg);
-    top:342px;
-    right:17px;
+    transform: rotateZ(180deg);
+    top:3px;
+    right:30%;
+    z-index:1001;
 }
 
-label {
-    transform: rotateX(370deg);
+div.label {
+    color:#efefef;
+    width:80px;
+    z-index:1002;
+}
+
+div.label.zero-label {
+    /* //border:1px solid red; */
+    transform: rotateZ(180deg) translateX(100px) translateY(-34px);
+}
+
+div.label.all-label {
+    /* //border:1px solid green; */
+    transform: rotateZ(180deg) translateX(-140px) translateY(20px);
 }
 
 </style>
