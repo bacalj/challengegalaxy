@@ -1,7 +1,7 @@
 <template>
     <div class="challenge-container container is-fullhd">
         <LevelSlider />
-        <section class="section challenge-heading has-background-white-ter">
+        <section class="section challenge-heading has-background-dark">
             <h1 class="challenge-title title">
                 {{ challenge.title }}
             </h1>
@@ -84,6 +84,9 @@ export default {
         
 <style scoped>
 
+h1, .goal-text.subtitle {
+    color:#efefef;
+}
 .contained {
     max-width:480px;
 }
