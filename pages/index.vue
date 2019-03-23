@@ -90,9 +90,7 @@ export default {
 </script>
 
 <style>
-.hero {
-    //background-image: url("http://www.challengegalaxy.com/wp-content/themes/challenge-theme/assets/images/galaxy-1676711.jpg");
-}
+
 @media only screen and (max-width: 769px) {
     .hero {
         text-align: center;
@@ -112,6 +110,7 @@ export default {
     height: 180px;
     margin:0 auto;
 }
+
 .tile.is-ancestor {
     display: flex;
     flex-wrap: wrap;
