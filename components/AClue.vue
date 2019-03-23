@@ -6,7 +6,6 @@
                 Type this backwards to unlock: {{ lockCombo.split("").reverse().join("") }}
                 <input @keyup="unlockIfComboCorrect" v-model="lockEntryText" placeholder="Type the code...">
             </div>
-            
             <button class="the-lock lock-info" @click="handleLockClick">
                 <span v-if="lockedState"><i class="fas fa-lock"></i></span>
                 <span v-else><i class="fas fa-lock-open"></i></span>
