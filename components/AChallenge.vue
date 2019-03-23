@@ -48,17 +48,6 @@ export default {
     .subtitle {
         color: #363636;
     }
-
-    .content {
-        height:100%;
-        position:relative;
-    }
-
-    .challenge a.button {
-        position:absolute;
-        bottom:0px;
-        right:25%;
-    }
 }
 @media only screen and (max-width: 683px) {
     .tile {
