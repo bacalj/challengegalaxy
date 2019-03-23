@@ -59,7 +59,7 @@ export const state = () => ({
                     content: '<pre class="blocks">wait (1) seconds</pre>',
                 },
                 {
-                    id: 2,
+                    id: 4,
                     cover: '<i class="fas fa-code"></i> Switch back to normal',
                     content: '<pre class="blocks">switch costume to [dragon-a v]</pre>',
                 },

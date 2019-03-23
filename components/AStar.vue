@@ -1,6 +1,10 @@
 <template>
     <div>
-        <svg class="star" :width="w" :height="h" viewBox="0 0 138 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg class="star" 
+            :class="speed"
+            :width="w" 
+            :height="h" 
+            viewBox="0 0 138 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <polygon 
                     :fill="color" 
@@ -16,34 +20,51 @@
         props:[
             'color',
             'h',
-            'w'
-        ]
+            'w',
+            'speed'
+        ],
+        computed:{
+            speedClass(){
+                return this.speed;
+            }
+        }
     }
 </script>
 
 <style scoped>
 
-@keyframes fallslow {
+@keyframes fall {
     0% {
-        opacity:0%;
-        transform: translateY(-500px);
+        opacity:100%;
+        transform: translateY(-300px);
     }
 
     20% {
-        opactiy:100%;
+        opactiy:0%;
     }
 
     100%  {
-        transform: translateY(1500px);
+        transform: translateY(1000px);
     }
 }
 
-.star {
-    position: fixed;
-    z-index:0;
-    animation: 10s fallslow;
-    animation-iteration-count:infinite;
 
+.fast {
+    animation: 12s fall;
+}
+
+.medium {
+    animation: 18s fall;
+}
+
+.slow {
+    animation: 24s fall;
+}
+
+.star {
+    z-index:0;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
 }
 
 </style>

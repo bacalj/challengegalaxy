@@ -8,8 +8,8 @@
                             <h1 class="title">
                                 Challenge Galaxy
                             </h1>
-                            <a-star w="100px" h="100px" color="#fefefe"></a-star>
-                            <a-star w="50px" h="50px" color="#9012FE"></a-star>
+                            <a-star speed="fast" w="100px" h="100px" color="#fefefe"></a-star>
+                            <a-star speed="slow" w="50px" h="50px" color="#9012FE"></a-star>
                             <h2 class="subtitle">
                                 Learn Scratch through these interactive challenges<br>
                                 Share with others around the world
