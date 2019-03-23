@@ -4,7 +4,7 @@
         
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
-                <img src="/pngs/scratchcatspace2.png"><h1>ChallengeGalaxy</h1>
+                <img src="/pngs/cglogo2.png"><h1 style="display:none;">ChallengeGalaxy</h1>
             </a>
             <a @click="toggleClueMenu" role="button" class="navbar-burger clueMenu" aria-label="menu" aria-expanded="false" :class="{ 'is-active': clueMenuOpen }">
                 Clues
@@ -70,4 +70,10 @@ export default {
     text-align: center;
     line-height: 3rem;
 }
+
+.navbar-brand img {
+    max-height:4rem;
+    margin-right:10px;
+}
+
 </style>
