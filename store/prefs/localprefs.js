@@ -1,11 +1,11 @@
 export const state = () => ({
     //eventually get this from auth and db
-    levelSetTo: 1
+    levelSetTo: 1,
+    fallingStars: false
 })
 
 export const mutations = {
     setLevel(state, sliderVal){
-        console.log('tryit');
         state.levelSetTo = sliderVal;
     }
 } 
