@@ -4,11 +4,15 @@
             <div class="content">
                 <p class="title">{{ challenge.title }}</p>
                 <p class="subtitle">{{ challenge.goalText }}</p>
+                
                 <figure class="image">
                     <img :src="challenge.goalImg">
                 </figure>
+
                 <nuxt-link :to="'/challenges/' + challenge.id" class="button is-primary" >
-                Try this challenge</nuxt-link>
+                    Try this challenge
+                </nuxt-link>
+
             </div>
         </div>
     </div>
@@ -26,26 +30,35 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.tile {
+
+.column {
     margin: 5px;
     min-width: 320px;
     max-width: 480px;
+    
+    .box {
+        height:100%;
+    }
+
     .title {
         color: #363636;
         font-size: 1.8rem;
     }
+
     .subtitle {
         color: #363636;
     }
-    .challenge .button {
-        display: block;
-        margin: auto;
-        width: 10rem;
-    }
-}
 
-.column .challenge.box {
-    height:100%;
+    .content {
+        height:100%;
+        position:relative;
+    }
+
+    .challenge a.button {
+        position:absolute;
+        bottom:0px;
+        right:25%;
+    }
 }
 @media only screen and (max-width: 683px) {
     .tile {
