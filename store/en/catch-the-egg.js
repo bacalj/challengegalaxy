@@ -3,7 +3,8 @@ export const state = () => ({
     title: 'Catch the Egg',
     goalText: "Don't let the egg hit the ground!",
     scratchprojid: 296663990,
-
+    studio: 'https://scratch.mit.edu/studios/6229749/projects/',
+    
     steps: [
         {
             id: 1,
