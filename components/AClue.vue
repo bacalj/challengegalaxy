@@ -182,7 +182,9 @@ export default {
 .clue.extra .clue-cover:before {
     content: '\f069';
 }
-
+.clue.question .clue-cover:before {
+    content: '\f128';
+}
 .clue-cover.flat-bottom:hover {
     background-color: hsl(0, 0%, 86%);
 }
@@ -213,6 +215,7 @@ export default {
    border-radius:10px;
 }
 .clue img {
+    display: block;
     width: auto;
     max-width: 100%;
     margin: 0 auto;
@@ -227,8 +230,6 @@ export default {
 .scratchblock-clue {
     text-align:center;
 }
-
-
 .flat-bottom {
     border-radius: 3px 3px 0px 0px;
 }
