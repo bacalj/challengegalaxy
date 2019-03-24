@@ -11,7 +11,7 @@
                     <div class="step-text subtitle">
                         {{ text }}
                     </div>
-                    <div class="columns is-mobile">
+                    <div class="columns is-mobile" v-if="img">
                         <div class="column">
                             <div class="step-image image">
                                 <img :src="img">
