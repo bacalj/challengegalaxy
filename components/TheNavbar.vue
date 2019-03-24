@@ -7,7 +7,10 @@
                 <img src="/pngs/cglogo2.png"><h1 style="display:none;">ChallengeGalaxy</h1>
             </a>
             <a @click="toggleClueMenu" role="button" class="navbar-burger clueMenu" aria-label="menu" aria-expanded="false" :class="{ 'is-active': clueMenuOpen }">
-                Clues
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <div class="text">Clues</div>
             </a>
             <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': mobileMenuOpen }">
                 <span aria-hidden="true"></span>
@@ -20,7 +23,7 @@
                 <LevelSlider />
             </div>
         </div>
-        <div class="navbar-menu" :class="{ 'is-active': mobileMenuOpen }">
+        <div class="navbar-menu" :class="{ 'is-active': mobileMenuOpen, 'has-background-dark': true }">
             <div class="navbar-start">
 
             </div>
@@ -61,19 +64,36 @@ export default {
 </script>
 
 <style scoped>
+.navbar {
+    box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+}
 .navbar-start {
     flex-grow: 1;
     align-self: flex-end;
     justify-content: flex-end;
 }
-.clueMenu {
+.navbar-burger {
     text-align: center;
-    line-height: 3rem;
+    line-height: 78px;
+    height: 78px;
 }
-
+.clueMenu .text {
+    display: inline;
+}
+.clueMenu.is-active .text {
+    display: none;
+}
+.clueMenu span {
+    display: none;
+}
+.clueMenu.is-active span {
+    display: inline-block;
+}
 .navbar-brand img {
     max-height:4rem;
     margin-right:10px;
 }
-
+.navbar-item {
+    color: whitesmoke;
+}
 </style>

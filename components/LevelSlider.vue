@@ -1,7 +1,7 @@
 <template>
     <div class="level-menu">
         <div class="level-slider">
-            <div class="zero-label label">None</div>
+            <div class="zero-label label">No clues</div>
             <input 
                 type="range" 
                 min=0
@@ -10,7 +10,7 @@
                 v-model="cluesLevel"
                 v-on:input="setLevelInStore"
             >
-            <div class="all-label label">All</div>
+            <div class="all-label label">All clues</div>
         </div>
     </div>
 </template>
@@ -58,6 +58,7 @@
     display: inline-block;
     z-index:1002;
     color: whitesmoke;
+    font-weight: 400;
 }
 
 </style>
