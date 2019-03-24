@@ -16,80 +16,11 @@ export const state = () => ({
             title: 'Hat Landing'
         },
         { 
-            id: 'maze', 
-            link: 'challenges/maze', 
-            title: 'Maze'
+            id: 'catch-the-egg', 
+            link: 'challenges/catch-the-egg', 
+            title: 'Catch the Egg'
         },
-        { 
-            id: 'video-sensing', 
-            link: 'challenges/video-sensing', 
-            title: 'Video Sensing'
-        },
-        { 
-            id: 'hat-landing', 
-            link: 'challenges/hat-landing', 
-            title: 'Hat Landing'
-        },
-        { 
-            id: 'maze', 
-            link: 'challenges/maze', 
-            title: 'Maze'
-        },
-        { 
-            id: 'video-sensing', 
-            link: 'challenges/video-sensing', 
-            title: 'Video Sensing'
-        },
-        { 
-            id: 'hat-landing', 
-            link: 'challenges/hat-landing', 
-            title: 'Hat Landing'
-        },
-        { 
-            id: 'maze', 
-            link: 'challenges/maze', 
-            title: 'Maze'
-        },
-        { 
-            id: 'video-sensing', 
-            link: 'challenges/video-sensing', 
-            title: 'Video Sensing'
-        },
-        { 
-            id: 'hat-landing', 
-            link: 'challenges/hat-landing', 
-            title: 'Hat Landing'
-        },
-        { 
-            id: 'maze', 
-            link: 'challenges/maze', 
-            title: 'Maze'
-        },
-        { 
-            id: 'video-sensing', 
-            link: 'challenges/video-sensing', 
-            title: 'Video Sensing'
-        },
-        { 
-            id: 'hat-landing', 
-            link: 'challenges/hat-landing', 
-            title: 'Hat Landing'
-        },
-        { 
-            id: 'maze', 
-            link: 'challenges/maze', 
-            title: 'Maze'
-        },
-        { 
-            id: 'video-sensing', 
-            link: 'challenges/video-sensing', 
-            title: 'Video Sensing'
-        },
-        { 
-            id: 'hat-landing', 
-            link: 'challenges/hat-landing', 
-            title: 'Hat Landing'
-        }
+
     ],
 
     featured:[
@@ -107,6 +38,11 @@ export const state = () => ({
             id: 'hat-landing', 
             link: 'challenges/hat-landing', 
             title: 'Hat Landing'
+        },
+        { 
+            id: 'catch-the-egg', 
+            link: 'challenges/catch-the-egg', 
+            title: 'Catch the Egg'
         }
     ]
 })
