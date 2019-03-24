@@ -67,6 +67,11 @@ export default {
             sbs.forEach( ( pre ) => {
                 pre.setAttribute("style", "background-color:#dbdbdb; padding:0px;");
             })
+            const sbsvgs = document.querySelectorAll('.scratchblocks svg');
+            sbsvgs.forEach( (svg) => {
+                svg.setAttribute("viewBox", "0 0 420 " + svg.getAttribute("height"));
+                svg.setAttribute("width", "");
+            })
         }, 100);  
     },
 
