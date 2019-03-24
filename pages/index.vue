@@ -121,5 +121,6 @@ export default {
 .tile.is-ancestor {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 </style>

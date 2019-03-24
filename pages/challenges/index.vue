@@ -34,8 +34,9 @@ export default {
 .title, .subtitle {
     color: white;
 }
-.tile.is-ancestor {
+.columns {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 </style>
