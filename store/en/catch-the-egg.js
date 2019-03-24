@@ -251,7 +251,7 @@ export const state = () => ({
             id: 5,
             stepNum: '5',
             stepImg: '/catch-the-egg/cracking-egg.gif',
-            stepLabel: '<i class="fas fa-asterisk"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i>',
             stepText: 'Hit the ground?',
             clues:[
                 {
@@ -317,6 +317,42 @@ export const state = () => ({
                     type: 'locked',
                     showAtLevelAndAbove:"4"
                 }     
+            ]
+        },
+        {
+            id: 6,
+            stepNum: '6',
+            stepLabel: '<i class="fas fa-asterisk"></i>',
+            stepText: 'Extras!',
+            clues:[
+                {
+                    cover: 'Make the eggs fall faster',
+                    id: 0, 
+                    content: '<pre class="blocks">change y by ()</pre>',
+                    type: 'idea',
+                    showAtLevelAndAbove:"0"
+                },
+                {
+                    cover: 'More levels',
+                    id: 0, 
+                    content: '<pre class="blocks">if &lt; (score) = (10) &gt; then <br/> switch backdrop to [backdrop2 v]</pre>',
+                    type: 'locked',
+                    showAtLevelAndAbove:"0"
+                },
+                {
+                    cover: 'High score?',
+                    id: 2, 
+                    content: '<pre class="blocks">if &lt; (score) &gt; (high score) &gt; then <br/> set [high score v] to (score) </pre>',
+                    type: 'locked',
+                    showAtLevelAndAbove:"0"
+                },
+                {
+                    cover: 'Make more falling things',
+                    id: 1, 
+                    content: 'Try duplicating sprites or experiment with cloning.',
+                    type: 'idea',
+                    showAtLevelAndAbove:"0"
+                },
             ]
         }
     ],
