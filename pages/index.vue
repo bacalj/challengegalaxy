@@ -1,13 +1,31 @@
 <template>
     <div>
-        <section class="hero is-dark">
+        <section class="hero is-dark is-fullheight">
+            <div class="hero-head">
+                <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': mobileMenuOpen }">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="navbar-menu" :class="{ 'is-active': mobileMenuOpen, 'has-background-dark': true }">
+                        <div class="navbar-start">
+
+                        </div>
+                        <div class="navbar-end">
+                            <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
+                            <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
+                        </div>
+                    </div>
+                </nav>
+            </div>
             <div class="hero-body">
                 <div class="container">
                     <div class="columns">
                         <div class="column">
-                            <h1 class="title">
-                                Challenge Galaxy
-                            </h1>
+                            <img src="/pngs/cglogo2.png" alt="Challenge Galaxy"/>
                            
                             <div v-if="showTheFallingStars">
                                 <!-- these will be abstracted into a function later -->
@@ -26,13 +44,13 @@
                             </div>
 
                             <h2 class="subtitle">
-                                Learn Scratch through these interactive challenges<br>
-                                Share with others around the world
+                                Learn Scratch through these interactive challenges.<br>
+                                Share your solutions with others around the world!  
                             </h2>
                             <div class="flex-row intro-buttons">
                                 <a class="button is-primary"
                                  href="https://scratch.mit.edu" target="_blank">Open Scratch</a>
-                                <n-link class="button is-primary" to="/#featured">Find a challenge</n-link>
+                                <n-link class="button is-primary" to="/challenges">Find a challenge</n-link>
                             </div>
                         </div>
                         <div class="column">
@@ -65,6 +83,7 @@ import { mapState } from 'vuex'
 import AStar from '~/components/AStar.vue'
 
 export default {
+    layout: 'home',
     components:{
         AChallenge,
         AStar
@@ -95,10 +114,6 @@ export default {
     .hero {
         text-align: center;
     }
-}
-
-.hero {
-    margin-top:28px;
 }
 
 .hero .title {

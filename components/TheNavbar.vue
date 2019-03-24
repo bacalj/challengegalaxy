@@ -41,6 +41,11 @@
 import LevelSlider from '~/components/LevelSlider.vue'
 
 export default {
+    head: {
+        htmlAttrs: {
+            class: 'has-navbar-fixed-top'
+        },
+    },
 
     components:{
         LevelSlider
