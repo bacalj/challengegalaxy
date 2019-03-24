@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
     <div>
         <section class="hero is-dark">
             <div class="hero-body">
@@ -57,6 +58,34 @@
             <n-link to="/challenges" class="button is-warning is-medium">Explore more challenges</n-link>
         </section>
     </div>
+=======
+    <section class="section">
+        <h1 class="title is-1">Welcome to ChallengeGalaxy!</h1>
+
+        <div class="tile is-ancestor">
+            <div class="tile box">
+                <div class="content">
+                    <p class="title">Mazes</p>
+                    <p class="subtitle">Make a maze game.</p>
+                    <figure class="image is-416x348">
+                        <img src="/gifs/maze_glitch.gif">
+                    </figure>
+                    <a class="button is-primary" href="/challenges/maze">Try this challenge</a>
+                </div>
+            </div>
+            <div class="tile box">
+                <div class="content">
+                    <p class="title">Video Sensing</p>
+                    <p class="subtitle">Use your webcam to interact with Scratch!</p>
+                    <figure class="image is-1488x362">
+                        <img src="/gifs/video-sensing-collect-gems.gif">
+                    </figure>
+                    <a class="button is-primary" href="/challenges/video-sensing">Try this challenge</a>
+                </div>
+            </div>
+        </div>
+    </section>
+>>>>>>> 8f442ad94f01b764a3760cbabd11e73cb63f7c81
 </template>
 
 <script>
