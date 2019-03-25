@@ -54,7 +54,7 @@ export const state = () => ({
                     id: 6,
                     content: 'You point to where you want to go and then you...',
                     type: 'idea',
-                    showAtLevelAndAbove:"2"
+                    showAtLevelAndAbove:"1"
                 },
                 {
                     cover: 'How?',
@@ -62,7 +62,14 @@ export const state = () => ({
                     content: '<pre class="blocks">move ( ) steps</pre>',
                     type: 'code',
                     showAtLevelAndAbove:"2"
-                } 
+                },
+                {
+                    cover: '',
+                    id: 8,
+                    content: '<pre class="blocks">When green flag clicked\nforever\npoint towards (mouse pointer v)\nmove (10) steps\n</pre>',
+                    showAtLevelAndAbove:"3",
+                    type:'locked'
+                }
             ]
         },
 
@@ -81,18 +88,18 @@ export const state = () => ({
                     type: 'code'
                 },
                 {
-                    cover: '',
+                    cover: 'When what?',
                     id: 2,
                     content: '<pre class="blocks">if  &lt; &gt; then</pre>',
                     type: 'code',
                     showAtLevelAndAbove:"1"
                 },
                 {
-                    cover: '<i class="fas fa-hand-point-right"></i>✨<i class="fas fa-hand-point-left"></i>',
+                    cover: 'When what?',
                     id: 3,
                     content: '<pre class="blocks">touching color ( ) ?</pre>',
                     type: 'code',
-                    showAtLevelAndAbove:"1"
+                    showAtLevelAndAbove:"2"
                 },
                 {
                     id: 4,
@@ -101,6 +108,13 @@ export const state = () => ({
                     type: 'code',
                     showAtLevelAndAbove:"1"
                 },
+                {
+                    cover: '',
+                    id: 5,
+                    content: '<pre class="blocks">When green flag clicked\nforever\npoint towards (mouse pointer v)\nmove (10) steps\n</pre>',
+                    showAtLevelAndAbove:"3",
+                    type:'locked'
+                }
             ]
         },
         {
@@ -141,20 +155,23 @@ export const state = () => ({
             stepText: 'You win!',
             clues:[
                 {
-                    cover: '<i class="fas fa-clock"></i>',
+                    cover: 'When?',
                     id: 1,
-                    content: '<pre class="blocks">when green flag clicked\nforever</pre>',
+                    type: 'code',
+                    content: '<pre class="blocks">when green flag clicked\nforever\nif &lt; &gt;</pre>',
                     showAtLevelAndAbove:"1"
                 },
                 {
-                    cover: '<i class="fas fa-hand-point-right"></i>✨<i class="fas fa-hand-point-left"></i>',
+                    cover: 'When?',
                     id: 2,
+                    type: 'code',
                     content: '<pre class="blocks">touching color ( ) ?</pre>',
                     showAtLevelAndAbove:"1"
                 },
                 {
-                    cover: '<i class="fas fa-microphone"></i>',
+                    cover: 'Yay!',
                     id: 3,
+                    type: 'code',
                     content: '<pre class="blocks">say ()</pre>',
                     showAtLevelAndAbove:"1"
                 },
