@@ -23,20 +23,20 @@ export const state = () => ({
                 },
                 {
                     id: 2,
-                    cover: '<i class="fas fa-compass"></i>',
+                    cover: '',
                     content: '<pre class="blocks">point towards ()</pre>',
                     type: 'code',
                     showAtLevelAndAbove:"1"
                 },
                 {
-                    cover: '<i class="fas fa-compass"></i>',
+                    cover: '',
                     id: 4, 
                     content: '<pre class="blocks">point towards ( what should you point towards?! )</pre>',
                     type: 'idea',
                     showAtLevelAndAbove:"1"
                 },
                 {
-                    cover: '<i class="fas fa-arrows-alt"></i>',
+                    cover: '',
                     id: 5,
                     content: 'You point to where you want to go and then you...',
                     type: 'idea',
@@ -60,24 +60,32 @@ export const state = () => ({
             stepText: 'Stop at the walls',
             clues:[
                 {
-                    cover: '<i class="fas fa-clock"></i>',
+                    cover: 'When?',
                     id: 1,
-                    content: '<pre class="blocks">when green flag clicked\nforever</pre>'
+                    content: '<pre class="blocks">when green flag clicked\nforever</pre>',
+                    showAtLevelAndAbove:"1",
+                    type: 'code'
                 },
                 {
-                    cover: '<i class="fas fa-hand-point-right"></i>✨<i class="fas fa-hand-point-left"></i>',
+                    cover: '',
                     id: 2,
-                    content: '<pre class="blocks">if  &lt; &gt; then</pre>'
+                    content: '<pre class="blocks">if  &lt; &gt; then</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"1"
                 },
                 {
                     cover: '<i class="fas fa-hand-point-right"></i>✨<i class="fas fa-hand-point-left"></i>',
                     id: 3,
-                    content: '<pre class="blocks">touching color ( ) ?</pre>'
+                    content: '<pre class="blocks">touching color ( ) ?</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"1"
                 },
                 {
                     id: 4,
                     cover: '<i class="fas fa-magic"></i>',
                     content: '<pre class="blocks">go to x:( ) y:( )</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"1"
                 },
             ]
         },
@@ -89,19 +97,25 @@ export const state = () => ({
             stepText: 'Glitch!',
             clues:[
                 {
-                    cover: '<i class="fas fa-crosshairs"></i>',
+                    cover: 'Why is it glitchy?',
                     id: 1,
-                    content: '<pre class="blocks">distance to [mouse pointer v]</pre>'
+                    type: 'info',
+                    content: '<pre class="blocks">distance to [mouse pointer v]</pre>',
+                    showAtLevelAndAbove:"1"
                 },
                 {
-                    cover: '<i class="fas fa-greater-than"></i>',
+                    cover: '<Why is it glitchy?',
                     id: 2,
-                    content: '<pre class="blocks">&lt; () > () &gt;</pre>'
+                    type: 'info',
+                    content: '<pre class="blocks">&lt; () > () &gt;</pre>',
+                    showAtLevelAndAbove:"1"
                 },
                 {
-                    cover: '<i class="fas fa-arrows-alt"></i>',
+                    cover: 'Can we fix it',
                     id: 3,
-                    content: 'Only move if the distance to the mouse pointer is greater than?'
+                    type: 'idea',
+                    content: 'Only move if the distance to the mouse pointer is greater than?',
+                    showAtLevelAndAbove:"1"
                 },
             ]
         },
@@ -115,17 +129,20 @@ export const state = () => ({
                 {
                     cover: '<i class="fas fa-clock"></i>',
                     id: 1,
-                    content: '<pre class="blocks">when green flag clicked\nforever</pre>'
+                    content: '<pre class="blocks">when green flag clicked\nforever</pre>',
+                    showAtLevelAndAbove:"1"
                 },
                 {
                     cover: '<i class="fas fa-hand-point-right"></i>✨<i class="fas fa-hand-point-left"></i>',
                     id: 2,
-                    content: '<pre class="blocks">touching color ( ) ?</pre>'
+                    content: '<pre class="blocks">touching color ( ) ?</pre>',
+                    showAtLevelAndAbove:"1"
                 },
                 {
                     cover: '<i class="fas fa-microphone"></i>',
                     id: 3,
-                    content: '<pre class="blocks">say ()</pre>'
+                    content: '<pre class="blocks">say ()</pre>',
+                    showAtLevelAndAbove:"1"
                 },
             ]
         }
