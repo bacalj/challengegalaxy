@@ -158,7 +158,7 @@ export const state = () => ({
                     cover: 'When?',
                     id: 1,
                     type: 'code',
-                    content: '<pre class="blocks">when green flag clicked\nforever if</pre>',
+                    content: '<pre class="blocks">when green flag clicked\nforever\nif &lt; &gt;</pre>',
                     showAtLevelAndAbove:"1"
                 },
                 {
