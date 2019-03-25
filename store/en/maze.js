@@ -54,7 +54,7 @@ export const state = () => ({
                     id: 6,
                     content: 'You point to where you want to go and then you...',
                     type: 'idea',
-                    showAtLevelAndAbove:"2"
+                    showAtLevelAndAbove:"1"
                 },
                 {
                     cover: 'How?',
@@ -62,7 +62,14 @@ export const state = () => ({
                     content: '<pre class="blocks">move ( ) steps</pre>',
                     type: 'code',
                     showAtLevelAndAbove:"2"
-                } 
+                },
+                {
+                    cover: '',
+                    id: 8,
+                    content: '<pre class="blocks">When green flag clicked\nforever\npoint towards (mouse pointer v)\nmove (10) steps\n</pre>',
+                    showAtLevelAndAbove:"3",
+                    type:'locked'
+                }
             ]
         },
 
