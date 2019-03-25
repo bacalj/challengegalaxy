@@ -16,39 +16,53 @@ export const state = () => ({
             clues:[
                 {
                     cover: 'When?',
+                    id: 0,
+                    content: 'Should it follow it all the time? How will we do that?',
+                    type: 'idea',
+                    showAtLevelAndAbove:"1"
+                },
+                {
+                    cover: 'When?',
                     id: 1,
                     content: '<pre class="blocks">when green flag clicked\nforever</pre>',
                     type: 'code',
+                    showAtLevelAndAbove:"2"
+                },
+                {
+                    id: 3,
+                    cover: 'How?',
+                    content: 'Think about direction',
+                    type: 'idea',
                     showAtLevelAndAbove:"1"
                 },
                 {
-                    id: 2,
-                    cover: '',
+                    id: 4,
+                    cover: 'How?',
                     content: '<pre class="blocks">point towards ()</pre>',
                     type: 'code',
-                    showAtLevelAndAbove:"1"
+                    showAtLevelAndAbove:"2"
                 },
                 {
-                    cover: '',
-                    id: 4, 
+                    cover: 'How?',
+                    id: 5, 
                     content: '<pre class="blocks">point towards ( what should you point towards?! )</pre>',
                     type: 'idea',
-                    showAtLevelAndAbove:"1"
+                    showAtLevelAndAbove:"2"
                 },
                 {
-                    cover: '',
-                    id: 5,
+                    cover: 'How?',
+                    id: 6,
                     content: 'You point to where you want to go and then you...',
                     type: 'idea',
-                    showAtLevelAndAbove:"1"
+                    showAtLevelAndAbove:"2"
                 },
                 {
-                    cover: '<i class="fas fa-arrows-alt"></i>',
-                    id: 6,
+                    cover: 'How?',
+                    id: 7,
                     content: '<pre class="blocks">move ( ) steps</pre>',
                     type: 'code',
-                    showAtLevelAndAbove:"1"
-                }
+                    showAtLevelAndAbove:"2"
+                } 
             ]
         },
 
