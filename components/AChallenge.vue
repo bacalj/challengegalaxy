@@ -6,7 +6,9 @@
                 <p class="subtitle">{{ challenge.goalText }}</p>
                 
                 <figure class="image">
-                    <img :src="challenge.goalImg">
+                    <nuxt-link :to="'/challenges/' + challenge.id">
+                        <img :src="challenge.goalImg">
+                    </nuxt-link>
                 </figure>
 
                 <nuxt-link :to="'/challenges/' + challenge.id" class="button is-primary" >
