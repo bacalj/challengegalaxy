@@ -170,9 +170,9 @@ export default {
     text-decoration: inherit;
     margin-right: 1rem;
 }
-.clue.code .clue-cover:before {
-    content: '\f121';
-}
+// .clue.code .clue-cover:before {
+//     content: '\f121';
+// }
 .clue.idea .clue-cover:before {
     content: '\f0eb';
 }
@@ -187,6 +187,10 @@ export default {
 }
 .clue-cover.flat-bottom:hover {
     background-color: hsl(0, 0%, 86%);
+}
+
+.clue.code .clue-cover:before {
+    content: url('~static/svgs/scratchblocksicon.svg');
 }
 
 // .clue-cover.is-locked::after {
