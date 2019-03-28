@@ -191,6 +191,9 @@ export default {
 
 .clue.code .clue-cover:before {
     content: url('~static/svgs/scratchblocksicon.svg');
+    position: relative;
+    right: -8px;
+    top: 4px;
 }
 
 // .clue-cover.is-locked::after {
