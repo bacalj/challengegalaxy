@@ -16,7 +16,7 @@ export const state = () => ({
                 {
                     cover: 'Before you start',
                     id: 1, 
-                    content: '<pre class="blocks">when green flag clicked</pre>',
+                    content: 'What will your sprites be?',
                     type: 'info',
                     showAtLevelAndAbove:"1"
                 },
