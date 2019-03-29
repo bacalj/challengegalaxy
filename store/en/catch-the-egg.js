@@ -11,7 +11,7 @@ export const state = () => ({
             id: 1,
             stepNum: '1',
             stepImg: '/catch-the-egg/step-1.jpg',
-            stepLabel: '<i class="fas fa-lightbulb"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i> Setup',
             stepText: 'Choose sprites and a backdrop',
             clues:[
                 {
@@ -56,7 +56,7 @@ export const state = () => ({
             id: 2,
             stepNum: '2',
             stepImg: '/catch-the-egg/moving-catcher.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i> Moving',
             stepText: 'Move your catcher',
             clues:[
                 {
@@ -121,7 +121,7 @@ export const state = () => ({
             id: 3,
             stepNum: '3',
             stepImg: '/catch-the-egg/falling-eggs.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i> Falling',
             stepText: 'Make the egg fall',
             clues:[
                 {
@@ -186,7 +186,7 @@ export const state = () => ({
             id: 4,
             stepNum: '4',
             stepImg: '/catch-the-egg/catching-eggs.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i> Points',
             stepText: 'How many can you collect?',
             clues:[
                 {
@@ -241,7 +241,7 @@ export const state = () => ({
                 {
                     cover: 'Having trouble?',
                     id: 7,
-                    content: '<pre class="blocks">when flag clicked <br/> set [score v] to (0) <br/> forever <br/> go to x (pick random (-240) to (240)) y (180) <br/> repeat until &lt;touching [catcher v]&gt; <br/> change y by (-5) <br/> end <br/> change [score v] by (1) <br/> start sound [pop v]</pre>',
+                    content: "Look at the script you wrote before and add three new blocks: <br/> <pre class='blocks'>when flag clicked <br/> set [score v] to (0) <br/> forever <br/> go to x (pick random (-240) to (240)) y (180) <br/> repeat until &lt;touching [catcher v]&gt; <br/> change y by (-5) <br/> end <br/> change [score v] by (1) <br/> start sound [pop v]</pre>",
                     type: 'locked',
                     showAtLevelAndAbove:"4"
                 }     
@@ -251,7 +251,7 @@ export const state = () => ({
             id: 5,
             stepNum: '5',
             stepImg: '/catch-the-egg/cracking-egg.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i> Ground',
             stepText: 'Hit the ground?',
             clues:[
                 {
@@ -322,27 +322,27 @@ export const state = () => ({
         {
             id: 6,
             stepNum: '6',
-            stepLabel: '<i class="fas fa-asterisk"></i>',
-            stepText: 'Extras!',
+            stepLabel: '<i class="fas fa-asterisk"></i> Extras!',
+            stepText: 'What else can you add? Powerups? Levels?',
             clues:[
                 {
                     cover: 'Make the eggs fall faster',
                     id: 0, 
-                    content: '<pre class="blocks">change y by ()</pre>',
+                    content: "Try different speeds? <pre class='blocks'>change y by ()</pre>",
                     type: 'idea',
                     showAtLevelAndAbove:"0"
                 },
                 {
                     cover: 'More levels',
                     id: 0, 
-                    content: '<pre class="blocks">if &lt; (score) = (10) &gt; then <br/> switch backdrop to [backdrop2 v]</pre>',
+                    content: '<pre class="blocks">when flag clicked <br/> switch backdrop to [backdrop1 v] <br/> forever <br/> if &lt; (score) = (10) &gt; then <br/> switch backdrop to [backdrop2 v]</pre>',
                     type: 'locked',
                     showAtLevelAndAbove:"0"
                 },
                 {
                     cover: 'High score?',
                     id: 2, 
-                    content: '<pre class="blocks">if &lt; (score) &gt; (high score) &gt; then <br/> set [high score v] to (score) </pre>',
+                    content: '<pre class="blocks">when flag clicked <br/> forever <br/> if &lt; (score) &gt; (high score) &gt; then <br/> set [high score v] to (score) </pre>',
                     type: 'locked',
                     showAtLevelAndAbove:"0"
                 },
