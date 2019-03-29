@@ -35,7 +35,7 @@
         </a-step>
 
         <div v-if="challenge.studio">
-            <button class="button step-button is-primary">Share!</button>
+            <button class="button step-button is-primary"><i class="fas fa-share"></i>&nbsp;Share!</button>
             <section class="challenge-studio column has-background-info">
                 <div>Add your project to the Studio and see how other people made their projects.</div>
                 <a class="button is-primary step-toggler" target="_blank" v-bind:href="challenge.studio">Studio</a>  
