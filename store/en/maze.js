@@ -11,7 +11,7 @@ export const state = () => ({
             id: 1,
             stepNum: '1',
             stepImg: '/gifs/mouse_move_1.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i> Move',
             stepText: 'Move with the mouse',
             clues:[
                 {
@@ -59,14 +59,14 @@ export const state = () => ({
                 {
                     cover: 'How?',
                     id: 7,
-                    content: '<pre class="blocks">move ( ) steps</pre>',
+                    content: 'How fast should it go? <br/><br/> <pre class="blocks">move ( ) steps</pre>',
                     type: 'code',
                     showAtLevelAndAbove:"2"
                 },
                 {
-                    cover: '',
+                    cover: 'An example',
                     id: 8,
-                    content: '<pre class="blocks">When green flag clicked\nforever\npoint towards (mouse pointer v)\nmove (10) steps\n</pre>',
+                    content: '<pre class="blocks">When green flag clicked\nforever\npoint towards (mouse pointer v)\nmove (2) steps\n</pre>',
                     showAtLevelAndAbove:"3",
                     type:'locked'
                 }
@@ -77,7 +77,7 @@ export const state = () => ({
             id: 2,
             stepNum: '2',
             stepImg: '/gifs/maze_bump_1.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i> Walls',
             stepText: 'Stop at the walls',
             clues:[
                 {
@@ -97,21 +97,21 @@ export const state = () => ({
                 {
                     cover: 'When what?',
                     id: 3,
-                    content: '<pre class="blocks">touching color ( ) ?</pre>',
+                    content: 'What color are your walls? <br/><br/> <pre class="blocks">touching color ( ) ?</pre>',
                     type: 'code',
                     showAtLevelAndAbove:"2"
                 },
                 {
                     id: 4,
                     cover: '<i class="fas fa-magic"></i>',
-                    content: '<pre class="blocks">go to x:( ) y:( )</pre>',
+                    content: 'Where is the start of your maze? <br/><br/> Drag your sprite there and then find this block. Scratch will update the coordinates for you! <br/><br/> <pre class="blocks">go to x:( ) y:( )</pre>',
                     type: 'code',
                     showAtLevelAndAbove:"1"
                 },
                 {
-                    cover: '',
+                    cover: 'An example',
                     id: 5,
-                    content: '<pre class="blocks">When green flag clicked\nforever\npoint towards (mouse pointer v)\nmove (10) steps\n</pre>',
+                    content: '<pre class="blocks">When green flag clicked\nforever\nif &lt;touching color () &gt; then \n go to x () y() \n</pre>',
                     showAtLevelAndAbove:"3",
                     type:'locked'
                 }
@@ -121,7 +121,7 @@ export const state = () => ({
             id: 3,
             stepNum: '3',
             stepImg: '/gifs/maze_glitch.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i> Glitch',
             stepText: 'Glitch!',
             clues:[
                 {
@@ -145,20 +145,34 @@ export const state = () => ({
                     content: 'Only move if the distance to the mouse pointer is greater than?',
                     showAtLevelAndAbove:"1"
                 },
+                {
+                    cover: 'An example',
+                    id: 4,
+                    type: 'locked',
+                    content: 'Add this to the code you wrote before: <br/><br/><pre class="blocks">if &lt;(distance to [mouse-pointer v]) > (5)&gt; then <br/> your point and move code here</pre>',
+                    showAtLevelAndAbove:"1"
+                },
+                {
+                    cover: 'A full example',
+                    id: 5,
+                    type: 'locked',
+                    content: '<pre class="blocks">when flag clicked <br/> forever <br/> if &lt;(distance to [mouse-pointer v]) > (5)&gt; then <br/> point towards [mouse-pointer v] <br/> move (2) steps</pre>',
+                    showAtLevelAndAbove:"3"
+                },
             ]
         },
         {
             id: 4,
             stepNum: '4',
             stepImg: '/gifs/maze_win.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i>',
+            stepLabel: '<i class="fas fa-lightbulb"></i> Win',
             stepText: 'You win!',
             clues:[
                 {
                     cover: 'When?',
                     id: 1,
                     type: 'code',
-                    content: '<pre class="blocks">when green flag clicked\nforever\nif &lt; &gt;</pre>',
+                    content: '<pre class="blocks">when green flag clicked\nforever\nif &lt; &gt; then</pre>',
                     showAtLevelAndAbove:"1"
                 },
                 {
@@ -172,7 +186,14 @@ export const state = () => ({
                     cover: 'Yay!',
                     id: 3,
                     type: 'code',
-                    content: '<pre class="blocks">say ()</pre>',
+                    content: '<pre class="blocks">say []</pre>',
+                    showAtLevelAndAbove:"1"
+                },
+                {
+                    cover: 'Peek at code',
+                    id: 4,
+                    type: 'locked',
+                    content: '<pre class="blocks">when flag clicked <br/> forever <br/> if &lt; touching color () &gt; then <br/> say [You win!]</pre>',
                     showAtLevelAndAbove:"1"
                 },
             ]
