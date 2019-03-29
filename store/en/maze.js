@@ -5,6 +5,7 @@ export const state = () => ({
     goalImg: '/gifs/maze_win.gif',
     scratchprojid: 291566653,
     studio: 'https://scratch.mit.edu/studios/6026971/projects/',
+    code: 'Maze.pdf',
 
     steps: [
         {

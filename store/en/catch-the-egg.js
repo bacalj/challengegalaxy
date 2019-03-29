@@ -5,6 +5,7 @@ export const state = () => ({
     goalImg: '/catch-the-egg/catching-eggs.gif',
     scratchprojid: 296663990,
     studio: 'https://scratch.mit.edu/studios/6229749/projects/',
+    code: 'Catch-the-Egg-Code.pdf',
     
     steps: [
         {

@@ -41,6 +41,14 @@
                 <a class="button is-primary step-toggler" target="_blank" v-bind:href="challenge.studio">Studio</a>  
             </section>
         </div>
+
+        <div v-if="challenge.code">
+            <button class="button step-button is-primary">Code Example</button>
+            <section class="challenge-studio column has-background-info">
+                <div>There are many ways to create this project, but here is one way. This document can be printed as a reference while you are building your project.</div>
+                <a class="button is-primary step-toggler" target="_blank" v-bind:href="'/' + challenge.id + '/' + challenge.code">Code</a>  
+            </section>
+        </div>
     </div>
 </template>
 
