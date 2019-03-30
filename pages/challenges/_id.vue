@@ -1,13 +1,8 @@
 <template>
     <div class="challenge-container container is-fullhd">
         <section class="section challenge-heading has-background-dark">
-            <h1 class="challenge-title title">
-                {{ challenge.title }}
-            </h1>
-
-            <div class="goal-text subtitle">
-                {{ challenge.goalText }}
-            </div>
+            <h1 v-html="challenge.title" class="challenge-title title"></h1>
+            <div v-html="challenge.goalText" class="goal-text subtitle"></div>
         </section>
 
         <section class="challenge-intro-section section has-background-info">
