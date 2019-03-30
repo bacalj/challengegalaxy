@@ -60,7 +60,7 @@ export default {
             scratchblocks.renderMatching("pre.blocks",{style:"scratch3"}); 
             const sbs = document.querySelectorAll('pre.blocks');
             sbs.forEach( ( pre ) => {
-                pre.setAttribute("style", "background-color:#dbdbdb; padding:0px;");
+                pre.setAttribute("style", "background-color:rgba(255, 255, 255, 0); padding:0px;");
             })
             const sbsvgs = document.querySelectorAll('.scratchblocks svg');
             sbsvgs.forEach( (svg) => {

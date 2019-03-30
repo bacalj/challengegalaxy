@@ -27,7 +27,8 @@
                             :cover="clue.cover"
                             :type="clue.type"
                             :level="clue.showAtLevelAndAbove"
-                            :key="clue.id">
+                            :key="clue.id"
+                            :sprite="clue.sprite">
                         </a-clue>
                     </div>
                 </section>

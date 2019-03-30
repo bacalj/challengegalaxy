@@ -71,6 +71,7 @@ export const state = () => ({
                     id: 2, 
                     content: '<pre class="blocks">when flag clicked</pre>',
                     type: 'code',
+                    sprite: 'catcher.png',
                     showAtLevelAndAbove:"4"
                 },
                 {
@@ -78,6 +79,7 @@ export const state = () => ({
                     id: 3, 
                     content: '<pre class="blocks">forever</pre>',
                     type: 'code',
+                    sprite: 'catcher.png',
                     showAtLevelAndAbove:"4"
                 },
                 {
@@ -85,6 +87,7 @@ export const state = () => ({
                     id: 4, 
                     content: '<pre class="blocks">if &lt;&gt; then</pre>',
                     type: 'code',
+                    sprite: 'catcher.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -92,6 +95,7 @@ export const state = () => ({
                     id: 5,
                     content: '<pre class="blocks">key &lt;&gt; pressed?</pre>',
                     type: 'code',
+                    sprite: 'catcher.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -99,6 +103,7 @@ export const state = () => ({
                     id: 6,
                     content: 'How fast do you want to move?<br/><pre class="blocks">change x by ()</pre>',
                     type: 'code',
+                    sprite: 'catcher.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -113,6 +118,7 @@ export const state = () => ({
                     id: 8,
                     content: '<pre class="blocks">when flag clicked<br/>forever<br/>if &lt;key [right arrow v] pressed?&gt; then <br/> change x by (10) <br/> end  <br/> if &lt;key [left arrow v] pressed?&gt; then <br/> change x by (-10) <br/> end <br/>end</pre>',
                     type: 'locked',
+                    sprite: 'catcher.png',
                     showAtLevelAndAbove:"4"
                 },
             ]
@@ -136,6 +142,7 @@ export const state = () => ({
                     id: 2, 
                     content: '<pre class="blocks">when flag clicked</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 },
                 {
@@ -143,6 +150,7 @@ export const state = () => ({
                     id: 3, 
                     content: '<pre class="blocks">forever</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 },
                 {
@@ -150,6 +158,7 @@ export const state = () => ({
                     id: 4, 
                     content: '<pre class="blocks">go to x () y (180)</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -157,6 +166,7 @@ export const state = () => ({
                     id: 5,
                     content: '<pre class="blocks">pick random (-240) to (240)</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -164,6 +174,7 @@ export const state = () => ({
                     id: 6,
                     content: '<pre class="blocks">repeat until <> <br/>change y by (-5)</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -171,6 +182,7 @@ export const state = () => ({
                     id: 7,
                     content: '<pre class="blocks">touching [catcher v]</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -178,6 +190,7 @@ export const state = () => ({
                     id: 8,
                     content: '<pre class="blocks">when flag clicked<br/>forever<br/>go to x (pick random (-240) to (240)) y (180)<br/>repeat until &lt;touching [Catcher v]?&gt;<br/>change y by (-5)</pre>',
                     type: 'locked',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 } 
             ]
@@ -190,9 +203,9 @@ export const state = () => ({
             stepText: 'How many can you collect?',
             clues:[
                 {
-                    cover: 'Select the catcher sprite',
+                    cover: 'Select the egg sprite',
                     id: 0, 
-                    content: '/catch-the-egg/select-the-catcher-sprite.gif',
+                    content: '/catch-the-egg/select-the-egg-sprite.gif',
                     type: 'idea',
                     showAtLevelAndAbove:"4"
                 },
@@ -208,6 +221,7 @@ export const state = () => ({
                     id: 2, 
                     content: '<pre class="blocks">when flag clicked</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 },
                 {
@@ -215,6 +229,7 @@ export const state = () => ({
                     id: 3, 
                     content: '<pre class="blocks">set [score v] to (0)</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 },
                 {
@@ -222,6 +237,7 @@ export const state = () => ({
                     id: 4, 
                     content: 'After this is finished:<br/><pre class="blocks">repeat until &lt;touching [Catcher v]?&gt;</pre>',
                     type: 'question',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -229,6 +245,7 @@ export const state = () => ({
                     id: 5, 
                     content: '<pre class="blocks">change [score v] by (1)</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -236,6 +253,7 @@ export const state = () => ({
                     id: 6,
                     content: '<pre class="blocks">start sound [pop v]</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -243,6 +261,7 @@ export const state = () => ({
                     id: 7,
                     content: "Look at the script you wrote before and add three new blocks: <br/> <pre class='blocks'>when flag clicked <br/> set [score v] to (0) <br/> forever <br/> go to x (pick random (-240) to (240)) y (180) <br/> repeat until &lt;touching [catcher v]&gt; <br/> change y by (-5) <br/> end <br/> change [score v] by (1) <br/> start sound [pop v]</pre>",
                     type: 'locked',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 }     
             ]
@@ -266,6 +285,7 @@ export const state = () => ({
                     id: 1, 
                     content: '<pre class="blocks">when flag clicked</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 },
                 {
@@ -273,6 +293,7 @@ export const state = () => ({
                     id: 2, 
                     content: '<pre class="blocks">switch costume to [egg-a v]</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -280,6 +301,7 @@ export const state = () => ({
                     id: 3, 
                     content: '<pre class="blocks">forever</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 },
                 {
@@ -287,6 +309,7 @@ export const state = () => ({
                     id: 4, 
                     content: '<pre class="blocks">if &lt;&gt; then</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 },
                 {
@@ -294,6 +317,7 @@ export const state = () => ({
                     id: 5, 
                     content: '<pre class="blocks">&lt;touching color (#653b09)&gt;</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -301,6 +325,7 @@ export const state = () => ({
                     id: 6, 
                     content: '<pre class="blocks">switch costume to [egg-b v]</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -308,6 +333,7 @@ export const state = () => ({
                     id: 7, 
                     content: '<pre class="blocks">stop [all v]</pre>',
                     type: 'code',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"2"
                 },
                 {
@@ -315,6 +341,7 @@ export const state = () => ({
                     id: 8,
                     content: '<pre class="blocks">when flag clicked <br/> switch costume to [egg-a v] <br/> forever <br/> if &lt;touching color (#653b09)&gt; then <br/> switch costume to [egg-b v] <br/> stop [all v]</pre>',
                     type: 'locked',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"4"
                 }     
             ]
@@ -330,6 +357,7 @@ export const state = () => ({
                     id: 0, 
                     content: "Try different speeds? <pre class='blocks'>change y by ()</pre>",
                     type: 'idea',
+                    sprite: 'egg.png',
                     showAtLevelAndAbove:"0"
                 },
                 {
