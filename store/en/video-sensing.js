@@ -4,6 +4,7 @@ export const state = () => ({
     goalImg: '/gifs/video-sensing-collect-gems.gif',
     goalText: 'Use your webcam to interact with Scratch!',
     studio: 'https://scratch.mit.edu/studios/6050621/projects/',
+    pdf: 'Video-Sensing.pdf',
 
     steps: [
         {
@@ -14,26 +15,32 @@ export const state = () => ({
             clues:[
                 {
                     id: 0,
-                    cover: '<i class="fas fa-info"></i> Add the Video Sensing extension',
-                    content: '/gifs/video-sensing-add-extension.gif'
+                    cover: 'Add the Video Sensing extension',
+                    content: '/gifs/video-sensing-add-extension.gif',
+                    type: 'info',
+                    showAtLevelAndAbove:"3"
                 }
             ]
         },
         {
             id: 2,
-            stepLabel: '<i class="fas fa-lightbulb"></i> Pet the cat',
+            stepLabel: 'Pet the cat',
             stepImg: '/gifs/video-sensing-pet-cat.gif',
             stepText: 'Play sounds when you pet Scratch.',
             clues:[
                 {
                     id: 1,
-                    cover: '<i class="fas fa-code"></i> Detect motion',
+                    cover: 'Detect motion',
                     content: '<pre class="blocks">when video motion &gt; (20)</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     id: 2,
-                    cover: '<i class="fas fa-code"></i> Play a sound',
-                    content: '<pre class="blocks">play sound [meow] until done</pre>',
+                    cover: 'Play a sound',
+                    content: '<pre class="blocks">play sound [meow v] until done</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
                 },
             ]
         },
@@ -45,23 +52,38 @@ export const state = () => ({
             clues:[
                 {
                     id: 1,
-                    cover: '<i class="fas fa-code"></i> Detect motion',
+                    cover: 'Detect motion',
                     content: '<pre class="blocks">when video motion &gt; (20)</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     id: 2,
-                    cover: '<i class="fas fa-code"></i> Change costume',
+                    cover: 'Change costume',
                     content: '<pre class="blocks">switch costume to [dragon-c v]</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     id: 3,
-                    cover: '<i class="fas fa-code"></i> Wait a bit',
+                    cover: 'Wait a bit',
                     content: '<pre class="blocks">wait (1) seconds</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     id: 4,
-                    cover: '<i class="fas fa-code"></i> Switch back to normal',
+                    cover: 'Switch back to normal',
                     content: '<pre class="blocks">switch costume to [dragon-a v]</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
+                },
+                {
+                    id: 5,
+                    cover: 'Full code example',
+                    content: '<pre class="blocks">when video motion &gt; (20) <br/> switch costume to [dragon-c v] <br/> wait (1) seconds <br/> switch costume to [dragon-a v]</pre>',
+                    type: 'locked',
+                    showAtLevelAndAbove:"3"
                 },
             ]
         },
@@ -73,33 +95,52 @@ export const state = () => ({
             clues:[
                 {
                     id: 1,
-                    cover: '<i class="fas fa-code"></i> Detect motion',
+                    cover: 'Detect motion',
                     content: '<pre class="blocks">when video motion &gt; (20)</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     id: 2,
-                    cover: '<i class="fas fa-code"></i> Start a sound',
+                    cover: 'Start a sound',
                     content: '<pre class="blocks">start sound [Magic Spell v]</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     id: 3,
-                    cover: '<i class="fas fa-code"></i> Move to a new place',
+                    cover: 'Move to a new place',
                     content: '<pre class="blocks">go to [random position v]</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     id: 4,
-                    cover: '<i class="fas fa-code"></i> Change color',
+                    cover: 'Change color',
                     content: '<pre class="blocks">change [color v] effect by (25)</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     id: 5,
-                    cover: '<i class="fas fa-info"></i> Make a variable',
+                    cover: 'Make a variable',
                     content: '<img src="/gifs/make-a-variable.gif"/><img src="/gifs/score-variable.gif"/>',
+                    type: 'info',
+                    showAtLevelAndAbove:"3"
                 },
                 {
                     id: 6,
-                    cover: '<i class="fas fa-code"></i> Keep count',
+                    cover: 'Keep count',
                     content: '<pre class="blocks">change [score v] by (1)</pre>',
+                    type: 'code',
+                    showAtLevelAndAbove:"3"
+                },
+                {
+                    id: 7,
+                    cover: 'Full code example',
+                    content: '<pre class="blocks">when video motion &gt; (20) <br/> start sound [Magic Spell v] <br/> go to [random position v] <br/> change [color v] effect by (25) <br/> change [score v] by (1)</pre>',
+                    type: 'locked',
+                    showAtLevelAndAbove:"3"
                 },
             ]
         }
