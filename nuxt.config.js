@@ -32,7 +32,9 @@ module.exports = {
 
     generate: {
         routes: [
-            '/challenges/maze'
+            '/challenges/maze',
+            '/challenges/video-sensing',
+            '/challenges/catch-the-egg'
         ]
     },
     /*
