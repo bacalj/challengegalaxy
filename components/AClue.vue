@@ -20,8 +20,8 @@
                 class="clue-content contained" 
                 :class="{ 'image': isImage, 'scratchblock-clue' : isScratchblock }"
             >
-                <img v-show="this.isImage" :src="content">
-                <div v-show="this.isText" v-html="content"></div>
+                <img v-if="this.isImage" :src="content">
+                <div v-else v-html="content"></div>
             </div>
         </transition>
     </div>
