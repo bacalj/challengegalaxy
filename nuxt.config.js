@@ -6,12 +6,27 @@ module.exports = {
 
     router: {
         scrollBehavior: function (to, from, savedPosition) {
-            if (to.hash) {
-                return {
-                  selector: to.hash
-                  // , offset: { x: 0, y: 10 }
-                }
+            let position = false
+          
+            // savedPosition is only available for popstate navigations (back button)
+            if (savedPosition) {
+              position = savedPosition
+            } else {
+                position = { x: 0, y: 0 }
             }
+          
+            return new Promise(resolve => {
+              // wait for the out transition to complete (if necessary)
+              window.$nuxt.$once('triggerScroll', () => {
+                // coords will be used if no selector is provided,
+                // or if the selector didn't match any element.
+                if (to.hash && document.querySelector(to.hash)) {
+                  // scroll to anchor by returning the selector
+                  position = { selector: to.hash }
+                }
+                resolve(position)
+              })
+            })
         }
       },
 
