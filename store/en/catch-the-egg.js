@@ -127,7 +127,7 @@ export const state = () => ({
                 {
                     cover: 'Select the egg sprite',
                     id: 1, 
-                    content: '/gifs/select-the-egg-sprite.gif',
+                    content: '/catch-the-egg/select-the-egg-sprite.gif',
                     type: 'idea',
                     showAtLevelAndAbove:"4"
                 },
