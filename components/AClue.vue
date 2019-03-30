@@ -19,6 +19,7 @@
                 v-show="revealed && !lockedState" 
                 class="clue-content contained" 
                 :class="{ 'image': isImage, 'scratchblock-clue' : isScratchblock }"
+                v-bind:style='{ backgroundImage: spriteUrl }'
             >
                 <img v-if="this.isImage" :src="content">
                 <div v-else v-html="content"></div>
@@ -129,6 +130,11 @@ export default {
         
         hasLock() {
             return this.type == 'locked';
+        },
+        spriteUrl() {
+            if (this.sprite) { 
+                return 'url("/sprites/'+ this.sprite + '")'
+            }
         }
     },
     
@@ -136,7 +142,8 @@ export default {
         'content',
         'cover',
         'type',
-        'level'
+        'level',
+        'sprite'
     ]
 }
 </script>
@@ -232,6 +239,10 @@ export default {
     padding:20px;
     background-color: hsl(0, 0%, 86%);
     border-radius:0px 0px 3px 3px;
+    background-position: 95% top;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-size: 50px;
 }
 
 .scratchblock-clue {
