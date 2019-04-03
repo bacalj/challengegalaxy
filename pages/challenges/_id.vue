@@ -26,6 +26,7 @@
             :text="step.stepText"
             :num="step.stepNum"
             :label="step.stepLabel"
+            :initialCluesVisible="step.initialCluesVisible"
             :key="step.id">
         </a-step>
 
