@@ -1,6 +1,5 @@
 <template>
-    <div class="clue" @click="toggleClue" :class="type" v-show="checkLevel()">
-
+    <div class="clue" @click="toggleClue" :class="type" v-show="visible">
         <div class="lock-and-key" v-if="hasLock">
             <div class="lock-form" v-show="lockFormOpen">
                 Type this backwards to unlock: {{ lockCombo.split("").reverse().join("") }}
@@ -12,7 +11,11 @@
             </button>
         </div>
      
-        <div class="clue-cover contained" :class="{ 'flat-bottom' : revealed, 'is-locked' : lockedState }" v-html="cover"></div>
+        <div 
+            class="clue-cover contained" 
+            :class="{ 'flat-bottom' : revealed, 'is-locked' : lockedState }" 
+            v-html="cover">
+        </div>
   
         <transition name="fade">
             <div 
@@ -38,8 +41,7 @@ export default {
             lockedState: false,
             lockFormOpen: false,
             lockCombo: '',
-            lockEntryText: '',
-            settingsLevel: 1
+            lockEntryText: ''
         }
     },
 
@@ -87,12 +89,6 @@ export default {
             for ( var i = 0; i < 4; i++ ){
                 this.lockCombo += str.charAt(Math.floor(Math.random() * str.length))
             }
-        },
-
-        checkLevel(){
-            if (this.$store.state.prefs.localprefs.levelSetTo >= this.level){
-                return true;
-            }
         }
     },
 
@@ -110,9 +106,6 @@ export default {
             this.relock();
             this.setCombo();
         }
-
-        this.settingsLevel = this.$store.state.prefs.localprefs.levelSetTo;
-
     },
 
     computed:{
@@ -131,10 +124,15 @@ export default {
         hasLock() {
             return this.type == 'locked';
         },
+
         spriteUrl() {
             if (this.sprite) { 
                 return 'url("/sprites/'+ this.sprite + '")'
             }
+        },
+
+        visible(){
+            return this.id <= this.cr;
         }
     },
     
@@ -142,8 +140,9 @@ export default {
         'content',
         'cover',
         'type',
-        'level',
-        'sprite'
+        'sprite',
+        'id',
+        'cr'
     ]
 }
 </script>

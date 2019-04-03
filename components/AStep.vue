@@ -1,12 +1,16 @@
 <template>
     <div class="step column">
-        <button class="button step-toggler is-primary"  @click="toggleStep()">
+        <button 
+            class="button step-toggler is-primary"  
+            @click="toggleStep()"
+        >
             <span v-if="label" v-html="label"></span>
             <span v-else>{{ num }}</span>
         </button>
         
         <transition name="slide-fade">
             <div v-show="stepOpen" class="step-wrap">
+
                 <section class="intro-section section has-background-info">
                     <div class="step-text subtitle">
                         {{ text }}
@@ -16,21 +20,41 @@
                             <div class="step-image image">
                                 <img :src="img">
                             </div>
+
+                            <div class="clue-buttons">
+                                <button 
+                                    class="button is-primary is-rounded more-clues" 
+                                    :disabled="noCluesLeft"
+                                    @click="gimmieAClue()">
+                                    {{ gimmieClueText }}
+                                </button>
+
+                                <button
+                                    class="button is-warning is-rounded less-clues" 
+                                    v-show="this.cluesRevealed > 0"
+                                    @click="oneLessClue()">
+                                    Take away a clue!
+                                </button>
+                            </div>
+
                         </div>
                     </div>
                 </section>
                 <section class="clues-section has-background-info">
+                    
                     <div class="clues">
                         <a-clue 
                             v-for="clue in clues" 
                             :content="clue.content"
                             :cover="clue.cover"
                             :type="clue.type"
-                            :level="clue.showAtLevelAndAbove"
                             :key="clue.id"
+                            :id="clue.id"
+                            :cr="cluesRevealed"
                             :sprite="clue.sprite">
                         </a-clue>
                     </div>
+
                 </section>
             </div>
         </transition>
@@ -47,19 +71,48 @@ export default {
     
     data(){
         return {
-            stepOpen: false
+            stepOpen: false,
+            cluesRevealed: this.initialCluesVisible
         }
     },
 
     methods:{
         toggleStep(){
             this.stepOpen = !this.stepOpen;
+        },
+
+        gimmieAClue(){
+            this.cluesRevealed++;
+            if (this.cluesRevealed > this.clues.length){
+                this.cluesRevealed = this.clues.length;
+            }
+        },
+
+        oneLessClue(){
+            this.cluesRevealed--;
+            if (this.cluesRevealed < 0){
+                this.cluesRevealed = 0;
+            }
         }
     },
 
     computed:{
         stepToggleText(){
             return this.stepOpen ? '-' : '+';
+        },
+
+        noCluesLeft(){
+            return this.cluesRevealed >= this.clues.length;
+        },
+
+        gimmieClueText(){
+            if (this.cluesRevealed == 0 ){
+                return 'Give me a clue!';
+            } else if (this.cluesRevealed >= this.clues.length ) {
+                return 'No clues left! Ask a friend?';
+            } else {
+                return 'Give me another clue!';
+            }
         }
     },
     
@@ -68,7 +121,8 @@ export default {
         'text',
         'clues',
         'num',
-        'label'
+        'label',
+        'initialCluesVisible'
     ]
 }
 </script>
@@ -116,4 +170,9 @@ export default {
     opacity: 0;
 }
 
+.clue-buttons {
+    padding-top:20px;
+    text-align: center;
+    margin: 0 auto;
+}
 </style>
