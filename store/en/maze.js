@@ -18,13 +18,13 @@ export const state = () => ({
             clues:[
                 {
                     cover: 'When?',
-                    id: 0,
+                    id: 1,
                     content: 'Should it follow it all the time? How will we do that?',
                     type: 'idea',
                 },
                 {
                     cover: 'When?',
-                    id: 1,
+                    id: 2,
                     content: '<pre class="blocks">when green flag clicked\nforever</pre>',
                     type: 'code',
                 },
@@ -50,15 +50,13 @@ export const state = () => ({
                     cover: 'How?',
                     id: 6,
                     content: 'You point to where you want to go and then you...',
-                    type: 'idea',
-               
+                    type: 'idea'
                 },
                 {
                     cover: 'How?',
                     id: 7,
                     content: 'How fast should it go? <br/><br/> <pre class="blocks">move ( ) steps</pre>',
-                    type: 'code',
-              
+                    type: 'code'
                 },
                 {
                     cover: 'An example',
