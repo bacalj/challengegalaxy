@@ -50,12 +50,10 @@
 
 <script>
 import AStep from '~/components/AStep.vue'
-import LevelSlider from '~/components/LevelSlider.vue'
 
 export default {
     components:{
-        AStep,
-        LevelSlider
+        AStep
     },
 
     data(){

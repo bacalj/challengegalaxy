@@ -18,11 +18,6 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <div class="navbar-menu" :class="{ 'is-active': clueMenuOpen, 'has-background-dark': true }">
-            <div class="navbar-start">
-                <LevelSlider />
-            </div>
-        </div>
         <div class="navbar-menu" :class="{ 'is-active': mobileMenuOpen, 'has-background-dark': true }">
             <div class="navbar-start">
 
@@ -38,17 +33,12 @@
 </template>
 
 <script>
-import LevelSlider from '~/components/LevelSlider.vue'
 
 export default {
     head: {
         htmlAttrs: {
             class: 'has-navbar-fixed-top'
         },
-    },
-
-    components:{
-        LevelSlider
     },
 
     data(){
