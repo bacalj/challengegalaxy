@@ -6,12 +6,6 @@
             <a href="/" class="navbar-item">
                 <img src="/pngs/cglogo2.png"><h1 style="display:none;">ChallengeGalaxy</h1>
             </a>
-            <a @click="toggleClueMenu" role="button" class="navbar-burger clueMenu" aria-label="menu" aria-expanded="false" :class="{ 'is-active': clueMenuOpen }">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <div class="text">Clues</div>
-            </a>
             <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': mobileMenuOpen }">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -50,9 +44,6 @@ export default {
     methods:{
         toggleMobileMenu(){
             this.mobileMenuOpen = !this.mobileMenuOpen;
-        },
-        toggleClueMenu(){
-            this.clueMenuOpen = !this.clueMenuOpen;
         }
     }
 }
