@@ -18,32 +18,32 @@ export const state = () => ({
             clues:[
                 {
                     cover: 'Use your imagination!',
-                    id: 0, 
+                    id: 1, 
                     content: "<img src='/svgs/unicorn.svg' alt='unicorn'/><p>You can choose any sprites and backdrops you like for this project. In some places you may need to adapt the clues if you choose something different. Remember this challenge is meant to inspire your own ideas!</p>",
                     type: 'info',
                 },
                 {
                     cover: 'Delete Scratch',
-                    id: 1, 
+                    id: 2, 
                     content: '/gifs/delete-scratch.gif',
                     type: 'idea',
                 },
                 {
                     cover: 'Choose 2 sprites',
-                    id: 2, 
+                    id: 3, 
                     content: '/gifs/choose-a-sprite.gif',
                     type: 'idea',
                 },
 
                 {
                     cover: 'Choose a backdrop',
-                    id: 3, 
+                    id: 4, 
                     content: '/gifs/choose-a-backdrop.gif',
                     type: 'idea',
                 },
                 {
                     cover: 'Ground?',
-                    id: 4,
+                    id: 5,
                     content: "The ground should be a unique color. Use the drawing tools if needed.<br/><br/><img src='/catch-the-egg/add-ground.gif'/>",
                     type: 'idea',
                 },
@@ -188,54 +188,54 @@ export const state = () => ({
             clues:[
                 {
                     cover: 'Select the egg sprite',
-                    id: 0, 
+                    id: 1, 
                     content: '/catch-the-egg/select-the-egg-sprite.gif',
                     type: 'idea'
                 },
                 {
                     cover: 'Make a score variable ',
-                    id: 1, 
+                    id: 2, 
                     content: '<img src="/gifs/make-a-variable.gif"/><br/><img src="/gifs/score-variable.gif"/>',
                     type: 'idea'
                 },
                 {
                     cover: 'When the game starts',
-                    id: 2, 
+                    id: 3, 
                     content: '<pre class="blocks">when flag clicked</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'What is the score at the beginning?',
-                    id: 3, 
+                    id: 4, 
                     content: '<pre class="blocks">set [score v] to (0)</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'When do you know the egg has been caught?',
-                    id: 4, 
+                    id: 5, 
                     content: 'After this is finished:<br/><pre class="blocks">repeat until &lt;touching [Catcher v]?&gt;</pre>',
                     type: 'question',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'Then change the score',
-                    id: 5, 
+                    id: 6, 
                     content: '<pre class="blocks">change [score v] by (1)</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'Play a sound!',
-                    id: 6,
+                    id: 7,
                     content: '<pre class="blocks">start sound [pop v]</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'Having trouble?',
-                    id: 7,
+                    id: 8,
                     content: "Look at the script you wrote before and add three new blocks: <br/> <pre class='blocks'>when flag clicked <br/> set [score v] to (0) <br/> forever <br/> go to x (pick random (-240) to (240)) y (180) <br/> repeat until &lt;touching [catcher v]&gt; <br/> change y by (-5) <br/> end <br/> change [score v] by (1) <br/> start sound [pop v]</pre>",
                     type: 'locked',
                     sprite: 'egg.png'
@@ -252,62 +252,62 @@ export const state = () => ({
             clues:[
                 {
                     cover: 'Select the egg sprite',
-                    id: 0, 
+                    id: 1, 
                     content: '/catch-the-egg/select-the-egg-sprite.gif',
                     type: 'idea'
                 },
                 {
                     cover: 'When the game starts',
-                    id: 1, 
+                    id: 2, 
                     content: '<pre class="blocks">when flag clicked</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'Always start with the original costume',
-                    id: 2, 
+                    id: 3, 
                     content: '<pre class="blocks">switch costume to [egg-a v]</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'For how long?',
-                    id: 3, 
+                    id: 4, 
                     content: '<pre class="blocks">forever</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'if - then',
-                    id: 4, 
+                    id: 5, 
                     content: '<pre class="blocks">if &lt;&gt; then</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'Touching the ground?',
-                    id: 5, 
+                    id: 6, 
                     content: '<pre class="blocks">&lt;touching color (#653b09)&gt;</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'Switch to the broken costume',
-                    id: 6, 
+                    id: 7, 
                     content: '<pre class="blocks">switch costume to [egg-b v]</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'Stop the game!',
-                    id: 7, 
+                    id: 8, 
                     content: '<pre class="blocks">stop [all v]</pre>',
                     type: 'code',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'Having trouble?',
-                    id: 8,
+                    id: 9,
                     content: '<pre class="blocks">when flag clicked <br/> switch costume to [egg-a v] <br/> forever <br/> if &lt;touching color (#653b09)&gt; then <br/> switch costume to [egg-b v] <br/> stop [all v]</pre>',
                     type: 'locked',
                     sprite: 'egg.png'
@@ -323,26 +323,26 @@ export const state = () => ({
             clues:[
                 {
                     cover: 'Make the eggs fall faster',
-                    id: 0, 
+                    id: 1, 
                     content: "Try different speeds? <pre class='blocks'>change y by ()</pre>",
                     type: 'idea',
                     sprite: 'egg.png'
                 },
                 {
                     cover: 'More levels',
-                    id: 0, 
+                    id: 2, 
                     content: '<pre class="blocks">when flag clicked <br/> switch backdrop to [backdrop1 v] <br/> forever <br/> if &lt; (score) = (10) &gt; then <br/> switch backdrop to [backdrop2 v]</pre>',
                     type: 'locked'
                 },
                 {
                     cover: 'High score?',
-                    id: 2, 
+                    id: 3, 
                     content: '<pre class="blocks">when flag clicked <br/> forever <br/> if &lt; (score) &gt; (high score) &gt; then <br/> set [high score v] to (score) </pre>',
                     type: 'locked'
                 },
                 {
                     cover: 'Make more falling things',
-                    id: 1, 
+                    id: 4, 
                     content: 'Try duplicating sprites or experiment with cloning.',
                     type: 'idea'
                 },
