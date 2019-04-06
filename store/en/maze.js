@@ -14,6 +14,7 @@ export const state = () => ({
             stepImg: '/gifs/mouse_move_1.gif',
             stepLabel: '<i class="fas fa-lightbulb"></i> Move',
             stepText: 'Move with the mouse',
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'When?',
@@ -74,6 +75,7 @@ export const state = () => ({
             stepImg: '/gifs/maze_bump_1.gif',
             stepLabel: '<i class="fas fa-lightbulb"></i> Walls',
             stepText: 'Stop at the walls',
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'When?',
@@ -113,6 +115,7 @@ export const state = () => ({
             stepImg: '/gifs/maze_glitch.gif',
             stepLabel: '<i class="fas fa-lightbulb"></i> Glitch',
             stepText: 'Glitch!',
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'Why is it glitchy?',
@@ -152,6 +155,7 @@ export const state = () => ({
             stepImg: '/gifs/maze_win.gif',
             stepLabel: '<i class="fas fa-lightbulb"></i> Win',
             stepText: 'You win!',
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'When?',
