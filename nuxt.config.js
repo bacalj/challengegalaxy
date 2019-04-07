@@ -34,7 +34,8 @@ module.exports = {
         routes: [
             '/challenges/maze',
             '/challenges/video-sensing',
-            '/challenges/catch-the-egg'
+            '/challenges/catch-the-egg',
+            '/challenges/hat-landing'
         ]
     },
     /*
