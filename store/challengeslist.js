@@ -15,7 +15,11 @@ export const state = () => ({
             link: 'challenges/catch-the-egg', 
             title: 'Catch the Egg'
         },
-
+        { 
+            id: 'hat-landing', 
+            link: 'challenges/hat-landing', 
+            title: 'Hat Landing'
+        }
     ],
 
     featured:[
@@ -33,6 +37,11 @@ export const state = () => ({
             id: 'catch-the-egg', 
             link: 'challenges/catch-the-egg', 
             title: 'Catch the Egg'
+        },
+        { 
+            id: 'hat-landing', 
+            link: 'challenges/hat-landing', 
+            title: 'Hat Landing'
         }
     ]
 })

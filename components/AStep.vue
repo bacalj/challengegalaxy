@@ -20,23 +20,6 @@
                             <div class="step-image image">
                                 <img :src="img">
                             </div>
-
-                            <div class="clue-buttons">
-                                <button 
-                                    class="button is-primary is-rounded more-clues" 
-                                    :disabled="noCluesLeft"
-                                    @click="gimmieAClue()">
-                                    {{ gimmieClueText }}
-                                </button>
-
-                                <button
-                                    class="button is-warning is-rounded less-clues" 
-                                    v-show="this.cluesRevealed > 0"
-                                    @click="oneLessClue()">
-                                    Take away a clue!
-                                </button>
-                            </div>
-
                         </div>
                     </div>
                 </section>
@@ -55,7 +38,24 @@
                         </a-clue>
                     </div>
 
+                    <div class="clue-buttons">
+                        <button 
+                            class="button is-primary is-rounded more-clues" 
+                            :disabled="noCluesLeft"
+                            @click="gimmieAClue()">
+                            {{ gimmieClueText }}
+                        </button>
+
+                        <button
+                            class="button is-warning is-rounded less-clues" 
+                            v-show="this.cluesRevealed > 0"
+                            @click="oneLessClue()">
+                            Take away a clue!
+                        </button>
+
+                    </div>
                 </section>
+                
             </div>
         </transition>
     </div>
@@ -146,6 +146,7 @@ export default {
     }
     .clues-section {
         border-radius: 0px 0px 15px 15px;
+        padding-bottom:20px;
     }
     img {
         border-radius: 4px;
@@ -171,8 +172,11 @@ export default {
 }
 
 .clue-buttons {
-    padding-top:20px;
+    //padding-top:20px;
     text-align: center;
     margin: 0 auto;
+    margin-top:10px;
+    position: relative;
+    top:-12px;
 }
 </style>
