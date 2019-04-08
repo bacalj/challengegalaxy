@@ -4,8 +4,9 @@ export const state = () => ({
     goalImg: '/gifs/pet.gif',
     goalText: 'Make and care for a pet!',
     studio: 'https://scratch.mit.edu/studios/7283045/projects',
-    pdf: 'pet.pdf',
-    scratchprojid: 300642126,
+    pdf: 'petsimple.pdf',
+    scratchprojid: 300694444,
+    lessonplan: 'pet_simple_lesson.pdf',
 
     steps: [
         {
@@ -14,7 +15,7 @@ export const state = () => ({
             stepImg: '/pet/your_own_sprite.png',
             stepLabel: '<i class="fas fa-lightbulb"></i> 1. Create your happy pet!',
             stepText: 'Create your own sprite',
-            initialCluesVisible:10,
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'Choose to paint your own',
@@ -48,25 +49,28 @@ export const state = () => ({
             stepImg: '/pet/two_feelings.gif',
             stepLabel: '<i class="fas fa-lightbulb"></i> 2. Give your pet another feeling',
             stepText: 'Make a costume for each feeling',
-            initialCluesVisible:10,
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'Make a copy of a costume',
                     id: 1, 
                     content: "/gifs/duplicate.gif",
                     type: 'info',
+                    sprite: 'pet.png'
                 },
                 {
                     cover: 'change how it is feeling',
                     id: 2, 
                     content: "/pet/make_sad.gif",
                     type: 'info',
+                    sprite: 'pet.png'
                 },
                 {
                     cover: 'name your costumes',
                     id: 3, 
                     content: "/pet/name_costumes.gif",
                     type: 'info',
+                    sprite: 'pet.png'
                 }
             ]
         },
@@ -76,12 +80,12 @@ export const state = () => ({
             stepImg: '/pet/pet_and_donut.png',
             stepLabel: '<i class="fas fa-lightbulb"></i> 3. Put some food out for your pet!',
             stepText: 'You will need a new sprite!',
-            initialCluesVisible:10,
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'Choose a food sprite',
                     id: 1, 
-                    content: "/pet/new_sprite_donut.png",
+                    content: '/gifs/choose-a-sprite.gif',
                     type: 'info',
                 }
             ]
@@ -92,31 +96,35 @@ export const state = () => ({
             stepImg: '/pet/moving_pet.gif',
             stepLabel: '<i class="fas fa-lightbulb"></i> 4. Make your pet move!',
             stepText: 'You can use keybaord buttons to make it move',
-            initialCluesVisible:10,
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'make it move right',
                     id: 1, 
                     content: 'use these together!<pre class="blocks">when [right arrow v] key pressed</pre><pre class="blocks">point in direction(90)</pre><pre class="blocks">move (10) steps</pre>',
                     type: 'code',
+                    sprite: 'pet.png'
                 },
                 {
                     cover: 'make it move left',
                     id: 1, 
                     content: "What can you copy and change?",
                     type: 'idea',
+                    sprite: 'pet.png'
                 },
                 {
                     cover: 'make start in a certain spot',
                     id: 2, 
                     content: '<pre class="blocks">when green flag clicked\n go to x:(-100) y:(0)</pre>',
                     type: 'code',
+                    sprite: 'pet.png'
                 },
                 {
                     cover: '...and that it doesn\'t go upside down',
                     id: 3, 
                     content: '<pre class="blocks">when green flag clicked\n go to x:(-100) y:(0)\nset rotation style [left-right v]</pre>',
                     type: 'code',
+                    sprite: 'pet.png'
                 }
             ]
         },
@@ -124,45 +132,103 @@ export const state = () => ({
             id: 5,
             stepNum: '5',
             stepImg: '/pet/get_happy.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> 4. Make your pet eat!',
+            stepLabel: '<i class="fas fa-lightbulb"></i> 5. Make your pet happy when it gets food!',
             stepText: 'When will things change? What will change?',
-            initialCluesVisible:10,
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'how does it "sense" the food?',
                     id: 2, 
                     content: 'put these together to make it always wondering if it has food<pre class="blocks">when green flag clicked\n</pre><pre class="blocks">forever</pre><pre class="blocks">if &lt; &gt; then</pre><pre class="blocks">touching (donut v) ?</pre>',
                     type: 'code',
+                    sprite: 'pet.png'
                 },
                 {
                     cover: 'if it is touching the food, then...?',
                     id: 3, 
                     content: '<pre class="blocks">switch costume to (happy v)</pre>',
                     type: 'code',
+                    sprite: 'pet.png'
                 }
             ]
         },
         {
-            id: 5,
-            stepNum: '5',
-            stepImg: '/pet/get_happy.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> 4. Make the food dissapear!',
+            id: 6,
+            stepNum: '6',
+            stepImg: '/pet/eat_donut.gif',
+            stepLabel: '<i class="fas fa-lightbulb"></i> 6. Make the pet eat the food!',
             stepText: 'Add scripts to the food!',
-            initialCluesVisible:10,
+            initialCluesVisible:0,
             clues:[
                 {
                     cover: 'how does the food know it has been eaten?',
-                    id: 2, 
-                    content: 'put these together to make it always wondering if it has food<pre class="blocks">when green flag clicked\n</pre><pre class="blocks">forever</pre><pre class="blocks">if &lt; &gt; then</pre><pre class="blocks">touching (sprite1 v) ?</pre>',
+                    id: 1, 
+                    content: '<pre class="blocks">when green flag clicked\n</pre><pre class="blocks">forever</pre><pre class="blocks">if &lt; &gt; then</pre><pre class="blocks">touching (sprite1 v) ?</pre>',
                     type: 'code',
+                    sprite: 'donut.png'
                 },
                 {
-                    cover: 'if it is touching the Pet, then...?',
-                    id: 3, 
+                    cover: 'How will we show it is eaten up?',
+                    id: 2, 
                     content: '<pre class="blocks">hide</pre>',
                     type: 'code',
+                    sprite: 'donut.png'
+                },
+                {
+                    cover: 'Make the food come back at the start',
+                    id: 3,
+                    content: '<pre class="blocks">when green flag clicked\nshow</pre>',
+                    type: 'code',
+                    sprite: 'donut.png'
                 }
             ]
-        }
+        },
+        {
+            id: 7,
+            stepNum: '7',
+            stepImg: '/pet/eat_donut.gif',
+            stepLabel: '<i class="fas fa-warning"></i>7. See all the code together',
+            stepText: 'Unlock clues to see one way to do it',
+            initialCluesVisible:0,
+            clues:[
+                {
+                    cover: 'The code for the pet',
+                    id: 1, 
+                    content: '<img src="/pet/pet_scripts_long.svg">',
+                    type: 'code',
+                    sprite: 'pet.png'
+                },
+                {
+                    cover: 'The code for the food',
+                    id: 2, 
+                    content: '<img src="/pet/all_donut.svg">',
+                    type: 'code',
+                    sprite: 'donut.png'
+                }
+            ]
+        },
+        {
+            id: 8,
+            stepNum: '8',
+            stepImg: '/pet/pet_plate_eat_2.gif',
+            stepLabel: 'More things you can try',
+            stepText: 'See if you can figure out a way to do these ideas',
+            initialCluesVisible:0,
+            clues:[
+                {
+                    cover: 'Put the food on a plate and let the pet leave some crumbs',
+                    id: 1, 
+                    content: 'Right now the food just hides. What could happen instead? What ostumes will you need?',
+                    type: 'idea'
+                },
+                {
+                    cover: 'Make the pet notice when it is close to the food',
+                    id: 2, 
+                    content: 'These blocks will be useful: <pre class="blocks">(distance to [donut v])</pre><pre class="blocks">&lt; () \< () &gt;</pre>',
+                    type: 'code',
+                    sprite: 'donut.png'
+                }
+            ]
+        }   
     ]
 })
