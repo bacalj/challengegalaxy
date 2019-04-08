@@ -19,6 +19,11 @@ export const state = () => ({
             id: 'hat-landing', 
             link: 'challenges/hat-landing', 
             title: 'Hat Landing'
+        },
+        { 
+            id: 'pet', 
+            link: 'challenges/Pet', 
+            title: 'Make a Pet'
         }
     ],
 
