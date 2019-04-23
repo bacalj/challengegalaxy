@@ -195,14 +195,14 @@ export const state = () => ({
                     cover: 'The code for the pet',
                     id: 1, 
                     content: '<img src="/pet/pet_scripts_long.svg">',
-                    type: 'code',
+                    type: 'locked',
                     sprite: 'pet.png'
                 },
                 {
                     cover: 'The code for the food',
                     id: 2, 
                     content: '<img src="/pet/all_donut.svg">',
-                    type: 'code',
+                    type: 'locked',
                     sprite: 'donut.png'
                 }
             ]
