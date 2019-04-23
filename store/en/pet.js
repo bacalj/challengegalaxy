@@ -30,13 +30,13 @@ export const state = () => ({
                     type: 'info',
                 },
                 {
-                    cover: 'put your shapes together',
+                    cover: 'Put your shapes together',
                     id: 3, 
                     content: "/gifs/shapes_together.gif",
                     type: 'info',
                 },
                 {
-                    cover: 'use the pencil tool',
+                    cover: 'Use the pencil tool',
                     id: 4, 
                     content: "/gifs/use_pencil.gif",
                     type: 'info',
@@ -95,33 +95,40 @@ export const state = () => ({
             stepNum: '4',
             stepImg: '/pet/moving_pet.gif',
             stepLabel: '<i class="fas fa-lightbulb"></i> 4. Make your pet move!',
-            stepText: 'You can use keybaord buttons to make it move',
+            stepText: 'You can use keyboard buttons to make it move',
             initialCluesVisible:0,
             clues:[
                 {
-                    cover: 'make it move right',
+                    cover: 'Make it move right',
                     id: 1, 
-                    content: 'use these together!<pre class="blocks">when [right arrow v] key pressed</pre><pre class="blocks">point in direction(90)</pre><pre class="blocks">move (10) steps</pre>',
+                    content: 'Use these together!<pre class="blocks">when [right arrow v] key pressed</pre><pre class="blocks">point in direction(90)</pre><pre class="blocks">move (10) steps</pre>',
                     type: 'code',
                     sprite: 'pet.png'
                 },
                 {
-                    cover: 'make it move left',
-                    id: 1, 
+                    cover: 'Make it move left',
+                    id: 2, 
                     content: "What can you copy and change?",
                     type: 'idea',
                     sprite: 'pet.png'
                 },
                 {
-                    cover: 'make start in a certain spot',
-                    id: 2, 
-                    content: '<pre class="blocks">when green flag clicked\n go to x:(-100) y:(0)</pre>',
+                    cover: 'Make it move left',
+                    id: 3, 
+                    content: 'Right click on a block to duplicate it. <img src="/gifs/right-click-duplicate.gif"/>',
+                    type: 'code',
+                    sprite: 'pet.png'
+                },
+                {
+                    cover: 'Make start in a certain spot',
+                    id: 4, 
+                    content: '<pre class="blocks">when green flag clicked\n go to x (-100) y (0)</pre>',
                     type: 'code',
                     sprite: 'pet.png'
                 },
                 {
                     cover: '...and that it doesn\'t go upside down',
-                    id: 3, 
+                    id: 5, 
                     content: '<pre class="blocks">when green flag clicked\n go to x:(-100) y:(0)\nset rotation style [left-right v]</pre>',
                     type: 'code',
                     sprite: 'pet.png'
