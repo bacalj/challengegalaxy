@@ -55,7 +55,9 @@
                         </div>
                         <div class="column">
                             <div class="video-player intro-video">
-                                <div class="wistia_embed wistia_async_j38ihh83m5" style="height:180px;width:320px">&nbsp;</div>
+                                <div>
+                                    <img src="jpgs/cgandscratch.jpg" alt="gif of ChallengeGalaxy in use">
+                                </div>
                             </div>                      
                         </div>
                     </div>
@@ -128,8 +130,9 @@ export default {
     border-radius: 5px;
     border: 5px solid #333333;
     overflow: hidden;
-    width: 320px;
-    height: 180px;
+    width:80%;
+    //width: 320px;
+    //height: 180px;
     margin:0 auto;
 }
 
