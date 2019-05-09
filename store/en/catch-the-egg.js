@@ -12,7 +12,7 @@ export const state = () => ({
             id: 1,
             stepNum: '1',
             stepImg: '/catch-the-egg/step-1.jpg',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Setup',
+            stepLabel: '<i class="fas fa-cat"></i> Setup',
             stepText: 'Choose sprites and a backdrop',
             initialCluesVisible:0,
             clues:[
@@ -53,7 +53,7 @@ export const state = () => ({
             id: 2,
             stepNum: '2',
             stepImg: '/catch-the-egg/moving-catcher.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Moving',
+            stepLabel: '<i class="fas fa-arrows-alt-h"></i> Moving',
             stepText: 'Move your catcher',
             initialCluesVisible:0,
             clues:[
@@ -117,7 +117,7 @@ export const state = () => ({
             id: 3,
             stepNum: '3',
             stepImg: '/catch-the-egg/falling-eggs.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Falling',
+            stepLabel: '<i class="fas fa-arrow-down"></i> Falling',
             stepText: 'Make the egg fall',
             initialCluesVisible:0,
             clues:[
@@ -182,7 +182,7 @@ export const state = () => ({
             id: 4,
             stepNum: '4',
             stepImg: '/catch-the-egg/catching-eggs.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Points',
+            stepLabel: '<i class="fas fa-gem"></i> Points',
             stepText: 'How many can you collect?',
             initialCluesVisible:0,
             clues:[
@@ -236,7 +236,7 @@ export const state = () => ({
                 {
                     cover: 'Having trouble?',
                     id: 8,
-                    content: "Look at the script you wrote before and add three new blocks: <br/> <pre class='blocks'>when flag clicked <br/> set [score v] to (0) <br/> forever <br/> go to x (pick random (-240) to (240)) y (180) <br/> repeat until &lt;touching [catcher v]&gt; <br/> change y by (-5) <br/> end <br/> change [score v] by (1) <br/> start sound [pop v]</pre>",
+                    content: "Look at the script you wrote before and add three new blocks: <br/> <pre class='blocks'>when flag clicked <br/> set [score v] to (0) // add this block <br/> forever <br/> go to x (pick random (-240) to (240)) y (180) <br/> repeat until &lt;touching [catcher v]&gt; <br/> change y by (-5) <br/> end <br/> change [score v] by (1) // add this block <br/> start sound [pop v]// add this block </pre>",
                     type: 'locked',
                     sprite: 'egg.png'
                 }     
@@ -246,7 +246,7 @@ export const state = () => ({
             id: 5,
             stepNum: '5',
             stepImg: '/catch-the-egg/cracking-egg.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Ground',
+            stepLabel: '<i class="fas fa-smog"></i> Ground',
             stepText: 'Hit the ground?',
             initialCluesVisible:0,
             clues:[
