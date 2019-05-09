@@ -244,9 +244,6 @@ export default {
     background-size: 50px;
 }
 
-.scratchblock-clue {
-    text-align:center;
-}
 .flat-bottom {
     border-radius: 3px 3px 0px 0px;
 }

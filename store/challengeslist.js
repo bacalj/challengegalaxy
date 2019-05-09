@@ -24,6 +24,11 @@ export const state = () => ({
             id: 'pet', 
             link: 'challenges/Pet', 
             title: 'Make a Pet'
+        },
+        { 
+            id: 'platformer', 
+            link: 'challenges/platformer', 
+            title: 'Platformer Game'
         }
     ],
 
