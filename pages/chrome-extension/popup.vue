@@ -1,0 +1,65 @@
+<template>
+  <div>
+    <section class="section has-background-dark has-text-centered">
+        <img src="https://www.challengegalaxy.com/pngs/cglogo2.png"/>
+    </section>
+    
+    <section class="featured section has-background-dark has-text-centered">
+        <div class="columns is-multiline">
+            <a-challenge
+                v-for="challenge in challenges"
+                :id="challenge.id"
+                :key="challenge.id">
+            </a-challenge>
+        </div>
+    </section>
+
+    <div class="footer">
+      <h2>About Challenge Galaxy</h2>
+      <p>Find out more about Challenge Galaxy and additional curriculum materials at <a href="https://www.challengegalaxy.com" target="_blank">challengegalaxy.com</a>.</p>
+      
+      <p>Thanks to the <a href="http://communityfoundation.org/" target="_blank">Community Foundation of Western Massachusetts</a> for supporting this project. Code is licensed <a href="http://opensource.org/licenses/mit-license.php " target="_blank">MIT</a> open source license. Content is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY NC SA 4.0.</a></p>
+    </div>
+    <script src="../popup.js"></script>
+  </div>
+</template>
+<script>
+import AChallenge from '~/components/AChallenge.vue'
+import { mapState } from 'vuex'
+
+export default {
+    layout: 'extension',
+    components:{
+        AChallenge,
+    },
+    computed: {
+        ...mapState({
+            challenges: state => state.challengeslist.published,
+        }),
+    },
+}
+</script>
+<style>
+    body {
+      margin: 0px;
+      max-height: 400px;
+      padding: 0px;
+    }
+    .footer {
+      padding: 5px 20px;
+      background-color:#363636;
+    }
+    .footer h2 {
+      font-family: 'Raleway', sans-serif;
+      color: #ffffff;
+      font-size: 1.6rem;
+    }
+    .footer {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .footer a:hover {
+      color: #3273dc;
+      text-decoration:underline;
+    }
+  </style>
