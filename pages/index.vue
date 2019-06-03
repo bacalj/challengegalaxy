@@ -4,13 +4,13 @@
             <div class="hero-head">
                 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
-                        <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': mobileMenuOpen }">
+                        <a @click="toggleHomeMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': homeMobileMenuOpen }">
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                         </a>
                     </div>
-                    <div class="navbar-menu" :class="{ 'is-active': mobileMenuOpen, 'has-background-dark': true }">
+                    <div class="navbar-menu" :class="{ 'is-active': homeMobileMenuOpen, 'has-background-dark': true }">
                         <div class="navbar-start">
 
                         </div>
@@ -92,8 +92,7 @@ export default {
     layout: 'home',
     components:{
         AChallenge,
-        AStar, 
-        TheNavbar
+        AStar
     },
     computed: {
         ...mapState({
@@ -104,6 +103,19 @@ export default {
             return this.$store.state.prefs.localprefs.fallingStars;
         }
     },
+
+    data(){
+        return {
+            homeMobileMenuOpen:false
+        }
+    },
+
+    methods:{
+        toggleHomeMobileMenu(){
+            this.homeMobileMenuOpen = !this.homeMobileMenuOpen;
+        }
+    },
+
     head () {
         return {
             script: [
