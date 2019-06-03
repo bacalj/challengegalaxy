@@ -36,7 +36,8 @@ module.exports = {
             '/challenges/video-sensing',
             '/challenges/catch-the-egg',
             '/challenges/hat-landing',
-            '/challenges/pet'
+            '/challenges/pet',
+            '/collections'
         ]
     },
     /*
