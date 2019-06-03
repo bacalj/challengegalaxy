@@ -17,8 +17,9 @@
 
             </div>
             <div class="navbar-end">
-                <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
-                <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
+                <nuxt-link class="navbar-item" to="/about">Aboutt</nuxt-link>
+                <nuxt-link class="navbar-item" to="/challenges">Challengess</nuxt-link>
+                <nuxt-link class="navbar-item" to="/collections">Collectionss</nuxt-link>
             </div>
         </div>
     </nav>
