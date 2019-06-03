@@ -17,9 +17,12 @@
                         <div class="navbar-end">
                             <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
                             <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
+                            <nuxt-link class="navbar-item" to="/collections">Collections</nuxt-link>
                         </div>
                     </div>
                 </nav>
+                <!-- we could just do this later -->
+                <!-- <TheNavbar></TheNavbar> -->
             </div>
             <div class="hero-body">
                 <div class="container">
@@ -83,12 +86,14 @@
 import AChallenge from '~/components/AChallenge.vue'
 import { mapState } from 'vuex'
 import AStar from '~/components/AStar.vue'
+import TheNavbar from '~/components/TheNavbar.vue'
 
 export default {
     layout: 'home',
     components:{
         AChallenge,
-        AStar
+        AStar, 
+        TheNavbar
     },
     computed: {
         ...mapState({
