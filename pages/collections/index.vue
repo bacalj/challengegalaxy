@@ -8,14 +8,30 @@
                     Collections are groups of challenges that go together. 
                 </div>
             </div>
+            <div class="columns is-multiline">
+                <a-collection
+                    v-for="collection in collections"
+                    :id="collection.id"
+                    :key="collection.id">
+                </a-collection>
+            </div>
         </section>
     </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+import ACollection from '~/components/ACollection.vue'
+import { mapState } from 'vuex'
+export default {
+    components:{
+        ACollection
+    },
+    computed: {
+        ...mapState({
+            collections: state => state.collections
+        }),
+    },
+}
 </script>
 
 <style lang="scss" scoped>
