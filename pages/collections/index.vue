@@ -12,6 +12,7 @@
                 <a-collection
                     v-for="collection in collections"
                     :id="collection.id"
+                    :title="collection.title"
                     :key="collection.id">
                 </a-collection>
             </div>
@@ -26,14 +27,15 @@ export default {
     components:{
         ACollection
     },
+
     computed: {
         ...mapState({
-            collections: state => state.collections
+            collections: state => state.collections.collectionslist.published
         }),
     },
 }
 </script>
 
 <style lang="scss" scoped>
-
+h2 { color:white; }
 </style>
