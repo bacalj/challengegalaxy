@@ -39,7 +39,8 @@ module.exports = {
             '/challenges/pet',
             '/collections/',
             '/collections/scratch-basics',
-            '/collections/first-games'
+            '/collections/first-games',
+            'chrome-extension/popup'
         ]
     },
     /*
@@ -102,6 +103,7 @@ module.exports = {
     ** Build configuration
     */
     build: {
+        publicPath: 'https://www.challengegalaxy.com/_nuxt',
         extractCSS: {
             allChunks: true
         },

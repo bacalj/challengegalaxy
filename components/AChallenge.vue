@@ -5,11 +5,11 @@
                 <p class="title">{{ challenge.title }}</p>
                 <p class="subtitle">{{ challenge.goalText }}</p>
                 
-                <figure class="image">
+                <div class="image">
                     <nuxt-link :to="'/challenges/' + challenge.id">
-                        <img :src="challenge.goalImg">
+                        <img :src="'https://www.challengegalaxy.com' + challenge.goalImg">
                     </nuxt-link>
-                </figure>
+                </div>
 
                 <nuxt-link :to="'/challenges/' + challenge.id" class="button is-primary" >
                     Try this challenge
@@ -36,7 +36,7 @@ export default {
 .column {
     margin: 5px;
     min-width: 320px;
-    max-width: 480px;
+    max-width: 320px;
     
     .box {
         height:100%;
@@ -50,12 +50,11 @@ export default {
     .subtitle {
         color: #363636;
     }
-}
-@media only screen and (max-width: 683px) {
-    .tile {
-        margin: 20px auto;
+    .image {
+        margin-bottom: 20px;
     }
 }
+
 </style>
 
 

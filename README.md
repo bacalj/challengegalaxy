@@ -19,4 +19,10 @@ $ yarn start
 $ yarn run generate
 ```
 
+## Chrome Extension
+
+For development testing, load the unpacked extension from /dist/chrome-extension from chrome://extensions
+
+## Nuxt Documentation
+
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
