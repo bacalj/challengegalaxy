@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="section has-background-dark has-text-centered">
+    <section class="logo has-background-dark has-text-centered">
         <img src="https://www.challengegalaxy.com/pngs/cglogo2.png"/>
     </section>
     
@@ -39,11 +39,30 @@ export default {
     },
 }
 </script>
-<style>
+<style lang="scss">
     body {
       margin: 0px;
       max-height: 400px;
+      width: 400px;
+      max-width: 100%;
       padding: 0px;
+    }
+    .logo {
+      padding: 10px;
+    }
+    .logo img {
+      max-width: 100%;
+    }
+    .title {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+    .subtitle {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+    .button {
+      margin-top: 10px;
     }
     .footer {
       padding: 5px 20px;
@@ -57,9 +76,8 @@ export default {
     .footer {
       color: rgba(255, 255, 255, 0.8);
     }
-
     .footer a:hover {
       color: #3273dc;
       text-decoration:underline;
     }
-  </style>
+</style>
