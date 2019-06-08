@@ -37,7 +37,9 @@ module.exports = {
             '/challenges/catch-the-egg',
             '/challenges/hat-landing',
             '/challenges/pet',
-            '/collections'
+            '/collections',
+            '/collections/scratch-basics',
+            '/collections/first-games'
         ]
     },
     /*
