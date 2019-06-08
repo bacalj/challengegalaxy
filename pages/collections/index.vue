@@ -29,11 +29,11 @@ export default {
         ACollection
     },
 
-    computed: {
-        ...mapState({
-            collections: state => state.collections.collectionslist.published
-        }),
-    },
+    data(){
+        return {
+            collections: this.$store.state.collections.collectionslist.published
+        }
+    }
 }
 </script>
 
