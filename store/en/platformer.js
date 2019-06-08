@@ -1,12 +1,12 @@
 export const state = () => ({
     id: 'platformer',
     title: 'Platformer Game',
-    goalImg: '',
+    goalImg: 'platformer/level2.gif',
     goalText: 'Experiment with physics and gravity.',
     studio: 'https://scratch.mit.edu/studios/7283045/projects',
-    pdf: '',
+    pdf: 'Platformer Game.pdf',
     scratchprojid: 300694444,
-    lessonplan: 'pet_simple_lesson.pdf',
+    lessonplan: '',
 
     steps: [
         {
@@ -399,7 +399,7 @@ export const state = () => ({
                 {
                     cover: 'Switch backdrops when you win',
                     id: 3, 
-                    content: '<pre class="blocks">define win? <br/> if &lt; touching color (#fffb19) &gt; then <br/> say [You won!]  for (2) seconds <br/> next backdrop // add this block</pre>',
+                    content: '<pre class="blocks">define win? <br/> if &lt; touching color (#fffb19) &gt; then <br/> say [You won!]  for (2) seconds <br/> next backdrop // add this block <br/> spawn </pre>',
                     type: 'code',
                     sprite: 'giga.png'
                 },
@@ -456,7 +456,7 @@ export const state = () => ({
                 {
                     cover: 'Full baddy code example',
                     id: 6, 
-                    content: '<pre class="blocks"><pre class="blocks">when backdrop switches to [backdrop1 v] <br/> hide <br/> when backdrop switches to [backdrop2 v] <br/> show <br/> forever <br/> glide (3) secs to x (200) y(-130) <br/> glide (3) secs to x (35) y (-130)</pre>',
+                    content: '<pre class="blocks">when backdrop switches to [backdrop1 v] <br/> hide <br/> when backdrop switches to [backdrop2 v] <br/> show <br/> forever <br/> glide (3) secs to x (200) y(-130) <br/> glide (3) secs to x (35) y (-130)</pre>',
                     type: 'locked',
                     sprite: 'frank.png'
                 },
