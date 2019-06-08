@@ -1,7 +1,16 @@
 <template>
-    <div>
-        <div class="collection">
-           <nuxt-link :to="'/collections/' + id ">{{title}}</nuxt-link>
+    <div class="column">
+        <div class="collection box">
+            <div class="content">
+                <p class="title">{{ title }}</p>
+                <p class="subtitle">{{ subtitle }}</p>
+
+            </div>
+           <nuxt-link 
+                :to="'/collections/' + id "
+                class="button is-primary">
+                    Go to Collection
+            </nuxt-link>
         </div>
     </div>
 </template>
@@ -10,15 +19,12 @@
     export default {
         props:[
             'id',
-            'title'
+            'title',
+            'subtitle'
         ]
     }
 </script>
 
 <style lang="scss" scoped>
 
-.collection {
-    color:white !important;
-    border:1px solid white;
-}
 </style>

@@ -13,6 +13,7 @@
                     v-for="collection in collections"
                     :id="collection.id"
                     :title="collection.title"
+                    :subtitle="collection.subtitle"
                     :key="collection.id">
                 </a-collection>
             </div>
