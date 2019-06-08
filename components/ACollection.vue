@@ -4,7 +4,6 @@
             <div class="content">
                 <p class="title">{{ title }}</p>
                 <p class="subtitle">{{ subtitle }}</p>
-
             </div>
            <nuxt-link 
                 :to="'/collections/' + id "
@@ -17,14 +16,21 @@
 
 <script>
     export default {
+
         props:[
             'id',
             'title',
             'subtitle'
-        ]
+        ],
+
+        mounted(){
+            this.$forceUpdate()
+        }
     }
 </script>
 
 <style lang="scss" scoped>
-
+.title, .subtitle {
+    color:#363636;
+}
 </style>

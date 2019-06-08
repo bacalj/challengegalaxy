@@ -10,11 +10,12 @@
             </div>
             <div class="columns is-multiline">
                 <a-collection
-                    v-for="collection in collections"
+                    v-for="(collection,index) in collections"
+                    :key="index"
                     :id="collection.id"
                     :title="collection.title"
                     :subtitle="collection.subtitle"
-                    :key="collection.id">
+                    >
                 </a-collection>
             </div>
         </section>
@@ -23,7 +24,7 @@
 
 <script>
 import ACollection from '~/components/ACollection.vue'
-import { mapState } from 'vuex'
+
 export default {
     components:{
         ACollection
@@ -31,7 +32,7 @@ export default {
 
     data(){
         return {
-            collections: this.$store.state.collections.collectionslist.published
+            collections: this.collections = this.$store.state.collections.collectionslist.published
         }
     }
 }
