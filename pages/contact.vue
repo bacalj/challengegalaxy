@@ -37,7 +37,7 @@
                         </div>
                     </div>
 
-                    <div class="control">
+                    <div class="control recaptcha-wrap">
                         <div data-netlify-recaptcha="true"></div>
                     </div>
 
@@ -80,6 +80,10 @@ h1.title {
 .hidden-from-humans {
     position: absolute;
     left:-6000px;
+}
+
+.recaptcha-wrap {
+    margin-bottom:10px;
 }
 
 h2 {
