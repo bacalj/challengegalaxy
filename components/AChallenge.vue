@@ -7,7 +7,7 @@
                 
                 <div class="image">
                     <nuxt-link :to="'/challenges/' + challenge.id">
-                        <img :src="'https://www.challengegalaxy.com' + challenge.goalImg">
+                        <img :src="'https://subtest.challengegalaxy.com' + challenge.goalImg">
                     </nuxt-link>
                 </div>
 
