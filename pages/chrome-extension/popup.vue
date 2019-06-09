@@ -61,23 +61,27 @@ export default {
       font-size: 1rem;
       margin: 10px 0;
     }
+    .column {
+      max-width: 370px;
+    }
     .button {
       margin-top: 10px;
     }
     .footer {
       padding: 5px 20px;
       background-color:#363636;
-    }
-    .footer h2 {
-      font-family: 'Raleway', sans-serif;
-      color: #ffffff;
-      font-size: 1.6rem;
-    }
-    .footer {
       color: rgba(255, 255, 255, 0.8);
-    }
-    .footer a:hover {
-      color: #3273dc;
-      text-decoration:underline;
+
+      h2 {
+        font-family: 'Raleway', sans-serif;
+        color: #ffffff;
+        font-size: 1.6rem;
+      }
+      a, a:hover {
+        color: $green;
+      }
+      a:hover {
+        text-decoration:underline;
+      }
     }
 </style>

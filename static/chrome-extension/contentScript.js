@@ -37,12 +37,13 @@ const loadTutorial = function loadTutorial(id, title) {
             tutorial.style.maxHeight = '60px'
             tutorial.querySelector('.card_shrink-expand-button_vbegz img').src = '/static/assets/04e28ba12fe914cf4f131dcb85ae82d6.svg'
             tutorial.querySelector('.card_shrink-expand-button_vbegz span').textContent = 'Expand'
-
+            document.querySelector('.ui-resizable-se').style.display = 'none'
         } else {
             content.style.maxHeight = iframe.style.height || '324px'
             tutorial.style.maxHeight = tutorialHeight
             tutorial.querySelector('.card_shrink-expand-button_vbegz img').src = '/static/assets/76121b7f4eff7d7ca0d49a45479d3f3f.svg'
             tutorial.querySelector('.card_shrink-expand-button_vbegz span').textContent = 'Shrink'
+            document.querySelector('.ui-resizable-se').style.display = 'block'
         }
     })
 }
