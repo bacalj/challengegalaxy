@@ -40,6 +40,11 @@ module.exports = {
             '/collections/',
             '/collections/scratch-basics',
             '/collections/first-games',
+            '/extension/maze',
+            '/extension/video-sensing',
+            '/extension/catch-the-egg',
+            '/extension/hat-landing',
+            '/extension/pet',
             'chrome-extension/popup'
         ]
     },
