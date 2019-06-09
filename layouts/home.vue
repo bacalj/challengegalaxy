@@ -39,4 +39,8 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+path.sb3-obsolete {
+    fill: #ff6680;
+    stroke: #ff3355;
+}
 </style>

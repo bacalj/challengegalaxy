@@ -36,6 +36,7 @@ module.exports = {
             '/challenges/catch-the-egg',
             '/challenges/hat-landing',
             '/challenges/pet',
+            '/challenges/platformer',
             '/collections/',
             '/collections/scratch-basics',
             '/collections/first-games',
@@ -44,7 +45,8 @@ module.exports = {
             '/extension/catch-the-egg',
             '/extension/hat-landing',
             '/extension/pet',
-            'chrome-extension/popup'
+            '/extension/platformer',
+            '/chrome-extension/popup'
         ]
     },
     /*
