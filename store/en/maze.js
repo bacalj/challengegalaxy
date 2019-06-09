@@ -12,7 +12,7 @@ export const state = () => ({
             id: 1,
             stepNum: '1',
             stepImg: '/gifs/mouse_move_1.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Move',
+            stepLabel: '<i class="fas fa-arrows-alt"></i> Move',
             stepText: 'Move with the mouse',
             initialCluesVisible:0,
             clues:[
@@ -71,7 +71,7 @@ export const state = () => ({
             id: 2,
             stepNum: '2',
             stepImg: '/gifs/maze_bump_1.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Walls',
+            stepLabel: '<i class="fas fa-dungeon"></i> Walls',
             stepText: 'Stop at the walls',
             initialCluesVisible:0,
             clues:[
@@ -94,14 +94,19 @@ export const state = () => ({
                     type: 'code',
                 },
                 {
+                    cover: '<i class="fas fa-eye-dropper"></i> Picking the right color',
                     id: 4,
+                    content: 'Make sure the color is an exact match to the color of your walls. <img src="/gifs/color-picking.gif"/>',
+                },
+                {
+                    id: 5,
                     cover: '<i class="fas fa-magic"></i>',
                     content: 'Where is the start of your maze? <br/><br/> Drag your sprite there and then find this block. Scratch will update the coordinates for you! <br/><br/> <pre class="blocks">go to x:( ) y:( )</pre>',
                     type: 'code',
                 },
                 {
                     cover: 'An example',
-                    id: 5,
+                    id: 6,
                     content: '<pre class="blocks">When green flag clicked\nforever\nif &lt;touching color () &gt; then \n go to x () y() \n</pre>',
                     type:'locked'
                 }
@@ -111,7 +116,7 @@ export const state = () => ({
             id: 3,
             stepNum: '3',
             stepImg: '/gifs/maze_glitch.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Glitch',
+            stepLabel: '<i class="fas fa-dumpster-fire"></i> Glitch',
             stepText: 'Glitch!',
             initialCluesVisible:0,
             clues:[
@@ -151,7 +156,7 @@ export const state = () => ({
             id: 4,
             stepNum: '4',
             stepImg: '/gifs/maze_win.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Win',
+            stepLabel: '<i class="fas fa-trophy"></i> Win',
             stepText: 'You win!',
             initialCluesVisible:0,
             clues:[

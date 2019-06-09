@@ -4,22 +4,25 @@
             <div class="hero-head">
                 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
-                        <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': mobileMenuOpen }">
+                        <a @click="toggleHomeMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': homeMobileMenuOpen }">
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                         </a>
                     </div>
-                    <div class="navbar-menu" :class="{ 'is-active': mobileMenuOpen, 'has-background-dark': true }">
+                    <div class="navbar-menu" :class="{ 'is-active': homeMobileMenuOpen, 'has-background-dark': true }">
                         <div class="navbar-start">
 
                         </div>
                         <div class="navbar-end">
                             <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
                             <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
+                            <nuxt-link class="navbar-item" to="/collections/">Collections</nuxt-link>
                         </div>
                     </div>
                 </nav>
+                <!-- we could just do this later -->
+                <!-- <TheNavbar></TheNavbar> -->
             </div>
             <div class="hero-body">
                 <div class="container">
@@ -55,7 +58,9 @@
                         </div>
                         <div class="column">
                             <div class="video-player intro-video">
-                                <div class="wistia_embed wistia_async_j38ihh83m5" style="height:180px;width:320px">&nbsp;</div>
+                                <div>
+                                    <img src="jpgs/cgandscratch.jpg" alt="still image of ChallengeGalaxy in use">
+                                </div>
                             </div>                      
                         </div>
                     </div>
@@ -81,6 +86,7 @@
 import AChallenge from '~/components/AChallenge.vue'
 import { mapState } from 'vuex'
 import AStar from '~/components/AStar.vue'
+import TheNavbar from '~/components/TheNavbar.vue'
 
 export default {
     layout: 'home',
@@ -97,6 +103,19 @@ export default {
             return this.$store.state.prefs.localprefs.fallingStars;
         }
     },
+
+    data(){
+        return {
+            homeMobileMenuOpen:false
+        }
+    },
+
+    methods:{
+        toggleHomeMobileMenu(){
+            this.homeMobileMenuOpen = !this.homeMobileMenuOpen;
+        }
+    },
+
     head () {
         return {
             script: [
@@ -128,8 +147,9 @@ export default {
     border-radius: 5px;
     border: 5px solid #333333;
     overflow: hidden;
-    width: 320px;
-    height: 180px;
+    width:80%;
+    //width: 320px;
+    //height: 180px;
     margin:0 auto;
 }
 

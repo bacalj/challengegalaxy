@@ -36,7 +36,16 @@ module.exports = {
             '/challenges/video-sensing',
             '/challenges/catch-the-egg',
             '/challenges/hat-landing',
-            '/challenges/pet'
+            '/challenges/pet',
+            '/collections/',
+            '/collections/scratch-basics',
+            '/collections/first-games',
+            '/extension/maze',
+            '/extension/video-sensing',
+            '/extension/catch-the-egg',
+            '/extension/hat-landing',
+            '/extension/pet',
+            'chrome-extension/popup'
         ]
     },
     /*
@@ -99,6 +108,7 @@ module.exports = {
     ** Build configuration
     */
     build: {
+        publicPath: 'https://www.challengegalaxy.com/_nuxt',
         extractCSS: {
             allChunks: true
         },

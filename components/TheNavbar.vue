@@ -19,6 +19,7 @@
             <div class="navbar-end">
                 <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
                 <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
+                <nuxt-link class="navbar-item" to="/collections/">Collections</nuxt-link>
             </div>
         </div>
     </nav>
@@ -38,9 +39,10 @@ export default {
     data(){
         return {
             mobileMenuOpen:false,
-            clueMenuOpen: false,
+            clueMenuOpen: false
         }
     },
+
     methods:{
         toggleMobileMenu(){
             this.mobileMenuOpen = !this.mobileMenuOpen;
