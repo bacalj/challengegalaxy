@@ -1,12 +1,10 @@
 const pkg = require('./package')
 
-
 module.exports = {
     mode: 'universal',
 
     router: {
-        base: process.env.DEPLOY_ENV === 'GEN' ? 'https://subtest.challengegalaxy.com/' : '/',
-        scrollBehavior: function (to, from, savedPosition) {
+       scrollBehavior: function (to, from, savedPosition) {
             let position = false
           
             // savedPosition is only available for popstate navigations (back button)
@@ -109,7 +107,7 @@ module.exports = {
     ** Build configuration
     */
     build: {
-        // publicPath: 'https://subtest.challengegalaxy.com/_nuxt',
+        publicPath: 'https://subtest.challengegalaxy.com/_nuxt',
         extractCSS: {
             allChunks: true
         },
@@ -124,7 +122,6 @@ module.exports = {
         ** You can extend webpack config here
         */
         extend(config, ctx) {
-
         }
     }
 }
