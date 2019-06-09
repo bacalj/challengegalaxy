@@ -61,7 +61,7 @@ export default {
       font-size: 1rem;
       margin: 10px 0;
     }
-    .column {
+    .section .column {
       max-width: 370px;
     }
     .button {
