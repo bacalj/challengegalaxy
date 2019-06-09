@@ -16,14 +16,14 @@
                     <div class="field">
                         <label class="label">Name</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="Text input">
+                            <input class="input" name="name" type="text" placeholder="Text input">
                         </div>
                     </div>
 
                     <div class="field">
                         <label class="label">Email</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input" type="email" placeholder="Email input" value="">
+                            <input class="input" name="email" type="email" placeholder="Email input" value="">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
@@ -33,7 +33,7 @@
                     <div class="field">
                         <label class="label">Message</label>
                         <div class="control">
-                            <textarea class="textarea" placeholder=""></textarea>
+                            <textarea name="message" class="textarea" placeholder=""></textarea>
                         </div>
                     </div>
 
