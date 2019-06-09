@@ -8,7 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "DEPLOY_ENV=GEN nuxt generate; grunt move"
+    "generate": "DEPLOY_ENV=GEN nuxt generate; grunt move; grunt zip"
   },
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.1",
@@ -16,6 +16,7 @@
     "cross-env": "^5.2.0",
     "grunt": "^1.0.4",
     "grunt-move": "^1.0.2",
+    "grunt-zip": "^0.18.2",
     "node-sass": "^4.11.0",
     "nuxt": "^2.4.0",
     "sass-loader": "^7.1.0",
