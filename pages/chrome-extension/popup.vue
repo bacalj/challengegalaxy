@@ -16,9 +16,7 @@
 
     <div class="footer">
       <h2>About Challenge Galaxy</h2>
-      <p>Find out more about Challenge Galaxy and additional curriculum materials at <a href="https://www.challengegalaxy.com" target="_blank">challengegalaxy.com</a>.</p>
-      
-      <p>Thanks to the <a href="http://communityfoundation.org/" target="_blank">Community Foundation of Western Massachusetts</a> for supporting this project. Code is licensed <a href="http://opensource.org/licenses/mit-license.php " target="_blank">MIT</a> open source license. Content is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY NC SA 4.0.</a></p>
+      <p>Challenge Galaxy helps people learn Scratch through problem solving and experimentation with just the right amount of help. Find out more about Challenge Galaxy and additional materials at <a href="https://www.challengegalaxy.com" target="_blank">challengegalaxy.com</a>.</p>
     </div>
     <script src="../popup.js"></script>
   </div>
@@ -68,7 +66,7 @@ export default {
       margin-top: 10px;
     }
     .footer {
-      padding: 5px 20px;
+      padding: 5px 20px 40px 20px;
       background-color:#363636;
       color: rgba(255, 255, 255, 0.8);
 
