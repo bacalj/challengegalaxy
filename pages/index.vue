@@ -47,7 +47,7 @@
                             </div>
 
                             <h2 class="subtitle">
-                                Learn Scratch through these interactive challenges.<br>
+                                Learn Scratch by working on challenges.<br>
                                 Share your solutions with others around the world!  
                             </h2>
                             <div class="flex-row intro-buttons">
