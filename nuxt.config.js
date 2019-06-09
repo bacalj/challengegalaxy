@@ -5,6 +5,7 @@ module.exports = {
     mode: 'universal',
 
     router: {
+        base: process.env.DEPLOY_ENV === 'GEN' ? 'https://subtest.challengegalaxy.com/' : '/',
         scrollBehavior: function (to, from, savedPosition) {
             let position = false
           
@@ -108,7 +109,7 @@ module.exports = {
     ** Build configuration
     */
     build: {
-        publicPath: 'https://www.challengegalaxy.com/_nuxt',
+        // publicPath: 'https://subtest.challengegalaxy.com/_nuxt',
         extractCSS: {
             allChunks: true
         },
