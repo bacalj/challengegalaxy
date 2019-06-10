@@ -37,6 +37,7 @@ module.exports = {
             '/challenges/hat-landing',
             '/challenges/pet',
             '/challenges/platformer',
+            '/challenges/label-it',
             '/collections/',
             '/collections/scratch-basics',
             '/collections/first-games',
@@ -46,6 +47,7 @@ module.exports = {
             '/extension/hat-landing',
             '/extension/pet',
             '/extension/platformer',
+            '/extension/label-it',
             '/chrome-extension/popup'
         ]
     },

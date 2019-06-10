@@ -29,7 +29,12 @@ export const state = () => ({
             id: 'platformer', 
             link: 'challenges/platformer', 
             title: 'Platformer Game'
-        }
+        },
+        { 
+            id: 'label-it', 
+            link: 'challenges/label-it', 
+            title: 'Label It!'
+        },
     ],
 
     featured:[
