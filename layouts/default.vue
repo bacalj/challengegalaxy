@@ -23,7 +23,7 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -42,7 +42,32 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-
+.has-background-dark { 
+  a {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0,#9115fc), color-stop(0.6, #c568da) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #9115fc), color-stop(0.6, #c568da) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.5s;
+  }
+   a:hover {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    text-decoration: underline;
+    color: transparent;
+    transition: 0.5s;
+  }
+}
+a.button {
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    background-image: unset;
+}
+a.button:hover {
+  background-image: unset;  
+  text-decoration: none;
+}
 .button--green {
   display: inline-block;
   border-radius: 4px;
@@ -70,9 +95,5 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
-}
-
-body {
-    background-color:whitesmoke;
 }
 </style>
