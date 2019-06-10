@@ -1,5 +1,5 @@
 <template>
-  <div class="has-background-dark">
+  <div class="site has-background-dark">
     <TheNavbar />
     <nuxt />
     <TheFooter />
@@ -35,7 +35,15 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
+// Make footer at bottom if page is short
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main {
+  flex: 1;
+}
 *,
 *:before,
 *:after {
