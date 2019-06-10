@@ -123,6 +123,7 @@ h1, .goal-text.subtitle {
 }
 .challenge-container {
     max-width: 480px;
+    width: 100%;
     padding-bottom:60px;
 }
 .challenge-intro-section {
