@@ -6,7 +6,7 @@
                 <h1 class="title has-text-light">About ChallengeGalaxy</h1>
                 
                 <h2 class="subtitle has-text-light">Experimentation and Play</h2>
-                <p>Fiddling, puzzling, playing and experimenting are at the core of learning. The progressive educational movements of the last hundred years go by different monikers – constructivism, constructionism, “Maker Education,”“Hands on Learning.” The big idea that connects them is that the best learning happens when people engage with materials, deriving their own understanding through active inquiry and experimentation – rather than through instruction about the materials.  What are the core concepts of engineering? Try building a bridge out of drinking straws and marshmallows and you’ll probably arrive at a good portion of the answer.</p>
+                <p>Fiddling, puzzling, playing and experimenting are at the core of learning. The progressive educational movements of the last hundred years go by different monikers – constructivism, constructionism, “Maker Education,” “Hands on Learning.” The big idea that connects them is that the best learning happens when people engage with materials, deriving their own understanding through active inquiry and experimentation – rather than through instruction about the materials.  What are the core concepts of engineering? Try building a bridge out of drinking straws and marshmallows and you’ll probably arrive at a good portion of the answer.</p>
                 <br>
 
                 <h2 class="subtitle has-text-light">The Right Amount of Scaffolding</h2>
