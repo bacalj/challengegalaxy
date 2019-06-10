@@ -42,7 +42,7 @@ module.exports = {
             '/collections/',
             '/collections/scratch-basics',
             '/collections/first-games',
-            '/collections/scratch-science',
+            '/collections/science',
             '/extension/maze',
             '/extension/video-sensing',
             '/extension/catch-the-egg',
