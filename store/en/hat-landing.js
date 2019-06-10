@@ -3,7 +3,7 @@ export const state = () => ({
     title: 'Hat Landing',
     goalImg: '/gifs/hat_landing.gif',
     goalText: 'Make something land on something',
-    scratchprojid: 287880895,
+    scratchprojid: 316200322,
 
     steps: [
         {
@@ -71,9 +71,16 @@ export const state = () => ({
                     sprite: 'hat.png'
                 },
                 {
+                    cover: 'Make it move a little futher.',
+                    id: 5, 
+                    content: '<pre class="blocks">change y by (-20)</pre>',
+                    type: 'code',
+                    sprite: 'hat.png'
+                },
+                {
                     cover: 'Keep experimenting before you click this open!',
-                    id: 5,
-                    content: '<pre class="blocks">when green flag clicked\n go to x:(0) y:(165)\n repeat until &lt; touching (sprite2 v) ? &gt;\n &emsp; change y by (-10)\n end\n change y by (-15)</pre>',
+                    id: 6,
+                    content: '<pre class="blocks">when green flag clicked\n go to x:(0) y:(165)\n repeat until &lt; touching (sprite2 v) ? &gt;\n &emsp; change y by (-10)\n end\n change y by (-20)</pre>',
                     type: 'locked',
                     sprite: 'hat.png'
                 }
