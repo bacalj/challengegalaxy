@@ -16,17 +16,29 @@
                     <div class="field">
                         <label class="label">Name</label>
                         <div class="control">
-                            <input class="input" name="name" type="text" placeholder="Text input">
+                            <input class="input" name="name" type="text" placeholder="Your name">
                         </div>
                     </div>
 
                     <div class="field">
                         <label class="label">Email</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input" name="email" type="email" placeholder="Email input" value="">
+                            <input class="input" name="email" type="email" placeholder="Email" value="">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Challenge</label>
+                        <div class="select">
+                            <select v-model="selected">
+                                <option :value="placeholder" hidden disabled>Does this relate to a specific challenge?</option>
+                                <option v-for="challenge in challenges" v-bind:value="challenge.title">
+                                    {{ challenge.title }}
+                                </option>
+                            </select>
                         </div>
                     </div>
 
@@ -57,7 +69,16 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
+    computed: {
+        ...mapState({
+            challenges: state => state.challengeslist.published,
+        }),
+    },
+    data: {
+        selected: 'Does this related to a specific challenge?',
+    }
 }
 </script>
 
