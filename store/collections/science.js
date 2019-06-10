@@ -3,6 +3,7 @@ export const state = () => ({
     title: 'Scratch Science',
     challenges:[
         'label-it',
+        'reaction-time',
         'platformer',
     ]
 })

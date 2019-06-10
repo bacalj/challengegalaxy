@@ -38,6 +38,7 @@ module.exports = {
             '/challenges/pet',
             '/challenges/platformer',
             '/challenges/label-it',
+            '/challenges/reaction-time',
             '/collections/',
             '/collections/scratch-basics',
             '/collections/first-games',
@@ -48,6 +49,7 @@ module.exports = {
             '/extension/pet',
             '/extension/platformer',
             '/extension/label-it',
+            '/extension/reaction-time',
             '/chrome-extension/popup'
         ]
     },

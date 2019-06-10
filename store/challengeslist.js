@@ -35,6 +35,11 @@ export const state = () => ({
             link: 'challenges/label-it', 
             title: 'Label It!'
         },
+        { 
+            id: 'reaction-time', 
+            link: 'challenges/reaction-time', 
+            title: 'How fast are you?'
+        },
     ],
 
     featured:[
