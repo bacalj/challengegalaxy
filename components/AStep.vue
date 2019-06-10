@@ -150,6 +150,8 @@ export default {
     }
     img {
         border-radius: 4px;
+        width: auto;
+        margin: 0 auto;
     }
 }
 
