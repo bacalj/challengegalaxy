@@ -220,7 +220,7 @@ export const state = () => ({
             stepImg: '/pet/pet_plate_eat_2.gif',
             stepLabel: 'More things you can try',
             stepText: 'See if you can figure out a way to do these ideas',
-            initialCluesVisible:0,
+            initialCluesVisible:2,
             clues:[
                 {
                     cover: 'Put the food on a plate and let the pet leave some crumbs',
