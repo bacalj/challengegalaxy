@@ -78,8 +78,8 @@ export default {
             })
             const sbsvgs = document.querySelectorAll('.scratchblocks svg');
             sbsvgs.forEach( (svg) => {
-                svg.setAttribute("viewBox", "0 0 420 " + svg.getAttribute("height"));
-                svg.setAttribute("width", "");
+                svg.setAttribute("viewBox", "0 0 " + svg.getAttribute("width") + " " + svg.getAttribute("height"));
+                svg.setAttribute("width", "100%");
             })
         }, 100);  
     },
