@@ -29,26 +29,12 @@
                     <div class="columns">
                         <div class="column">
                             <img src="/pngs/cglogo2.png" alt="Challenge Galaxy"/>
-                            <div v-if="showTheFallingStars">
-                                <!-- these will be abstracted into a function later -->
-                                <a-star speed="slow"    ystart="5%" xstart="0%"     w="10px"   h="10px" color="#fefefe"></a-star>
-                                <a-star speed="medium"  ystart="12%" xstart="11%"    w="25px"   h="25px" color="#9012FE"></a-star>
-                                <a-star speed="fast"    ystart="16%" xstart="15%"    w="50px"   h="50px" color="#fefefe"></a-star>
-                                <a-star speed="slow"    ystart="20%" xstart="18%"    w="10px"   h="10px" color="#9012FE"></a-star>
-                                <a-star speed="medium"  ystart="6%" xstart="23%"    w="25px"   h="25px" color="#fefefe"></a-star>
-                                <a-star speed="fast"    ystart="15%" xstart="34%"    w="50px"   h="50px" color="#9012FE"></a-star>
-                                <a-star speed="slow"    ystart="40%" xstart="56%"    w="10px"   h="10px" color="#fefefe"></a-star>
-                                <a-star speed="medium"  ystart="7%" xstart="43%"    w="25px"   h="25px" color="#9012FE"></a-star>
-                                <a-star speed="fast"    ystart="30%" xstart="65%"    w="50px"   h="50px" color="#fefefe"></a-star>
-                                <a-star speed="slow"    ystart="80%" xstart="74%"    w="10px"   h="10px" color="#9012FE"></a-star>
-                                <a-star speed="medium"  ystart="60%" xstart="81%"    w="25px"   h="25px" color="#fefefe"></a-star>
-                                <a-star speed="fast"    ystart="80%" xstart="98%"    w="50px"   h="50px" color="#9012FE"></a-star>
-                            </div>
-
+                            
                             <h2 class="subtitle">
                                 Learn Scratch by working on challenges.<br>
                                 Share your solutions with others around the world!  
                             </h2>
+
                             <div class="flex-row intro-buttons">
                                 <a class="button is-primary"
                                  href="https://scratch.mit.edu" target="_blank">Open Scratch</a>
@@ -84,14 +70,12 @@
 <script>
 import AChallenge from '~/components/AChallenge.vue'
 import { mapState } from 'vuex'
-import AStar from '~/components/AStar.vue'
 import TheNavbar from '~/components/TheNavbar.vue'
 
 export default {
     layout: 'home',
     components:{
-        AChallenge,
-        AStar
+        AChallenge
     },
 
     transition: 'pagechange',
