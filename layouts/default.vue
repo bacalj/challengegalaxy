@@ -98,4 +98,15 @@ a.button:hover {
 .pagechange-leave-to {
   opacity: 0;
 }
+
+.layout-enter-active,
+.layout-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 200ms;
+}
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
+}
 </style>
