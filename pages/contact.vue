@@ -34,7 +34,7 @@
                         <label class="label">Challenge</label>
                         <div class="select">
                             <select v-model="selected">
-                                <option :value="placeholder" hidden disabled>Does this relate to a specific challenge?</option>
+                                <option :value="placeholder" disabled>Does this relate to a specific challenge?</option>
                                 <option v-for="(challenge, index) in challenges" :key="index" v-bind:value="challenge.title">
                                     {{ challenge.title }}
                                 </option>
