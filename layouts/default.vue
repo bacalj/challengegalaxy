@@ -76,32 +76,14 @@ a.button:hover {
   background-image: unset;  
   text-decoration: none;
 }
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.button.is-primary:hover {
+  background-color: #9115fc;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0,#9115fc), color-stop(1, #c568da) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #9115fc), color-stop(1, #c568da) );
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.button.is-primary {
+  background-color: #8204f0;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0,#8204f0), color-stop(1, #a037fc) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #8204f0), color-stop(1, #a037fc) );
 }
 </style>
