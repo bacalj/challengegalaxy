@@ -50,6 +50,12 @@ export default {
     .subtitle {
         color: #363636;
     }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
     .image {
         margin-bottom: 20px;
     }
