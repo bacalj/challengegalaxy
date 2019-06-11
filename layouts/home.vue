@@ -43,4 +43,16 @@ path.sb3-obsolete {
     fill: #ff6680;
     stroke: #ff3355;
 }
+
+/* transition classes for page transitions */
+.pagechange-enter-active,
+.pagechange-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 100ms;
+}
+.pagechange-enter,
+.pagechange-leave-to {
+  opacity: 0;
+}
 </style>

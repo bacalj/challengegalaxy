@@ -74,7 +74,8 @@ export default {
     },
     data: {
         selected: 'Does this related to a specific challenge?',
-    }
+    },
+    transition: 'pagechange'
 }
 </script>
 
@@ -106,4 +107,5 @@ h1.title {
 h2 {
     margin-top:30px;
 }
+
 </style>

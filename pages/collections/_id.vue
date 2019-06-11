@@ -22,6 +22,8 @@ import { mapState } from 'vuex'
             AChallenge
         },
 
+        transition: 'pagechange',
+
         data(){
             return {
                 id: this.$route.params.id,

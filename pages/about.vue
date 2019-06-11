@@ -32,6 +32,7 @@
 
 <script>
 export default {
+    transition: 'pagechange'
 }
 </script>
 

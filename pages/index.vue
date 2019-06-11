@@ -93,6 +93,9 @@ export default {
         AChallenge,
         AStar
     },
+
+    transition: 'pagechange',
+    
     computed: {
         ...mapState({
             featured: state => state.challengeslist.featured,
