@@ -2,7 +2,7 @@
     <div class="main">
         <section class="featured section has-background-dark has-text-centered">
             <a name="featured" id="featured"></a>
-            <h2 class="title is-2">Collections</h2>
+            <h1 class="title is-1">Collections</h1>
             <div class="columns">
                 <div class="column is-three-fifths is-offset-one-fifth has-text-light">
                     Collections are groups of challenges that go together. 
@@ -39,5 +39,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h2 { color:white; }
+h1 { color:white; }
 </style>

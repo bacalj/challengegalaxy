@@ -2,7 +2,7 @@
     <div>
         <section class="featured section has-background-dark has-text-centered">
             <a name="featured" id="featured"></a>
-            <h2 class="title is-2">Find a Challenge</h2>
+            <h1 class="title is-1">Find a Challenge</h1>
             <div class="columns is-multiline">
                 <a-challenge
                     v-for="challenge in challenges"

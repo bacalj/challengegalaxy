@@ -4,7 +4,7 @@
         
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
-                <img src="/pngs/cglogo2.png"><h1 style="display:none;">ChallengeGalaxy</h1>
+                <img src="/pngs/cglogo2.png" alt="Challenge Galaxy">
             </a>
             <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': mobileMenuOpen }">
                 <span aria-hidden="true"></span>

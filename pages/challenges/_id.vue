@@ -12,7 +12,7 @@
                         <iframe width="100%" :src="'https://scratch.mit.edu/projects/' + challenge.scratchprojid + '/embed'" scrolling="no"></iframe>
                     </div>
                     <div v-else class="goal-image image">
-                        <img :src="challenge.goalImg">
+                        <img :src="challenge.goalImg" alt="">
                     </div>
                 </div>
             </div>
