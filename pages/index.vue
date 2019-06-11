@@ -21,36 +21,8 @@
                         </div>
                     </div>
                 </nav>
-                <!-- we could just do this later -->
-                <!-- <TheNavbar></TheNavbar> -->
             </div>
-            <div class="hero-body">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column">
-                            <img src="/pngs/cglogo2.png" alt="Challenge Galaxy"/>
-                            
-                            <h2 class="subtitle">
-                                Learn Scratch by working on challenges.<br>
-                                Share your solutions with others around the world!  
-                            </h2>
-
-                            <div class="flex-row intro-buttons">
-                                <a class="button is-primary"
-                                 href="https://scratch.mit.edu" target="_blank">Open Scratch</a>
-                                <n-link class="button is-primary" to="/challenges">Find a challenge</n-link>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="video-player intro-video">
-                                <div>
-                                    <img src="jpgs/cgandscratch.jpg" alt="still image of ChallengeGalaxy in use">
-                                </div>
-                            </div>                      
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <TheHero />
         </section>
         <section class="featured section has-background-dark has-text-centered">
             <a name="featured" id="featured"></a>
@@ -71,10 +43,12 @@
 import AChallenge from '~/components/AChallenge.vue'
 import { mapState } from 'vuex'
 import TheNavbar from '~/components/TheNavbar.vue'
+import TheHero from '~/components/TheHero.vue'
 
 export default {
     layout: 'home',
     components:{
+        TheHero,
         AChallenge
     },
 
@@ -143,5 +117,16 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 200ms;
+}
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
 }
 </style>

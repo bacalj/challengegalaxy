@@ -86,6 +86,7 @@ module.exports = {
     ** Global CSS
     */
     css: [
+        '~/assets/globalitems.scss'
     ],
 
     /*
