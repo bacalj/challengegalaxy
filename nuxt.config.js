@@ -114,7 +114,7 @@ module.exports = {
     ** Build configuration
     */
     build: {
-        publicPath: 'https://subtest.challengegalaxy.com/_nuxt',
+        publicPath: 'https://www.challengegalaxy.com/_nuxt',
         extractCSS: {
             allChunks: true
         },
