@@ -35,7 +35,7 @@
                         <div class="select">
                             <select v-model="selected">
                                 <option :value="placeholder" hidden disabled>Does this relate to a specific challenge?</option>
-                                <option v-for="challenge in challenges" v-bind:value="challenge.title">
+                                <option v-for="(challenge, index) in challenges" :key="index" v-bind:value="challenge.title">
                                     {{ challenge.title }}
                                 </option>
                             </select>
@@ -47,10 +47,6 @@
                         <div class="control">
                             <textarea name="message" class="textarea" placeholder=""></textarea>
                         </div>
-                    </div>
-
-                    <div class="control recaptcha-wrap">
-                        <div data-netlify-recaptcha="true"></div>
                     </div>
 
                     <div class="control">
