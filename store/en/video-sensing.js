@@ -2,7 +2,7 @@ export const state = () => ({
     id: 'video-sensing',
     title: 'Video Sensing!',
     goalImg: '/gifs/video-sensing-collect-gems.gif',
-    goalText: 'Use your webcam to interact with Scratch!',
+    goalText: 'Use a webcam with Scratch!',
     studio: 'https://scratch.mit.edu/studios/6050621/projects/',
     pdf: 'Video-Sensing.pdf',
 

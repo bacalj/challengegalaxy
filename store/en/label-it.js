@@ -2,7 +2,7 @@ export const state = () => ({
     id: 'label-it',
     title: 'Label It!',
     goalImg: '/label-it/positioned-numbers.jpg',
-    goalText: 'Make an interactive quiz to help people learn!',
+    goalText: 'Make an interactive quiz',
     scratchprojid: 289710261,
     studio: 'https://scratch.mit.edu/studios/6020136/projects/',
     pdf: 'Label It.pdf',

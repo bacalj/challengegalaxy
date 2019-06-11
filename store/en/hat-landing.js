@@ -2,7 +2,7 @@ export const state = () => ({
     id: 'hat-landing',
     title: 'Hat Landing',
     goalImg: '/gifs/hat_landing.gif',
-    goalText: 'Make something land on something',
+    goalText: 'Make it land on something',
     scratchprojid: 316200322,
 
     steps: [

@@ -2,7 +2,7 @@ export const state = () => ({
     id: 'platformer',
     title: 'Platformer Game',
     goalImg: '/platformer/level2.gif',
-    goalText: 'Experiment with physics and gravity.',
+    goalText: 'Use physics and gravity',
     studio: 'https://scratch.mit.edu/studios/15698174/projects/',
     pdf: 'Platformer Game.pdf',
     scratchprojid: 304133549,
