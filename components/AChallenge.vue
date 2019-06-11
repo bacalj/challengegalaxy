@@ -2,17 +2,14 @@
     <div class="column">
         <div class="challenge box">
             <div class="content">
-                <p class="title">{{ challenge.title }}</p>
+                <h2 class="title">{{ challenge.title }}</h2>
                 <p class="subtitle">{{ challenge.goalText }}</p>
                 
-                <div class="image">
-                    <nuxt-link :to="'/challenges/' + challenge.id">
-                        <img :src="'https://www.challengegalaxy.com' + challenge.goalImg">
-                    </nuxt-link>
-                </div>
-
-                <nuxt-link :to="'/challenges/' + challenge.id" class="button is-primary" >
-                    Try this challenge
+                <nuxt-link :to="'/challenges/' + challenge.id">
+                    <div class="image">
+                        <img :src="'https://www.challengegalaxy.com' + challenge.goalImg" alt="">
+                    </div>
+                    <button class="button is-primary">Try this challenge</button>
                 </nuxt-link>
 
             </div>
