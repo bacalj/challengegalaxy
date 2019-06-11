@@ -40,18 +40,18 @@
 
                     <div class="clue-buttons">
                         <button 
-                            class="button is-primary is-rounded more-clues" 
+                            class="button is-warning is-rounded more-clues" 
                             :disabled="noCluesLeft"
                             @click="gimmieAClue()">
                             {{ gimmieClueText }}
                         </button>
 
-                        <button
+                        <!-- <button
                             class="button is-warning is-rounded less-clues" 
                             v-show="this.cluesRevealed > 0"
                             @click="oneLessClue()">
                             Take away a clue!
-                        </button>
+                        </button> -->
 
                     </div>
                 </section>
@@ -150,6 +150,8 @@ export default {
     }
     img {
         border-radius: 4px;
+        width: auto;
+        margin: 0 auto;
     }
 }
 

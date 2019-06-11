@@ -1,11 +1,10 @@
 const pkg = require('./package')
 
-
 module.exports = {
     mode: 'universal',
 
     router: {
-        scrollBehavior: function (to, from, savedPosition) {
+       scrollBehavior: function (to, from, savedPosition) {
             let position = false
           
             // savedPosition is only available for popstate navigations (back button)
@@ -37,9 +36,22 @@ module.exports = {
             '/challenges/catch-the-egg',
             '/challenges/hat-landing',
             '/challenges/pet',
+            '/challenges/platformer',
+            '/challenges/label-it',
+            '/challenges/reaction-time',
             '/collections/',
             '/collections/scratch-basics',
-            '/collections/first-games'
+            '/collections/first-games',
+            '/collections/science',
+            '/extension/maze',
+            '/extension/video-sensing',
+            '/extension/catch-the-egg',
+            '/extension/hat-landing',
+            '/extension/pet',
+            '/extension/platformer',
+            '/extension/label-it',
+            '/extension/reaction-time',
+            '/chrome-extension/popup'
         ]
     },
     /*
@@ -102,6 +114,7 @@ module.exports = {
     ** Build configuration
     */
     build: {
+        publicPath: 'https://subtest.challengegalaxy.com/_nuxt',
         extractCSS: {
             allChunks: true
         },
@@ -116,7 +129,6 @@ module.exports = {
         ** You can extend webpack config here
         */
         extend(config, ctx) {
-
         }
     }
 }

@@ -24,7 +24,22 @@ export const state = () => ({
             id: 'pet', 
             link: 'challenges/Pet', 
             title: 'Make a Pet'
-        }
+        },
+        { 
+            id: 'platformer', 
+            link: 'challenges/platformer', 
+            title: 'Platformer Game'
+        },
+        { 
+            id: 'label-it', 
+            link: 'challenges/label-it', 
+            title: 'Label It!'
+        },
+        { 
+            id: 'reaction-time', 
+            link: 'challenges/reaction-time', 
+            title: 'How fast are you?'
+        },
     ],
 
     featured:[

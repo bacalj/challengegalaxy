@@ -15,7 +15,7 @@ export const state = () => ({
             initialCluesVisible:0,
             clues:[
                 {
-                    id: 0,
+                    id: 1,
                     cover: 'Add the Video Sensing extension',
                     content: '/gifs/video-sensing-add-extension.gif',
                     type: 'info'
@@ -24,7 +24,7 @@ export const state = () => ({
         },
         {
             id: 2,
-            stepLabel: 'Pet the cat',
+            stepLabel: '<i class="fas fa-cat"></i> Pet the cat',
             stepImg: '/gifs/video-sensing-pet-cat.gif',
             stepText: 'Play sounds when you pet Scratch.',
             initialCluesVisible:0,
@@ -45,7 +45,7 @@ export const state = () => ({
         },
         {
             id: 3,
-            stepLabel: '<i class="fas fa-lightbulb"></i> Fire-Breathing Dragon',
+            stepLabel: '<i class="fas fa-dragon"></i> Fire-Breathing Dragon',
             stepImg: '/gifs/video-sensing-touch-dragon.gif',
             stepText: "Don't get burned!",
             initialCluesVisible:0,
@@ -84,7 +84,7 @@ export const state = () => ({
         },
         {
             id: 4,
-            stepLabel: '<i class="fas fa-lightbulb"></i> Collect Gems',
+            stepLabel: '<i class="fas fa-gem"></i> Collect Gems',
             stepImg: '/gifs/video-sensing-collect-gems.gif',
             stepText: "How many can you collect?",
             initialCluesVisible:0,

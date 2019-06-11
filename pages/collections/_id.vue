@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="main">
         <section class="featured section has-background-dark has-text-centered">
             <a name="featured" id="featured"></a>
-            <h2 class="title is-2">Collection: {{ collectionTitle }} </h2>
+            <h2 class="title is-2">{{ collectionTitle }} </h2>
             <div class="columns is-multiline" style="color:lightgreen;">
                 <a-challenge
                     v-for="challenge in fetchedChallenges"

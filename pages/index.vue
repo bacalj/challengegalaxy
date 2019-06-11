@@ -29,7 +29,7 @@
                     <div class="columns">
                         <div class="column">
                             <img src="/pngs/cglogo2.png" alt="Challenge Galaxy"/>
-                           
+                           subtest
                             <div v-if="showTheFallingStars">
                                 <!-- these will be abstracted into a function later -->
                                 <a-star speed="slow"    ystart="5%" xstart="0%"     w="10px"   h="10px" color="#fefefe"></a-star>
@@ -59,7 +59,7 @@
                         <div class="column">
                             <div class="video-player intro-video">
                                 <div>
-                                    <img src="jpgs/cgandscratch.jpg" alt="gif of ChallengeGalaxy in use">
+                                    <img src="jpgs/cgandscratch.jpg" alt="still image of ChallengeGalaxy in use">
                                 </div>
                             </div>                      
                         </div>
