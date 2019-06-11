@@ -49,7 +49,7 @@ path.sb3-obsolete {
 .pagechange-leave-active {
   transition-property: opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
 }
 .pagechange-enter,
 .pagechange-leave-to {
