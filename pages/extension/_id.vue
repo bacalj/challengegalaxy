@@ -76,9 +76,20 @@ export default {
     data(){
         return {
             id: this.$route.params.id,
+            studioOpen: false,
+            pdfOpen: false,
         }
     },
-
+    
+    methods:{
+        toggleStudio(){
+            this.studioOpen = !this.studioOpen;
+        },
+        togglePdf(){
+            this.pdfOpen = !this.pdfOpen;
+        }
+    },
+    
     mounted(){
         window.setTimeout(function(){ 
             scratchblocks.renderMatching("pre.blocks",{style:"scratch3"}); 
@@ -148,7 +159,6 @@ section {
     border-radius:15px;
 }
 .challenge-studio {
-    margin: 0.75rem;
     color: #ffffff;
 }
 .step-toggler {
