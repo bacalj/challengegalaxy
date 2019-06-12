@@ -15,6 +15,17 @@ module.exports = function(grunt) {
             dest: 'dist/_nuxt/'
         }
     },
+    // Remove JS from chrome extension popup
+    dom_munger: {
+        remove_scripts: {
+          options: {
+            remove: 'script, link[rel="preload"]',
+            append: {selector:'body',html:'<script src="../popup.js"></script>'}
+          },
+          src: 'dist/chrome-extension/popup/index.html',
+          dest: 'dist/chrome-extension/popup/index.html'
+        },
+      },
     // Zip the Chrome Extension for upload to the store.
     zip: {
         'using-cwd': {
@@ -26,4 +37,5 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-move');
     grunt.loadNpmTasks('grunt-zip');
+    grunt.loadNpmTasks('grunt-dom-munger');
 };
