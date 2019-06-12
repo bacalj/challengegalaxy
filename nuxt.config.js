@@ -2,7 +2,7 @@ const pkg = require('./package')
 
 module.exports = {
     mode: 'universal',
-
+    
     router: {
        scrollBehavior: function (to, from, savedPosition) {
             let position = false
@@ -86,6 +86,7 @@ module.exports = {
     ** Global CSS
     */
     css: [
+        '~/assets/globalitems.scss'
     ],
 
     /*

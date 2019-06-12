@@ -1,5 +1,8 @@
 <template>
     <div>
+        <!-- add a star somwhere like this:
+            <a-star speed="fast"    ystart="16%" xstart="15%"    w="50px"   h="50px" color="#fefefe"></a-star>
+         -->
         <svg class="star" 
             :class="speed"
             :width="w" 

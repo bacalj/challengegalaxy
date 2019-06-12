@@ -66,6 +66,8 @@ export default {
         AStep
     },
 
+    transition: 'pagechange',
+    
     data(){
         return {
             id: this.$route.params.id,

@@ -30,6 +30,8 @@ export default {
         ACollection
     },
 
+    transition: 'pagechange',
+    
     data(){
         return {
             collections: this.collections = this.$store.state.collections.collectionslist.published
@@ -40,4 +42,6 @@ export default {
 
 <style lang="scss" scoped>
 h1 { color:white; }
+
+
 </style>

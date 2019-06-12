@@ -22,6 +22,9 @@ export default {
     components:{
         AChallenge,
     },
+    
+    transition: 'pagechange',
+    
     computed: {
         ...mapState({
             challenges: state => state.challengeslist.published,

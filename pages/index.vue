@@ -21,50 +21,8 @@
                         </div>
                     </div>
                 </nav>
-                <!-- we could just do this later -->
-                <!-- <TheNavbar></TheNavbar> -->
             </div>
-            <div class="hero-body">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column">
-                            <img src="/pngs/cglogo2.png" alt="Challenge Galaxy"/>
-                            <div v-if="showTheFallingStars">
-                                <!-- these will be abstracted into a function later -->
-                                <a-star speed="slow"    ystart="5%" xstart="0%"     w="10px"   h="10px" color="#fefefe"></a-star>
-                                <a-star speed="medium"  ystart="12%" xstart="11%"    w="25px"   h="25px" color="#9012FE"></a-star>
-                                <a-star speed="fast"    ystart="16%" xstart="15%"    w="50px"   h="50px" color="#fefefe"></a-star>
-                                <a-star speed="slow"    ystart="20%" xstart="18%"    w="10px"   h="10px" color="#9012FE"></a-star>
-                                <a-star speed="medium"  ystart="6%" xstart="23%"    w="25px"   h="25px" color="#fefefe"></a-star>
-                                <a-star speed="fast"    ystart="15%" xstart="34%"    w="50px"   h="50px" color="#9012FE"></a-star>
-                                <a-star speed="slow"    ystart="40%" xstart="56%"    w="10px"   h="10px" color="#fefefe"></a-star>
-                                <a-star speed="medium"  ystart="7%" xstart="43%"    w="25px"   h="25px" color="#9012FE"></a-star>
-                                <a-star speed="fast"    ystart="30%" xstart="65%"    w="50px"   h="50px" color="#fefefe"></a-star>
-                                <a-star speed="slow"    ystart="80%" xstart="74%"    w="10px"   h="10px" color="#9012FE"></a-star>
-                                <a-star speed="medium"  ystart="60%" xstart="81%"    w="25px"   h="25px" color="#fefefe"></a-star>
-                                <a-star speed="fast"    ystart="80%" xstart="98%"    w="50px"   h="50px" color="#9012FE"></a-star>
-                            </div>
-
-                            <h2 class="subtitle">
-                                Learn Scratch by working on challenges.<br>
-                                Share your solutions with others around the world!  
-                            </h2>
-                            <div class="flex-row intro-buttons">
-                                <a class="button is-primary"
-                                 href="https://scratch.mit.edu" target="_blank">Open Scratch</a>
-                                <n-link class="button is-primary" to="/challenges">Find a challenge</n-link>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="video-player intro-video">
-                                <div>
-                                    <img src="jpgs/cgandscratch.jpg" alt="still image of ChallengeGalaxy in use">
-                                </div>
-                            </div>                      
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <TheHero />
         </section>
         <section class="featured section has-background-dark has-text-centered">
             <a name="featured" id="featured"></a>
@@ -84,15 +42,17 @@
 <script>
 import AChallenge from '~/components/AChallenge.vue'
 import { mapState } from 'vuex'
-import AStar from '~/components/AStar.vue'
 import TheNavbar from '~/components/TheNavbar.vue'
+import TheHero from '~/components/TheHero.vue'
 
 export default {
     layout: 'home',
+
     components:{
-        AChallenge,
-        AStar
+        TheHero,
+        AChallenge
     },
+    
     computed: {
         ...mapState({
             featured: state => state.challengeslist.featured,
@@ -156,5 +116,16 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 200ms;
+}
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
 }
 </style>
