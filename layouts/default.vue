@@ -67,6 +67,9 @@ html {
     transition: 0.5s;
   }
 }
+.has-background-info {
+    background-color: $blue !important;
+}
 a.button {
     -webkit-background-clip: unset;
     background-clip: unset;
