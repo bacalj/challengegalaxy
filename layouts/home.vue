@@ -43,4 +43,8 @@ path.sb3-obsolete {
     fill: #ff6680;
     stroke: #ff3355;
 }
+
+body {
+    background: #4a4a4a;
+}
 </style>

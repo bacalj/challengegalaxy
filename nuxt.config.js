@@ -2,7 +2,7 @@ const pkg = require('./package')
 
 module.exports = {
     mode: 'universal',
-
+    
     router: {
        scrollBehavior: function (to, from, savedPosition) {
             let position = false
