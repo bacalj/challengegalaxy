@@ -34,6 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 @media only screen and (max-width: 769px) {
     .hero {
         text-align: center;
@@ -42,5 +43,20 @@ export default {
 
 .hero .title {
     font-size: 2.5rem;
+}
+
+.hero-body {
+    animation-name: enterhero;
+    animation-duration:.8s;
+}
+
+@keyframes enterhero {
+    from {
+        opacity:0;
+    }
+
+    to {
+        opacity:1;
+    }
 }
 </style>
