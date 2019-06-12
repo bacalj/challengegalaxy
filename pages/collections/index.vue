@@ -30,6 +30,8 @@ export default {
         ACollection
     },
 
+    transition: 'pagechange',
+    
     data(){
         return {
             collections: this.collections = this.$store.state.collections.collectionslist.published
