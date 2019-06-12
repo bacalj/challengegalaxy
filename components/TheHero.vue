@@ -29,38 +29,18 @@
 </template>
 
 <script>
-    export default {
-        transition: 'pagechange'
-    }
+export default {
+}
 </script>
 
 <style lang="scss" scoped>
-/* about to enter */
-.fade-enter {
-    opacity: 0;
-    height:0px;
+@media only screen and (max-width: 769px) {
+    .hero {
+        text-align: center;
+    }
 }
 
-.fade-enter-active {
-    transition: all .5s;
-}
-
-.fade-enter-to { 
-    opacity: 1 
-}
-
-/* about to leave */
-.fade-leave {
-    opacity: .1;
-}
-
-.fade-leave-active { 
-    transition: height .1s; 
-    transition: opacity .1s;
-}
-
-.fade-leave-to { 
-    height:0px;
-    opacity: 0; 
+.hero .title {
+    font-size: 2.5rem;
 }
 </style>
