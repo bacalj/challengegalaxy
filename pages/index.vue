@@ -47,12 +47,11 @@ import TheHero from '~/components/TheHero.vue'
 
 export default {
     layout: 'home',
+
     components:{
         TheHero,
         AChallenge
     },
-
-    transition: 'pagechange',
     
     computed: {
         ...mapState({
