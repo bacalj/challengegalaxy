@@ -35,20 +35,30 @@
             :key="step.id">
         </a-step>
 
-        <div v-if="challenge.studio">
-            <button class="button step-button is-primary"><i class="fas fa-share"></i>&nbsp;Share!</button>
-            <section class="challenge-studio column has-background-info">
-                <div>Add your project to the Studio and see how other people made their projects.</div>
-                <a class="button is-primary step-toggler" target="_blank" v-bind:href="challenge.studio">Studio</a>  
-            </section>
+        <div v-if="challenge.studio" class="step column">
+            <button @click="toggleStudio()" class="button step-toggler is-primary">
+                <i class="fas fa-share"></i>&nbsp;Share!
+            </button>
+            <transition name="slide-fade">
+                <div class="step-wrap">
+                    <section v-show="studioOpen" class="challenge-studio has-background-info" >
+                        <div>Add your project to the Studio and see how other people made their projects.</div>
+                        <a class="button is-primary step-toggler" target="_blank" v-bind:href="challenge.studio">Studio</a>  
+                    </section>
+                </div>
+            </transition>
         </div>
 
-        <div v-if="challenge.pdf">
-            <button class="button step-button is-primary"><i class="fas fa-file-download"></i>&nbsp;Code Reference</button>
-            <section class="challenge-studio column has-background-info">
-                <div>There are many ways to create this project, but here is one way.</div>
-                <a class="button is-primary step-toggler" target="_blank" v-bind:href="'/' + challenge.id + '/' + challenge.pdf">Printable PDF</a>  
-            </section>
+        <div v-if="challenge.pdf" class="step column">
+            <button @click="togglePdf()" class="button step-toggler is-primary">
+                <i class="fas fa-file-download"></i>&nbsp;Code Reference
+            </button>
+            <transition name="slide-fade">
+                <section v-show="pdfOpen" class="challenge-studio has-background-info">
+                    <div>There are many ways to create this project, but here is one way.</div>
+                    <a class="button is-primary step-toggler" target="_blank" v-bind:href="'/' + challenge.id + '/' + challenge.pdf">Printable PDF</a>  
+                </section>
+            </transition>
         </div>
     </div>
 </template>
@@ -109,6 +119,7 @@ h1, .goal-text.subtitle {
 }
 .challenge-container {
     max-width: 480px;
+    width: 100%;
     padding-bottom:60px;
 }
 .challenge-intro-section {
@@ -140,10 +151,11 @@ section {
     margin: 0.75rem;
     color: #ffffff;
 }
-.step-button {
+.step-toggler {
     position: relative;
-    top:25px;
+    left:-12px;
+    top:10px;
     border-radius:50px;
-    font-weight: 600;
 }
+
 </style>
