@@ -1,9 +1,9 @@
 export const state = () => ({
     id: 'walk',
     title: 'Walking Animation',
-    goalImg: '/gifs/hat_landing.gif',
+    goalImg: '/gifs/walk.gif',
     goalText: 'Make a sprite look like it is walking',
-    scratchprojid: 316200322,
+    scratchprojid: 316774682,
 
     steps: [
         {

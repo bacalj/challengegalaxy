@@ -1,9 +1,9 @@
 export const state = () => ({
     id: 'arrow-move',
     title: 'Move with Arrow Keys',
-    goalImg: '/gifs/hat_landing.gif',
+    goalImg: '/gifs/arrow_move.gif',
     goalText: 'Move your sprite around with arrow keys',
-    scratchprojid: 316200322,
+    scratchprojid: 316679663,
 
     steps: [
         {

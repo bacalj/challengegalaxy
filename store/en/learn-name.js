@@ -1,9 +1,9 @@
 export const state = () => ({
     id: 'learn-name',
     title: 'Teach A Cat Your Name',
-    goalImg: '/gifs/hat_landing.gif',
+    goalImg: '/gifs/name.gif',
     goalText: 'Make it land on something',
-    scratchprojid: 316200322,
+    scratchprojid: 316775974,
 
     steps: [
         {
