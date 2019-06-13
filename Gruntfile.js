@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     zip: {
         'using-cwd': {
             cwd: 'dist/chrome-extension/',
-            src: ['dist/chrome-extension/*'],
+            src: ['dist/chrome-extension/*', 'dist/chrome-extension/popup/*', 'dist/chrome-extension/images/*'],
             dest: 'dist/chrome_extension.zip'
         }
       }
