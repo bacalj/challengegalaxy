@@ -15,7 +15,7 @@
                     :id="collection.id"
                     :title="collection.title"
                     :subtitle="collection.subtitle"
-                    >
+                >
                 </a-collection>
             </div>
         </section>
@@ -43,5 +43,10 @@ export default {
 <style lang="scss" scoped>
 h1 { color:white; }
 
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 </style>
