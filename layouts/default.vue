@@ -35,6 +35,9 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+html.has-navbar-fixed-top {
+  padding-top: 80px !important;
+}
 // Make footer at bottom if page is short
 .site {
     display: flex;
@@ -89,5 +92,4 @@ a.button:hover {
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0,#8204f0), color-stop(1, #a037fc) );
   background-image: gradient( linear, left top, right top, color-stop(0, #8204f0), color-stop(1, #a037fc) );
 }
-
 </style>

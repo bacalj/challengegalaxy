@@ -8,10 +8,6 @@
 <script>
 import TheFooter from '~/components/TheFooter.vue'
 
-if (process.client){
-    var scratchblocks = require('scratchblocks')
-}
-
 export default {
      components:{
         TheFooter
@@ -31,6 +27,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+html.has-navbar-fixed-top {
+  padding-top: 80px !important;
 }
 
 *,
