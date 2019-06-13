@@ -42,9 +42,4 @@ h1.title {
     margin-top:60px;
     margin-bottom:40px !important;
 }
-
-.column {
-    padding-left:20px;
-    padding-right:20px;
-}
 </style>
