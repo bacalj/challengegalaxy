@@ -40,6 +40,21 @@ export const state = () => ({
             link: 'challenges/reaction-time', 
             title: 'How fast are you?'
         },
+        {
+            id: 'arrow-move',
+            link: 'challenges/arrow-move',
+            title: 'Move With Arrow Keys'
+        },
+        {
+            id: 'learn-name',
+            link: 'challenges/learn-name',
+            title: 'Teach A Cat Your Name'
+        },
+        {
+            id: 'walk',
+            link: 'challenges/walk',
+            title: 'Walking Animation'
+        }
     ],
 
     featured:[
