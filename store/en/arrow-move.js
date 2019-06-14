@@ -9,27 +9,15 @@ export const state = () => ({
         {
             id: 1,
             stepNum: '1',
-            stepImg: '/hat-landing/hat_landing_setup.jpg',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Get Set Up!',
-            stepText: 'Choose two sprites',
+            stepImg: '/jpgs/choose_any_sprite.jpg',
+            stepLabel: '<i class="fas fa-shapes"></i> Get Set Up!',
+            stepText: 'Choose any sprite!',
             initialCluesVisible:0,
             clues:[
                 {
-                    cover: 'Use your imagination!',
-                    id: 1, 
-                    content: "<img src='/svgs/unicorn.svg' alt='unicorn'/><p>You can choose any sprites and backdrops you like for this project. In some places you may need to adapt the clues if you choose something different. Remember this challenge is meant to inspire your own ideas!</p>",
-                    type: 'info',
-                },
-                {
                     cover: 'Start here to choose a sprite',
-                    id: 2, 
+                    id: 1, 
                     content: '/gifs/choose-a-sprite.gif',
-                    type: 'info',
-                },
-                {
-                    cover: 'Start here to choose a backdrop',
-                    id: 3, 
-                    content: '/gifs/choose-a-backdrop.gif',
                     type: 'info',
                 }
             ]
@@ -37,52 +25,69 @@ export const state = () => ({
         {
             id: 2,
             stepNum: '2',
-            stepImg: '/gifs/hat_landing.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Make it work!',
-            stepText: 'Make one sprite fall until it lands on the other',
+            stepImg: '/gifs/go_right.gif',
+            stepLabel: '<i class="fas fa-caret-square-right"></i> Go to the right!',
+            stepText: 'When you press right arrow, go right!',
             initialCluesVisible:0,
             clues:[
                 {
-                    cover: 'How will it always start on top?',
+                    cover: 'Which block responds to a key press?',
                     id: 1, 
-                    content: '<pre class="blocks">when flag clicked</pre>',
+                    content: '<pre class="blocks">when [right arrow v] key pressed</pre>',
                     type: 'code',
-                    sprite: 'hat.png'
+                    sprite: 'scratch_cat.png'
                 },
                 {
-                    cover: 'How will it always start on top?',
+                    cover: 'How to go to the right?',
                     id: 2, 
-                    content: '<pre class="blocks">go to x:() y:()</pre><img src="/pngs/xygrid.png">',
+                    content: '<pre class="blocks">change x by: ()</pre><img src="/pngs/xygrid.png">',
                     type: 'code',
-                    sprite: 'hat.png'
+                    sprite: 'scratch_cat.png'
                 },
                 {
-                    cover: 'How will it fall on its own?',
+                    cover: 'x is how much left or right',
                     id: 3,
-                    content:'<pre class="blocks">change y by:()</pre>',
+                    content:'<pre class="blocks">change x by:(10)</pre>',
                     type: 'code',
-                    sprite: 'hat.png'
+                    sprite: 'scratch_cat.png'
                 },
                 {
-                    cover: 'How will it keep falling (until it lands)?',
-                    id: 4, 
-                    content: '<pre class="blocks">repeat until &lt; &gt; \n \n &lt; touching (sprite1 v)?&gt;</pre>',
-                    type: 'code',
-                    sprite: 'hat.png'
-                },
-                {
-                    cover: 'Make it move a little futher.',
-                    id: 5, 
-                    content: '<pre class="blocks">change y by (-20)</pre>',
-                    type: 'code',
-                    sprite: 'hat.png'
-                },
-                {
-                    cover: 'Keep experimenting before you click this open!',
-                    id: 6,
-                    content: '<pre class="blocks">when green flag clicked\n go to x:(0) y:(165)\n repeat until &lt; touching (sprite2 v) ? &gt;\n &emsp; change y by (-10)\n end\n change y by (-20)</pre>',
+                    cover: 'Now put it all together!',
+                    id: 4,
+                    content: '<pre class="blocks">when [right arrow v] key pressed \n change x by: (10)</pre>',
                     type: 'locked',
-                    sprite: 'hat.png'
+                    sprite: 'scratch_cat.png'
+                }
+            ]
+        },
+        {
+            id: 3,
+            stepNum: '3',
+            stepImg: '/gifs/arrow_move.gif',
+            stepLabel: '<i class="fas fa-arrows-alt"></i> Move other directions!',
+            stepText: 'Connect each arrow to different movements',
+            initialCluesVisible:0,
+            clues:[
+                {
+                    cover: 'More x means more right, so less x means...',
+                    id: 1, 
+                    content: '<pre class="blocks">when [left arrow v] key pressed \n change x by: (-10)</pre>',
+                    type: 'idea',
+                    sprite: 'scratch_cat.png'
+                },
+                {
+                    cover: 'y is a number that says how much up or down',
+                    id: 2,
+                    content: '<pre class="blocks">when [up arrow v] key pressed \n change y by: (10)</pre>',
+                    type: 'code',
+                    sprite: 'scratch_cat.png'
+                },
+                {
+                    cover: 'Now put it all together',
+                    id: 3,
+                    content: '<pre class="blocks">when [up arrow v] key pressed \n change y by: (10) \n \n when [down arrow v] key pressed \n change y by: (-10) \n \n when [right arrow v] key pressed \n change x by: (10) \n \n when [left arrow v] key pressed \n change x by: (-10)</pre>',
+                    type: 'locked',
+                    sprite: 'scratch_cat.png'
                 }
             ]
         }
