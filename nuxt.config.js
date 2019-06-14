@@ -51,7 +51,10 @@ module.exports = {
             '/extension/platformer',
             '/extension/label-it',
             '/extension/reaction-time',
-            '/chrome-extension/popup'
+            '/chrome-extension/popup',
+            '/how-it-works',
+            '/contact',
+            '/about'
         ]
     },
     /*
@@ -101,7 +104,8 @@ module.exports = {
     modules: [,
         // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
         '@nuxtjs/style-resources',
-        '@nuxtjs/bulma'
+        '@nuxtjs/bulma',
+        'vue-scrollto/nuxt'
     ],
 
     styleResources:{

@@ -90,11 +90,6 @@ h1.title {
     color:white;
 }
 
-.column {
-    padding-left:20px;
-    padding-right:20px;
-}
-
 .hidden-from-humans {
     position: absolute;
     left:-6000px;

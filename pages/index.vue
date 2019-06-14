@@ -69,24 +69,25 @@ export default {
         }
     },
 
+    head () {
+        return {
+            script: [
+                { src: 'https://fast.wistia.com/embed/medias/ce9988zz4y.jsonp' },
+                { src: 'https://fast.wistia.com/assets/external/E-v1.js' }
+            ]
+        }
+    },
+
     methods:{
         toggleHomeMobileMenu(){
             this.homeMobileMenuOpen = !this.homeMobileMenuOpen;
         }
     },
 
-    head () {
-        return {
-            script: [
-                { src: 'https://fast.wistia.com/embed/medias/j38ihh83m5.jsonp' },
-                { src: 'https://fast.wistia.com/assets/external/E-v1.js' }
-            ]
-        }
-    }
 }
 </script>
 
-<style>
+<style lang="scss">
 
 @media only screen and (max-width: 769px) {
     .hero {
@@ -100,16 +101,6 @@ export default {
 
 .title, .subtitle {
     color: white;
-}
-
-.video-player {
-    border-radius: 5px;
-    border: 5px solid #333333;
-    overflow: hidden;
-    width:80%;
-    //width: 320px;
-    //height: 180px;
-    margin:0 auto;
 }
 
 .tile.is-ancestor {
