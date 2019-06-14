@@ -103,15 +103,6 @@ export default {
     color: white;
 }
 
-.video-player {
-    border-radius: 5px;
-    border: 5px solid $blue;
-    overflow: hidden;
-    width: 480px;
-    height: 270px;
-    margin:0 auto 20px;
-}
-
 .tile.is-ancestor {
     display: flex;
     flex-wrap: wrap;
