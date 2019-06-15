@@ -63,4 +63,10 @@ import { mapState } from 'vuex'
 h2 {
     color:white;
 }
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 </style>
