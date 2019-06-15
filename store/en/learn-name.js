@@ -4,7 +4,7 @@ export const state = () => ({
     goalImg: '/gifs/name.gif',
     goalText: 'Save and use something typed in',
     scratchprojid: 316775974,
-    isUnderConstruction:true,
+    studio:'https://scratch.mit.edu/studios/16682664/',
 
     steps: [
         {

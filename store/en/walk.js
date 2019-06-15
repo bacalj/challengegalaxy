@@ -9,27 +9,21 @@ export const state = () => ({
         {
             id: 1,
             stepNum: '1',
-            stepImg: '/hat-landing/hat_landing_setup.jpg',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Get Set Up!',
-            stepText: 'Choose two sprites',
+            stepImg: '/walk/walk_setup.jpg',
+            stepLabel: '<i class="fas fa-shapes"></i> Get Set Up!',
+            stepText: 'Choose a sprite with multiple costumes',
             initialCluesVisible:0,
             clues:[
                 {
-                    cover: 'Use your imagination!',
-                    id: 1, 
-                    content: "<img src='/svgs/unicorn.svg' alt='unicorn'/><p>You can choose any sprites and backdrops you like for this project. In some places you may need to adapt the clues if you choose something different. Remember this challenge is meant to inspire your own ideas!</p>",
-                    type: 'info',
-                },
-                {
                     cover: 'Start here to choose a sprite',
-                    id: 2, 
+                    id: 1, 
                     content: '/gifs/choose-a-sprite.gif',
                     type: 'info',
                 },
                 {
-                    cover: 'Start here to choose a backdrop',
-                    id: 3, 
-                    content: '/gifs/choose-a-backdrop.gif',
+                    cover: 'Find a sprite with many costumes',
+                    id: 2, 
+                    content: '/gifs/hover_find_walk.gif',
                     type: 'info',
                 }
             ]
@@ -37,52 +31,62 @@ export const state = () => ({
         {
             id: 2,
             stepNum: '2',
-            stepImg: '/gifs/hat_landing.gif',
-            stepLabel: '<i class="fas fa-lightbulb"></i> Make it work!',
-            stepText: 'Make one sprite fall until it lands on the other',
+            stepImg: '/gifs/walk_in_place.gif',
+            stepLabel: '<i class="fas fa-video"></i> Animate it',
+            stepText: 'Make your sprite walk in place',
             initialCluesVisible:0,
             clues:[
                 {
-                    cover: 'How will it always start on top?',
+                    cover: 'Find a block that changes the sprites costume',
                     id: 1, 
-                    content: '<pre class="blocks">when flag clicked</pre>',
+                    content: '<pre class="blocks">next costume</pre>',
                     type: 'code',
-                    sprite: 'hat.png'
+                    sprite: 'avery.png'
                 },
                 {
-                    cover: 'How will it always start on top?',
+                    cover: 'What block will make it happen over and over?',
                     id: 2, 
-                    content: '<pre class="blocks">go to x:() y:()</pre><img src="/pngs/xygrid.png">',
+                    content: '<pre class="blocks">repeat[15]</pre>',
                     type: 'code',
-                    sprite: 'hat.png'
+                    sprite: 'avery.png'
                 },
                 {
-                    cover: 'How will it fall on its own?',
+                    cover: 'Too fast? Not starting?',
                     id: 3,
-                    content:'<pre class="blocks">change y by:()</pre>',
-                    type: 'code',
-                    sprite: 'hat.png'
+                    content: '<p>These will be useful</p><pre class="blocks">when green flag clicked \n \n wait [.2] seconds</pre>',
+                    type:'code',
+                    sprite: 'avery.png'
                 },
                 {
-                    cover: 'How will it keep falling (until it lands)?',
-                    id: 4, 
-                    content: '<pre class="blocks">repeat until &lt; &gt; \n \n &lt; touching (sprite1 v)?&gt;</pre>',
+                    cover: 'Put it all together',
+                    id:4,
+                    content:'<pre class="blocks">when green flag clicked \n  repeat [18] \n wait [.2] seconds \n next costume \n end \n</pre>',
+                    type:'locked',
+                    sprite: 'avery.png'
+                }
+            ]
+        },
+        {
+            id: 3,
+            stepNum: '2',
+            stepImg: '/gifs/walk.gif',
+            stepLabel: '<i class="fas fa-angle-double-right"></i> Add movement',
+            stepText: 'Put animation and motion together',
+            initialCluesVisible:0,
+            clues:[
+                {
+                    cover: 'Where will you add a block that adds motion?',
+                    id: 1, 
+                    content: '<pre class="blocks">move [10] steps</pre>',
                     type: 'code',
-                    sprite: 'hat.png'
+                    sprite: 'avery.png'
                 },
                 {
-                    cover: 'Make it move a little futher.',
-                    id: 5, 
-                    content: '<pre class="blocks">change y by (-20)</pre>',
-                    type: 'code',
-                    sprite: 'hat.png'
-                },
-                {
-                    cover: 'Keep experimenting before you click this open!',
-                    id: 6,
-                    content: '<pre class="blocks">when green flag clicked\n go to x:(0) y:(165)\n repeat until &lt; touching (sprite2 v) ? &gt;\n &emsp; change y by (-10)\n end\n change y by (-20)</pre>',
+                    cover: 'Put it all together',
+                    id: 2, 
+                    content: '<pre class="blocks">when green flag clicked \n go to x:[-100] y:[0] \n repeat [18] \n wait [.2] seconds \n move [18] steps \n next costume \n end \n</pre><p>Notice how we got Avery back to the middle when we start?</p>',
                     type: 'locked',
-                    sprite: 'hat.png'
+                    sprite: 'avery.png'
                 }
             ]
         }

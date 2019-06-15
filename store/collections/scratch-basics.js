@@ -3,8 +3,8 @@ export const state = () => ({
     title: 'Scratch Basics',
     challenges:[
         'arrow-move',
-        'hat-landing',
         'walk',
-        'learn-name'
+        'learn-name',
+        'hat-landing'
     ]
 })
