@@ -33,4 +33,10 @@
 .title, .subtitle {
     color:#363636;
 }
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 </style>
