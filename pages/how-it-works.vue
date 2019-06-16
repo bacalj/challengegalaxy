@@ -8,8 +8,8 @@
                         Getting Started
                     </p>
                     <ul class="menu-list">
-                        <li><a v-scroll-to="{ el: '#chrome', offset: -100 }">Chrome</a></li>
-                        <li><a v-scroll-to="{ el: '#other-browsers', offset: -100 }">Other Browsers</a></li>
+                        <li><a v-scroll-to="{ el: '#chrome', offset: -100 }">Chrome Extension</a></li>
+                        <li><a v-scroll-to="{ el: '#other-browsers', offset: -100 }">Side-By-Side</a></li>
                     </ul>
                     <p class="menu-label has-text-light">
                         Using Challenge Galaxy
@@ -20,7 +20,7 @@
                         <li><a>Sharing Projects</a></li>
                     </ul>
                     <p class="menu-label has-text-light">
-                        Teachers
+                        Educators
                     </p>
                     <ul class="menu-list">
                         <li><a>In Your Classroom</a></li>
@@ -33,26 +33,53 @@
                 <h1 class="page-title has-text-light">How It Works</h1>
                 
                 <h2 class="title has-text-light">Getting Started</h2>
-                <h3 id="chrome" class="subtitle has-text-light">Are you using Chrome?</h3>
+
+                <h3 class="title has-text-light">There two ways you can use ChallengeGalaxy:</h3>
+
+                <ul id="two-ways">
+                    <li>
+                        <h4><a href="#chrome">Chrome extension:</a></h4>
+                        <p>You can use it right inside Scratch by using our Chrome extension</p>
+                    </li>
+                    <li>
+                        <h4><a href="#other-browsers">Side-by-Side:</a></h4>
+                        <p>Side-by-side: open ChallengeGalaxy in one tab or device and Scratch in the other</p>
+                    </li>                
+                </ul>
+
+                <hr>
+                <h3 id="chrome" class="subtitle has-text-light">Use the ChallengeGalaxy chrome extension</h3>
                 <p>Our Chrome extension lets you see the challenges right inside Scratch.</p>
-                <p>First, add the Challenge Galaxy extension to your Chrome browser. The button below will bring you to the Chrome Web Store.</p>
+                <p>1. First, add the Challenge Galaxy extension to your Chrome browser. The button below will bring you to the Chrome Web Store.</p>
                 <p><a class="button is-primary" href="https://chrome.google.com/webstore/detail/cbidhbafbppopanlhekfpjjaicagjbci" target="_blank">Add Chrome Extension</a></p>
                 <p><img src="/gifs/add-to-chrome.gif" alt="Add to Chrome"/></p>
-                <p>Next, open Scratch. The button below will open it in a new browser window for you.</p>
+                <p>2. Next, open Scratch. The button below will open it in a new browser window for you.</p>
                 <p><a class="button is-primary" href="https://scratch.mit.edu" target="_blank">Open Scratch</a></p>
-                <p>Click the Challenge Galaxy button in your browser toolbar to open the list of challenges and pick your challenge!</p>
+                <p>3. Click the Challenge Galaxy button in your browser toolbar to open the list of challenges and pick your challenge!</p>
                 <p><img src="/gifs/chrome-choose-a-challenge.gif" alt="Choose a challenge"/></p>
-                <p>The challenge you choose will open right inside Scratch so you can build your project and look at the clues at the same time.</p>
+                <p>4. The challenge you choose will open right inside Scratch so you can build your project and look at the clues at the same time.</p>
                 <p><img src="/gifs/embedded-cg.gif" alt="Challenge Galaxy embedded in Scratch website"/></p>
                 <p>Have fun!</p>
 
-                <h3 id="other-browsers" class="subtitle has-text-light">Other Browsers</h3>
+                <hr>
+                <h3 id="other-browsers" class="subtitle has-text-light">Side-by-Side</h3>
                 <p>Challenge Galaxy works great in other web browsers too!</p>
                 <p>If you have a display that is wide enough, we recommend opening two windows side-by-side like this:</p>
                 <p><img src="/pngs/cgandscratch.png" alt="Challenge Galaxy and Scratch side-by-side"/></p>
                 <p>If you're using a display that doesn't easily fit both windows, try opening Challenge Galaxy in one window and Scratch in another and switch back and forth as needed. Some people prefer switch between browser tabs and others prefer having different windows. Maybe you're more comfortable one way or the other?</p>
                 <p>Another way that can work really well if you have a tablet or a phone is to open Challenge Galaxy on your mobile device and use Scratch on your computer.</p>
                 <p>Have fun!</p>
+
+                <h2 id="using" class="title has-text-light">Using Challenge Galaxy</h2>
+
+                <hr>
+                <h3 id="getting-clues" class="title has-text-light">Getting Clues</h3>
+
+                <hr>
+                <h3 id="locked-clues" class="title has-text-light">Locked Clues</h3>
+
+                <hr>
+                <h3 id="sharing-projects" class="title has-text-light">Sharing Projects</h3>
 
                 <div class="column is-one-fifth" style="padding-top:100px">
                     <nuxt-link class="button is-link" to="/contact">Contact Us</nuxt-link>
@@ -100,5 +127,10 @@ p {
 }
 .menu-label {
     padding: 0;
+}
+
+#two-ways p {
+    margin-top:-16px;
+    margin-bottom:10px;
 }
 </style>
