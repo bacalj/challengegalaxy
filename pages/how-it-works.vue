@@ -15,9 +15,9 @@
                         Using Challenge Galaxy
                     </p>
                     <ul class="menu-list">
-                        <li><a>Getting Clues</a></li>
-                        <li><a>Locked Clues</a></li>
-                        <li><a>Sharing Projects</a></li>
+                        <li><a v-scroll-to="{ el: '#getting-clues', offset: -100 }">Steps and Clues</a></li>
+                        <li><a v-scroll-to="{ el: '#locked-clues', offset: -100 }">Locked Clues</a></li>
+                        <li><a v-scroll-to="{ el: '#sharing-projects', offset: -100 }">Sharing Projects</a></li>
                     </ul>
                     <p class="menu-label has-text-light">
                         Educators
@@ -34,7 +34,7 @@
                 
                 <h2 class="title has-text-light">Getting Started</h2>
 
-                <h3 class="title has-text-light">There two ways you can use ChallengeGalaxy:</h3>
+                <p>There are two ways you can set up ChallengeGalaxy</p>
 
                 <ul id="two-ways">
                     <li>
@@ -47,7 +47,6 @@
                     </li>                
                 </ul>
 
-                <hr>
                 <h3 id="chrome" class="subtitle has-text-light">Use the ChallengeGalaxy chrome extension</h3>
                 <p>Our Chrome extension lets you see the challenges right inside Scratch.</p>
                 <p>1. First, add the Challenge Galaxy extension to your Chrome browser. The button below will bring you to the Chrome Web Store.</p>
@@ -61,25 +60,41 @@
                 <p><img src="/gifs/embedded-cg.gif" alt="Challenge Galaxy embedded in Scratch website"/></p>
                 <p>Have fun!</p>
 
-                <hr>
-                <h3 id="other-browsers" class="subtitle has-text-light">Side-by-Side</h3>
-                <p>Challenge Galaxy works great in other web browsers too!</p>
-                <p>If you have a display that is wide enough, we recommend opening two windows side-by-side like this:</p>
+                <h3 id="other-browsers" class="subtitle has-text-light">Use ChallengeGalaxy Side-by-Side with Scratch</h3>
+                <p>If you are not using Chrome and/or if your screen is wide enough, we recommend opening two windows side-by-side like this:</p>
                 <p><img src="/pngs/cgandscratch.png" alt="Challenge Galaxy and Scratch side-by-side"/></p>
                 <p>If you're using a display that doesn't easily fit both windows, try opening Challenge Galaxy in one window and Scratch in another and switch back and forth as needed. Some people prefer switch between browser tabs and others prefer having different windows. Maybe you're more comfortable one way or the other?</p>
                 <p>Another way that can work really well if you have a tablet or a phone is to open Challenge Galaxy on your mobile device and use Scratch on your computer.</p>
                 <p>Have fun!</p>
 
+                <hr>
                 <h2 id="using" class="title has-text-light">Using Challenge Galaxy</h2>
+              
+                <p>You can complete challenges with as many or as few clues as you like. The first part of a challenge always shows you what your goal is.  If you want to, you can just start building. You can build your solution, and share it in the studio set up on Scratch for each challenge.</p>
 
-                <hr>
-                <h3 id="getting-clues" class="title has-text-light">Getting Clues</h3>
+                <h3 id="getting-clues" class="title has-text-light">Steps and Clues</h3>
+               
+                <p>Each challenge is broken up in a number of steps. To open a step, click the step name.</p>
 
-                <hr>
+                <!-- <p><img src="gifts/open_step.gif" alt="an image of a step open in ChallengeGalaxy"></p> -->
+
+                <p>Maybe the step picture is enough to get you back to coding.  If not, you can open up clues. Click the give me a clue button.</p>
+
+                <!-- <p><img src="gifs/opening_a_clue.gif" alt="animation of opening a clue"></p> -->
+
+                <p>This is part of the clue.  It might help you and you might not even open the clue up.  If your still curious or wondering, open up the clue by clicking on it. </p>
+                
                 <h3 id="locked-clues" class="title has-text-light">Locked Clues</h3>
 
-                <hr>
+                <p>The last clue in a step is often locked.  This usually means it has all the code you need to finish the step.  You can open this up if you need to by clicking on the lock.  You'll have to type the code you see backwards to open it.</p>
+
+                <!-- <p><img src="gifs/open_locked_clue.gif" alt="moving image of opening a locked clue"></p> -->
+
                 <h3 id="sharing-projects" class="title has-text-light">Sharing Projects</h3>
+
+                <p>Finished a project? Great! We'd love for you to share it in the Scratch studio that we've set up for each challenge.</p>
+
+                <!-- <p><img src="gifs/go_to_studio.gif" alt="moving image of opening a locked clue"></p> -->
 
                 <div class="column is-one-fifth" style="padding-top:100px">
                     <nuxt-link class="button is-link" to="/contact">Contact Us</nuxt-link>
