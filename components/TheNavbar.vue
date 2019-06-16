@@ -20,7 +20,7 @@
                 <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
                 <nuxt-link class="navbar-item" to="/collections/">Collections</nuxt-link>
                 <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
-                <nuxt-link class="navbar-item" to="/contact-us">Contact</nuxt-link>
+                <nuxt-link class="navbar-item" to="/contact">Contact</nuxt-link>
                 <nuxt-link class="navbar-item" to="/how-it-works"><i class="fas fa-question-circle"></i></nuxt-link>
             </div>
         </div>
