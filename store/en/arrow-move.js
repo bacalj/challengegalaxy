@@ -4,6 +4,7 @@ export const state = () => ({
     goalImg: '/gifs/arrow_move.gif',
     goalText: 'Move your sprite around with arrow keys',
     scratchprojid: 316679663,
+    studio: 'https://scratch.mit.edu/studios/17326583/',
 
     steps: [
         {
