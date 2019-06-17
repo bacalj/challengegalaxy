@@ -76,11 +76,11 @@
                
                 <p>Each challenge is broken up in a number of steps. To open a step, click the step name.</p>
 
-                <!-- <p><img src="gifts/open_step.gif" alt="an image of a step open in ChallengeGalaxy"></p> -->
+                <p><img src="jpgs/open_step.jpg" alt="an image of a step open in ChallengeGalaxy"></p>
 
-                <p>Maybe the step picture is enough to get you back to coding.  If not, you can open up clues. Click the give me a clue button.</p>
+                <p>Maybe the step picture is enough to get you back to coding.  If not, you can open up clues. Click the "Give me a clue!"" button.</p>
 
-                <!-- <p><img src="gifs/opening_a_clue.gif" alt="animation of opening a clue"></p> -->
+                <p><img src="gifs/opening_a_clue.gif" alt="animation of opening a clue"></p>
 
                 <p>This is part of the clue.  It might help you and you might not even open the clue up.  If your still curious or wondering, open up the clue by clicking on it. </p>
                 
@@ -88,13 +88,13 @@
 
                 <p>The last clue in a step is often locked.  This usually means it has all the code you need to finish the step.  You can open this up if you need to by clicking on the lock.  You'll have to type the code you see backwards to open it.</p>
 
-                <!-- <p><img src="gifs/open_locked_clue.gif" alt="moving image of opening a locked clue"></p> -->
+                <p><img src="gifs/open_locked_clue.gif" alt="moving image of opening a locked clue"></p>
 
                 <h3 id="sharing-projects" class="title has-text-light">Sharing Projects</h3>
 
                 <p>Finished a project? Great! We'd love for you to share it in the Scratch studio that we've set up for each challenge.</p>
 
-                <!-- <p><img src="gifs/go_to_studio.gif" alt="moving image of opening a locked clue"></p> -->
+                <p><img src="gifs/go_to_studio.gif" alt="moving image of opening a locked clue"></p>
 
                 <div class="column is-one-fifth" style="padding-top:100px">
                     <nuxt-link class="button is-link" to="/contact">Contact Us</nuxt-link>
@@ -147,5 +147,10 @@ p {
 #two-ways p {
     margin-top:-16px;
     margin-bottom:10px;
+}
+
+p img {
+    margin:0 auto;
+    max-width:460px;
 }
 </style>
