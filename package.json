@@ -8,7 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate; grunt move; grunt zip; grunt dom_munger"
+    "generate": "nuxt generate; grunt move; grunt dom_munger; grunt zip"
   },
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.1",
