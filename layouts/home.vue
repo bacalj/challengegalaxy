@@ -1,5 +1,6 @@
 <template>
   <div class="has-background-dark">
+    <TheNavbar />
     <nuxt />
     <TheFooter />
   </div>
@@ -7,9 +8,11 @@
 
 <script>
 import TheFooter from '~/components/TheFooter.vue'
+import TheNavbar from '~/components/TheNavbar.vue'
 
 export default {
      components:{
+        TheNavbar,
         TheFooter
     }
 }

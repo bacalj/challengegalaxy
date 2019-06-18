@@ -4,7 +4,7 @@
         
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
-                <img src="/pngs/cglogo2.png" alt="Challenge Galaxy">
+                <img src="/pngs/cglogo2.png" alt="Challenge Galaxy" :style="{ opacity: iconOpacity }">
             </a>
             <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': mobileMenuOpen }">
                 <span aria-hidden="true"></span>
@@ -41,13 +41,42 @@ export default {
     data(){
         return {
             mobileMenuOpen:false,
-            clueMenuOpen: false
+            clueMenuOpen: false,
+            iconOpacity: 0
         }
     },
 
     methods:{
         toggleMobileMenu(){
             this.mobileMenuOpen = !this.mobileMenuOpen;
+        },
+
+        isHome(){
+            return this.$route.name == 'index';
+        },
+
+        setIconOpacity(event){
+            if ( window.scrollY > 650 ){
+                this.iconOpacity = 1;
+            } else {
+                this.iconOpacity = 0;
+            }
+        }
+    },
+
+    mounted(){
+        if ( !this.isHome() ){
+            this.iconOpacity = 1;
+        }
+
+        if ( this.isHome() ){
+            window.addEventListener('scroll', this.setIconOpacity);
+        }
+    },
+
+    destroyed(){
+        if ( this.isHome() ){
+            window.removeEventListener('scroll', this.setIconOpacity);
         }
     }
 }

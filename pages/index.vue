@@ -1,27 +1,6 @@
 <template>
     <div>
         <section class="hero is-dark is-fullheight">
-            <div class="hero-head">
-                <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                        <a @click="toggleHomeMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': homeMobileMenuOpen }">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </a>
-                    </div>
-                    <div class="navbar-menu" :class="{ 'is-active': homeMobileMenuOpen, 'has-background-dark': true }">
-                        <div class="navbar-start">
-
-                        </div>
-                        <div class="navbar-end">
-                            <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
-                            <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
-                            <nuxt-link class="navbar-item" to="/collections/">Collections</nuxt-link>
-                        </div>
-                    </div>
-                </nav>
-            </div>
             <TheHero />
         </section>
         <section class="featured section has-background-dark has-text-centered">
@@ -42,7 +21,6 @@
 <script>
 import AChallenge from '~/components/AChallenge.vue'
 import { mapState } from 'vuex'
-import TheNavbar from '~/components/TheNavbar.vue'
 import TheHero from '~/components/TheHero.vue'
 
 export default {
