@@ -19,8 +19,15 @@
             <div class="navbar-end">
                 <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
                 <nuxt-link class="navbar-item" to="/collections/">Collections</nuxt-link>
-                <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
-                <nuxt-link class="navbar-item" to="/contact">Contact</nuxt-link>
+                
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <nuxt-link to="/about/" class="dropdown-trigger navbar-link">About</nuxt-link>
+
+                    <div class="navbar-dropdown has-background-dark">
+                        <nuxt-link to="/contact" class="navbar-item">Contact</nuxt-link>
+                    </div>
+                </div>
+                
                 <nuxt-link class="navbar-item" to="/how-it-works"><i class="fas fa-question-circle"></i></nuxt-link>
             </div>
         </div>
@@ -42,7 +49,8 @@ export default {
         return {
             mobileMenuOpen:false,
             clueMenuOpen: false,
-            iconOpacity: 0
+            iconOpacity: 0,
+            aboutMenuOpen: false
         }
     },
 
@@ -53,6 +61,10 @@ export default {
 
         isHome(){
             return this.$route.name == 'index';
+        },
+
+        toggleAboutMenu(){
+            this.aboutMenuOpen = !this.aboutMenuOpen;
         },
 
         setIconOpacity(event){
