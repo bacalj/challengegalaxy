@@ -4,7 +4,7 @@
         
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
-                <img src="/pngs/cglogo2.png" alt="Challenge Galaxy" :style="{ opacity: iconOpacity }">
+                <img id="cg-main-logo" src="/pngs/cglogo2.png" alt="Challenge Galaxy" :style="{ opacity: iconOpacity }">
             </a>
             <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': mobileMenuOpen }">
                 <span aria-hidden="true"></span>
@@ -126,5 +126,10 @@ export default {
 }
 .navbar-item {
     color: whitesmoke;
+}
+
+#cg-main-logo {
+    transition-property: opacity;
+    transition-duration: .4s;
 }
 </style>
