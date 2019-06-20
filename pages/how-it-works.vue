@@ -190,10 +190,9 @@
                 </ul>
 
                 <p>In more detail, we're also working towards mapping out the connections between solutions to challenges and concepts and competencies in the <a href="https://csteachers.org/page/about-csta-s-k-12-nbsp-standards">CSTA K-12 Computer Science Standards</a>.</p>
-
-                <div class="column is-one-fifth" style="padding-top:100px">
-                    <nuxt-link class="button is-link" to="/contact">Contact Us</nuxt-link>
-                </div>
+            </div>
+            <div class="column is-one-fifth" style="padding-top:100px">
+                <nuxt-link class="button is-primary" to="/contact">Contact Us</nuxt-link>
             </div>
         </div>
     </section>
