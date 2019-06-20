@@ -15,15 +15,28 @@ module.exports = function(grunt) {
             dest: 'dist/_nuxt/'
         }
     },
+    // Remove JS from chrome extension popup
+    dom_munger: {
+        remove_scripts: {
+          options: {
+            remove: 'script, link[rel="preload"]',
+            prefix: {selector:'img',attribute:'src', value:'https://www.challengegalaxy.com'},
+            append: {selector:'body',html:'<script src="../popup.js"></script>'}
+          },
+          src: 'dist/chrome-extension/popup/index.html',
+          dest: 'dist/chrome-extension/popup/index.html'
+        },
+      },
     // Zip the Chrome Extension for upload to the store.
     zip: {
         'using-cwd': {
             cwd: 'dist/chrome-extension/',
-            src: ['dist/chrome-extension/*'],
+            src: ['dist/chrome-extension/*', 'dist/chrome-extension/popup/*', 'dist/chrome-extension/images/*'],
             dest: 'dist/chrome_extension.zip'
         }
       }
     });
     grunt.loadNpmTasks('grunt-move');
     grunt.loadNpmTasks('grunt-zip');
+    grunt.loadNpmTasks('grunt-dom-munger');
 };

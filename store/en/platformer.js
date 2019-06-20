@@ -2,7 +2,7 @@ export const state = () => ({
     id: 'platformer',
     title: 'Platformer Game',
     goalImg: '/platformer/level2.gif',
-    goalText: 'Experiment with physics and gravity.',
+    goalText: 'Use physics and gravity',
     studio: 'https://scratch.mit.edu/studios/15698174/projects/',
     pdf: 'Platformer Game.pdf',
     scratchprojid: 304133549,
@@ -10,7 +10,8 @@ export const state = () => ({
     standards: {
         'NGSS': ['5-PS2-1'],
         'DLCS-6-8-DTC': ['6-8.DTC.a'],
-        'DLCS-6-8-CT': ['6-8.CT.a', '6-8.CT.b', '6-8.CT.d', '6-8.CT.e', ]
+        'DLCS-6-8-CT': ['6-8.CT.a', '6-8.CT.b', '6-8.CT.d', '6-8.CT.e', ],
+        'CSTA-6-8-AP': ['2-AP-11', '2-AP-12', '2-AP-13', '2-AP-17']
     },
 
     steps: [

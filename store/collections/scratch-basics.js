@@ -2,7 +2,9 @@ export const state = () => ({
     id: 'scratch-basics',
     title: 'Scratch Basics',
     challenges:[
-        'hat-landing',
-        'maze'
+        'arrow-move',
+        'walk',
+        'learn-name',
+        'hat-landing'
     ]
 })

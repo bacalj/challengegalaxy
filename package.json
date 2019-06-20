@@ -8,19 +8,22 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate; grunt move; grunt zip"
+    "generate": "nuxt generate; grunt move; grunt dom_munger; grunt zip"
   },
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.1",
+    "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/style-resources": "^0.1.2",
     "cross-env": "^5.2.0",
     "grunt": "^1.0.4",
+    "grunt-dom-munger": "^3.4.0",
     "grunt-move": "^1.0.2",
     "grunt-zip": "^0.18.2",
     "node-sass": "^4.11.0",
     "nuxt": "^2.4.0",
     "sass-loader": "^7.1.0",
-    "scratchblocks": "^3.3.3"
+    "scratchblocks": "^3.3.3",
+    "vue-scrollto": "^2.15.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

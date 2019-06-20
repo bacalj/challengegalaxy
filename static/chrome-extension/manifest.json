@@ -1,6 +1,6 @@
 {
     "name": "Challenge Galaxy",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "description": "Learn Scratch through these interactive challenges!",
     "permissions": ["declarativeContent", "activeTab"],
     "web_accessible_resources": [

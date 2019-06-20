@@ -174,5 +174,179 @@ export const state = () => ({
             url: 'https://www.nextgenscience.org/pe/5-ps2-1-motion-and-stability-forces-and-interactions',
             description: 'Support an argument that the gravitational force exerted by Earth on objects is directed down. '
         }
+    ],
+    'CSTA-K-2-AP': [
+        { 
+            id: '1A-AP-8',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Model daily processes by creating and following algorithms (sets of step-by-step instructions) to complete tasks.'
+        },
+        {
+            id: '1A-AP-9',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Model the way programs store and manipulate data by using numbers or other symbols to represent information.'
+        },
+        {
+            id: '1A-AP-10',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Develop programs with sequences and simple loops, to express ideas or address a problem.'
+        },
+        { 
+            id: '1A-AP-11',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Decompose (break down) the steps needed to solve a problem into a precise sequence of instructions.'
+        },
+        {
+            id: '1A-AP-12',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Develop plans that describe a program’s sequence of events, goals, and expected outcomes.'
+        },
+        {
+            id: '1A-AP-13',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Give attribution when using the ideas and creations of others while developing programs.'
+        },
+        { 
+            id: '1A-AP-14',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Debug (identify and fix) errors in an algorithm or program that includes sequences and simple loops.'
+        },
+        {
+            id: '1A-AP-15',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Using correct terminology, describe steps taken and choices made during the iterative process of program development.'
+        }
+    ],
+    'CSTA-3-5-AP': [
+        { 
+            id: '1B-AP-8',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Compare and refine multiple algorithms for the same task and determine which is the most appropriate.'
+        },
+        {
+            id: '1B-AP-9',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Create programs that use variables to store and modify data.'
+        },
+        {
+            id: '1B-AP-10',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Create programs that include sequences, events, loops, and conditionals.'
+        },
+        { 
+            id: '1B-AP-11',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Decompose (break down) problems into smaller, manageable subproblems to facilitate the program development process.'
+        },
+        {
+            id: '1B-AP-12',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: "Modify, remix, or incorporate portions of an existing program into one's own work, to develop something new or add more advanced features."
+        },
+        {
+            id: '1B-AP-13',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: "Use an iterative process to plan the development of a program by including others' perspectives and considering user preferences."
+        },
+        { 
+            id: '1B-AP-14',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Observe intellectual property rights and give appropriate attribution when creating or remixing programs.'
+        },
+        {
+            id: '1B-AP-15',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Test and debug (identify and fix errors) a program or algorithm to ensure it runs as intended.'
+        },
+        { 
+            id: '1B-AP-16',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Take on varying roles, with teacher guidance, when collaborating with peers during the design, implementation, and review stages of program development.'
+        },
+        {
+            id: '1B-AP-17',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Describe choices made during program development using code comments, presentations, and demonstrations.'
+        }
+    ],
+    'CSTA-6-8-AP': [
+        { 
+            id: '2-AP-10',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Use flowcharts and/or pseudocode to address complex problems as algorithms.'
+        },
+        {
+            id: '2-AP-11',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Create clearly named variables that represent different data types and perform operations on their values.'
+        },
+        {
+            id: '2-AP-12',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals.'
+        },
+        { 
+            id: '2-AP-13',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs.'
+        },
+        {
+            id: '2-AP-14',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: "Create procedures with parameters to organize code and make it easier to reuse."
+        },
+        {
+            id: '2-AP-15',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: "Seek and incorporate feedback from team members and users to refine a solution that meets user needs."
+        },
+        { 
+            id: '2-AP-16',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Incorporate existing code, media, and libraries into original programs, and give attribution.'
+        },
+        {
+            id: '2-AP-17',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Systematically test and refine programs using a range of test cases.'
+        },
+        { 
+            id: '2-AP-18',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Distribute tasks and maintain a project timeline when collaboratively developing computational artifacts.'
+        },
+        {
+            id: '2-AP-19',
+            title: 'Algorithms & Programming',
+            url: 'https://csteachers.org/Page/standards',
+            description: 'Document programs in order to make them easier to follow, test, and debug.'
+        }
     ]
 })

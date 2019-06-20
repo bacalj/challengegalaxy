@@ -1,0 +1,38 @@
+/* transition classes for page transitions */
+.pagechange-enter-active,
+.pagechange-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+.pagechange-enter,
+.pagechange-leave-to {
+  opacity: 0;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
+}
+
+.page-enter-active, .page-leave-active {
+    transition: all 0.5s;
+}
+
+.page-enter, .page-leave-active {
+    opacity: 0;
+}
+
+.has-navbar-fixed-top {
+    background-color: #4a4a4a;
+}
+.column {
+  padding-left:20px;
+  padding-right:20px;
+}

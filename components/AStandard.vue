@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style <style lang="scss" scoped>
-    td {
+    .content table td {
         text-align: center;
         vertical-align: middle;
     }

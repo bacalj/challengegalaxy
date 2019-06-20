@@ -2,7 +2,7 @@ const pkg = require('./package')
 
 module.exports = {
     mode: 'universal',
-
+    
     router: {
        scrollBehavior: function (to, from, savedPosition) {
             let position = false
@@ -39,6 +39,10 @@ module.exports = {
             '/challenges/platformer',
             '/challenges/label-it',
             '/challenges/reaction-time',
+            '/challenges/arrow-move',
+            '/challenges/walk',
+            '/challenges/arrow-move',
+            '/challenges/learn-name',
             '/collections/',
             '/collections/scratch-basics',
             '/collections/first-games',
@@ -51,7 +55,14 @@ module.exports = {
             '/extension/platformer',
             '/extension/label-it',
             '/extension/reaction-time',
-            '/chrome-extension/popup'
+            '/extension/arrow-move',
+            '/extension/walk',
+            '/extension/arrow-move',
+            '/extension/learn-name',
+            '/chrome-extension/popup',
+            '/how-it-works',
+            '/contact',
+            '/about'
         ]
     },
     /*
@@ -86,6 +97,7 @@ module.exports = {
     ** Global CSS
     */
     css: [
+        '~/assets/globalitems.scss'
     ],
 
     /*
@@ -100,7 +112,9 @@ module.exports = {
     modules: [,
         // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
         '@nuxtjs/style-resources',
-        '@nuxtjs/bulma'
+        '@nuxtjs/bulma',
+        'vue-scrollto/nuxt',
+        ['@nuxtjs/google-analytics', { id: 'UA-39984374-3' }]
     ],
 
     styleResources:{
@@ -114,7 +128,7 @@ module.exports = {
     ** Build configuration
     */
     build: {
-        publicPath: 'https://subtest.challengegalaxy.com/_nuxt',
+        publicPath: 'https://www.challengegalaxy.com/_nuxt',
         extractCSS: {
             allChunks: true
         },

@@ -9,7 +9,8 @@ export const state = () => ({
     standards: {
         'NGSS': ['4-LS1-2'],
         'DLCS-6-8-DTC': ['6-8.DTC.a'],
-        'DLCS-6-8-CT': ['6-8.CT.b', '6-8.CT.c', '6-8.CT.d', '6-8.CT.e', ]
+        'DLCS-6-8-CT': ['6-8.CT.b', '6-8.CT.c', '6-8.CT.d', '6-8.CT.e'],
+        'CSTA-6-8-AP': ['2-AP-11', '2-AP-12', '2-AP-13']
     },
     steps: [
         {
