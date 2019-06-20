@@ -128,7 +128,6 @@ module.exports = {
     ** Build configuration
     */
     build: {
-        publicPath: 'https://www.challengegalaxy.com/_nuxt',
         extractCSS: {
             allChunks: true
         },
