@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="logo has-background-dark has-text-centered">
-        <img src="https://www.challengegalaxy.com/pngs/cglogo2.png"/>
+        <img src="/pngs/cglogo2.png"/>
     </section>
     
     <section class="featured section has-background-dark has-text-centered">
@@ -38,48 +38,61 @@ export default {
 }
 </script>
 <style lang="scss">
-    body {
-      margin: 0px;
-      max-height: 400px;
-      width: 400px;
-      max-width: 100%;
-      padding: 0px;
-    }
-    .logo {
-      padding: 10px;
-    }
-    .logo img {
-      max-width: 100%;
-    }
-    .title {
-      font-size: 1.4rem;
-      margin: 0;
-    }
-    .subtitle {
-      font-size: 1rem;
-      margin: 10px 0;
-    }
-    .section .column {
-      max-width: 370px;
-    }
-    .button {
-      margin-top: 10px;
-    }
-    .footer {
-      padding: 5px 20px 40px 20px;
-      background-color:#363636;
-      color: rgba(255, 255, 255, 0.8);
+body {
+  margin: 0px;
+  max-height: 400px;
+  width: 400px;
+  max-width: 100%;
+  padding: 0px;
+}
+.logo {
+  padding: 10px;
+}
+.logo img {
+  max-width: 100%;
+}
+.title {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.subtitle {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.section .column {
+  max-width: 370px;
+}
+.button {
+  margin-top: 10px;
+}
+.footer {
+  padding: 5px 20px 40px 20px;
+  background-color:#363636;
+  color: rgba(255, 255, 255, 0.8);
 
-      h2 {
-        font-family: 'Raleway', sans-serif;
-        color: #ffffff;
-        font-size: 1.6rem;
-      }
-      a, a:hover {
-        color: $green;
-      }
-      a:hover {
-        text-decoration:underline;
-      }
-    }
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+  a.button {
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    background-image: unset;
+  }
+  a.button:hover {
+    background-image: unset;  
+    text-decoration: none;
+  }
+  .button.is-primary:hover {
+    background-color: #9115fc;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0,#9115fc), color-stop(1, #c568da) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #9115fc), color-stop(1, #c568da) );
+  }
+  .button.is-primary {
+    background-color: #8204f0;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0,#8204f0), color-stop(1, #a037fc) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #8204f0), color-stop(1, #a037fc) );
+  }
+}
 </style>

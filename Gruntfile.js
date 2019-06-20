@@ -20,6 +20,7 @@ module.exports = function(grunt) {
         remove_scripts: {
           options: {
             remove: 'script, link[rel="preload"]',
+            prefix: {selector:'img',attribute:'src', value:'https://www.challengegalaxy.com'},
             append: {selector:'body',html:'<script src="../popup.js"></script>'}
           },
           src: 'dist/chrome-extension/popup/index.html',
