@@ -7,7 +7,10 @@ export const state = () => ({
     pdf: 'petsimple.pdf',
     scratchprojid: 300694444,
     lessonplan: 'pet_simple_lesson.pdf',
-
+    standards: {
+        'DLCS-3-5-DTC': ['3-5.DTC.a'],
+        'DLCS-3-5-CT': ['3-5.CT.b', '3-5.CT.d'],
+    },
     steps: [
         {
             id: 1,

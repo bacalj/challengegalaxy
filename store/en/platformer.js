@@ -7,6 +7,11 @@ export const state = () => ({
     pdf: 'Platformer Game.pdf',
     scratchprojid: 304133549,
     lessonplan: '',
+    standards: {
+        'NGSS': ['5-PS2-1'],
+        'DLCS-6-8-DTC': ['6-8.DTC.a'],
+        'DLCS-6-8-CT': ['6-8.CT.a', '6-8.CT.b', '6-8.CT.d', '6-8.CT.e', ]
+    },
 
     steps: [
         {

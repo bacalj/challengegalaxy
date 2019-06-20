@@ -6,7 +6,10 @@ export const state = () => ({
     scratchprojid: 296663990,
     studio: 'https://scratch.mit.edu/studios/6229749/projects/',
     pdf: 'Catch-the-Egg-Code.pdf',
-    
+    standards: {        
+        'DLCS-3-5-DTC': ['3-5.DTC.a'],
+        'DLCS-3-5-CT': ['3-5.CT.b', '3-5.CT.d'],
+    },
     steps: [
         {
             id: 1,

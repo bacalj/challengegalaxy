@@ -6,6 +6,11 @@ export const state = () => ({
     scratchprojid: 296799990,
     studio: 'https://scratch.mit.edu/studios/6230608/projects/',
     pdf: 'Reaction Time.pdf',
+    standards: {
+        'NGSS': ['4-LS1-2'],
+        'DLCS-6-8-DTC': ['6-8.DTC.a'],
+        'DLCS-6-8-CT': ['6-8.CT.b', '6-8.CT.c', '6-8.CT.d', '6-8.CT.e', ]
+    },
     steps: [
         {
             id: 1,

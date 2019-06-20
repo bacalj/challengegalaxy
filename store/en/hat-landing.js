@@ -4,7 +4,10 @@ export const state = () => ({
     goalImg: '/gifs/hat_landing.gif',
     goalText: 'Make something land on something',
     scratchprojid: 316200322,
-
+    standards: {
+        'DLCS-K-2-DTC': ['K-2.DTC.a'],
+        'DLCS-K-2-CT': ['K-2.CT.b', 'K-2.CT.d'],
+    },
     steps: [
         {
             id: 1,

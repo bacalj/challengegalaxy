@@ -5,7 +5,10 @@ export const state = () => ({
     goalText: 'Use your webcam to interact with Scratch!',
     studio: 'https://scratch.mit.edu/studios/6050621/projects/',
     pdf: 'Video-Sensing.pdf',
-
+    standards: {
+        'DLCS-K-2-DTC': ['K-2.DTC.a'],
+        'DLCS-K-2-CT': ['K-2.CT.b', 'K-2.CT.c' ,'K-2.CT.d'],
+    },
     steps: [
         {
             id: 1,
