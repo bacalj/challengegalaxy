@@ -21,8 +21,9 @@
                     <a href="#" class="dropdown-trigger navbar-link">About</a>
 
                     <div class="navbar-dropdown has-background-dark">
-                        <nuxt-link to="/about" class="navbar-item">The Big Idea</nuxt-link>
                         <nuxt-link to="/how-it-works" class="navbar-item">How It Works</nuxt-link>
+                        <nuxt-link to="/about" class="navbar-item">The Big Idea</nuxt-link>
+                        <nuxt-link to="/standards-alignment" class="navbar-item">Standards</nuxt-link>
                         <nuxt-link to="/contact" class="navbar-item">Contact Us</nuxt-link>
                     </div>
                 </div>
