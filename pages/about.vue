@@ -15,7 +15,7 @@
                 <br>
                 
                 <h2 class="subtitle has-text-light">A Flexible Platform</h2>
-                <p>The goal of ChallengeGalaxy is to create a platform that allows for this flexibility - and provides encouragement for experimentation and the key information when it is needed.  We are working to give learners a place where they can puzzle through the key concepts of programming with optional clues and pointers which can give a hand up over a wall, solidify knowledge, confirm suspicions, or open paths to new inquiries.  Some people will want a lot of pointers, some will want a few, and some will want none.</p>
+                <p>The goal of ChallengeGalaxy is to create a platform that allows for this flexibility -  providing context and encouragement for experimentation and key information where it is needed.  We are working to give learners a place where they can puzzle through the key concepts of programming with optional clues and pointers which can give a hand up over a wall, solidify knowledge, confirm suspicions, or open paths to new inquiries.  Some people will want a lot of pointers, some will want a few, and some will want none.</p>
 
                 <p>To learn more about how to get started with ChallengeGalaxy you can read <nuxt-link to="/how-it-works">our documentation</nuxt-link>.  Or, you can just <nuxt-link to="/challenges">Find a challenge</nuxt-link>, open up <a href="www.scratch.mit.edu">Scratch</a>, and start programming!</p>
                 <br/>
