@@ -191,10 +191,10 @@
 
                 <p>In more detail, we're mapping out the connections between solutions to challenges and concepts and competencies in the CSTA K-12 Computer Science Standards, the Massachusetts Digital Literacy &amp; Computer Science (DLCS) Standards, and the Next Generation Science Standards.</p>
 
-                <nuxt-link class="button is-link" to="/standards-alignment">See the Standards Alignment</nuxt-link>
+                <nuxt-link class="button is-primary" to="/standards-alignment">See the Standards Alignment</nuxt-link>
             </div>
             <div class="column is-one-fifth" style="padding-top:100px">
-                <nuxt-link class="button is-link" to="/contact">Contact Us</nuxt-link>
+                <nuxt-link class="button is-primary" to="/contact">Contact Us</nuxt-link>
             </div>
         </div>
     </section>
