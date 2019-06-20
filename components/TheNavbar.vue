@@ -1,10 +1,10 @@
 <template>
 <div class="header">
-    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation" :class="{ 'has-box-shadow' : shadowOn }">
         
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
-                <img src="/pngs/cglogo2.png" alt="Challenge Galaxy" :style="{ opacity: iconOpacity }">
+                <img id="cg-main-logo" src="/pngs/cglogo2.png" alt="Challenge Galaxy" :style="{ opacity: iconOpacity }">
             </a>
             <a @click="toggleMobileMenu" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{ 'is-active': mobileMenuOpen }">
                 <span aria-hidden="true"></span>
@@ -19,8 +19,16 @@
             <div class="navbar-end">
                 <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
                 <nuxt-link class="navbar-item" to="/collections/">Collections</nuxt-link>
-                <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
-                <nuxt-link class="navbar-item" to="/contact">Contact</nuxt-link>
+                
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="#" class="dropdown-trigger navbar-link">About</a>
+
+                    <div class="navbar-dropdown has-background-dark">
+                        <nuxt-link to="/about" class="navbar-item">Big Idea</nuxt-link>
+                        <nuxt-link to="/contact" class="navbar-item">Contact</nuxt-link>
+                    </div>
+                </div>
+                
                 <nuxt-link class="navbar-item" to="/how-it-works"><i class="fas fa-question-circle"></i></nuxt-link>
             </div>
         </div>
@@ -42,7 +50,9 @@ export default {
         return {
             mobileMenuOpen:false,
             clueMenuOpen: false,
-            iconOpacity: 0
+            iconOpacity: 0,
+            aboutMenuOpen: false,
+            shadowOn: false
         }
     },
 
@@ -55,11 +65,21 @@ export default {
             return this.$route.name == 'index';
         },
 
-        setIconOpacity(event){
+        toggleAboutMenu(){
+            this.aboutMenuOpen = !this.aboutMenuOpen;
+        },
+
+        scrollChanges(event){
             if ( window.scrollY > 650 ){
                 this.iconOpacity = 1;
             } else {
                 this.iconOpacity = 0;
+            }
+            
+            if ( window.scrollY < 50 ){
+                this.shadowOn = false;
+            } else {
+                this.shadowOn = true;
             }
         }
     },
@@ -70,21 +90,27 @@ export default {
         }
 
         if ( this.isHome() ){
-            window.addEventListener('scroll', this.setIconOpacity);
+            window.addEventListener('scroll', this.scrollChanges);
         }
     },
 
     destroyed(){
         if ( this.isHome() ){
-            window.removeEventListener('scroll', this.setIconOpacity);
+            window.removeEventListener('scroll', this.scrollChanges);
         }
     }
 }
 </script>
 
 <style scoped>
+
 .navbar {
+    transition-property: box-shadow;
+    transition-duration: .3s;
+}
+.navbar.has-box-shadow {
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+    z-index: 1001;
 }
 .navbar-start {
     flex-grow: 1;
@@ -114,5 +140,10 @@ export default {
 }
 .navbar-item {
     color: whitesmoke;
+}
+
+#cg-main-logo {
+    transition-property: opacity;
+    transition-duration: .4s;
 }
 </style>

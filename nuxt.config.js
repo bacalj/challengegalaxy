@@ -39,6 +39,10 @@ module.exports = {
             '/challenges/platformer',
             '/challenges/label-it',
             '/challenges/reaction-time',
+            '/challenges/arrow-move',
+            '/challenges/walk',
+            '/challenges/arrow-move',
+            '/challenges/learn-name',
             '/collections/',
             '/collections/scratch-basics',
             '/collections/first-games',
@@ -105,7 +109,8 @@ module.exports = {
         // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
         '@nuxtjs/style-resources',
         '@nuxtjs/bulma',
-        'vue-scrollto/nuxt'
+        'vue-scrollto/nuxt',
+        ['@nuxtjs/google-analytics', { id: 'UA-39984374-3' }]
     ],
 
     styleResources:{
