@@ -70,6 +70,11 @@ html.has-navbar-fixed-top {
     transition: 0.5s;
   }
 }
+@media screen and (min-width: 1088px) {
+  .navbar-dropdown a.navbar-item:hover {
+    color: transparent;
+  }
+}
 .has-background-info {
     background-color: $blue !important;
 }
