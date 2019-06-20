@@ -17,19 +17,18 @@
 
             </div>
             <div class="navbar-end">
-                <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
-                <nuxt-link class="navbar-item" to="/collections/">Collections</nuxt-link>
-                
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a href="#" class="dropdown-trigger navbar-link">About</a>
 
                     <div class="navbar-dropdown has-background-dark">
-                        <nuxt-link to="/about" class="navbar-item">Big Idea</nuxt-link>
-                        <nuxt-link to="/contact" class="navbar-item">Contact</nuxt-link>
+                        <nuxt-link to="/about" class="navbar-item">The Big Idea</nuxt-link>
+                        <nuxt-link to="/how-it-works" class="navbar-item">How It Works</nuxt-link>
+                        <nuxt-link to="/contact" class="navbar-item">Contact Us</nuxt-link>
                     </div>
                 </div>
-                
-                <nuxt-link class="navbar-item" to="/how-it-works"><i class="fas fa-question-circle"></i></nuxt-link>
+                <nuxt-link class="navbar-item" to="/challenges">Challenges</nuxt-link>
+                <nuxt-link class="navbar-item" to="/collections/">Collections</nuxt-link>
+                <!-- <nuxt-link class="navbar-item" to="/how-it-works"><i class="fas fa-question-circle"></i></nuxt-link> -->
             </div>
         </div>
     </nav>
@@ -141,7 +140,6 @@ export default {
 .navbar-item {
     color: whitesmoke;
 }
-
 #cg-main-logo {
     transition-property: opacity;
     transition-duration: .4s;
