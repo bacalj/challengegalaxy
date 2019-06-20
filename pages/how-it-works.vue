@@ -35,7 +35,7 @@
                 
                 <h2 class="title has-text-light">Getting Started</h2>
 
-                <p>There are two ways you can set up ChallengeGalaxy</p>
+                <p>There are two ways you can set up Challenge Galaxy</p>
 
                 <ul id="two-ways">
                     <li>
@@ -44,11 +44,11 @@
                     </li>
                     <li>
                         <h4><a href="#other-browsers">Side-by-Side:</a></h4>
-                        <p>Side-by-side: open ChallengeGalaxy in one tab or device and Scratch in the other</p>
+                        <p>Side-by-side: open Challenge Galaxy in one tab or device and Scratch in the other</p>
                     </li>                
                 </ul>
 
-                <h3 id="chrome" class="subtitle has-text-light">Use the ChallengeGalaxy chrome extension</h3>
+                <h3 id="chrome" class="subtitle has-text-light">Use the Challenge Galaxy Chrome extension</h3>
                 <p>Our Chrome extension lets you see the challenges right inside Scratch.</p>
                 <p>1. First, add the Challenge Galaxy extension to your Chrome browser. The button below will bring you to the Chrome Web Store.</p>
                 <p><a class="button is-primary" href="https://chrome.google.com/webstore/detail/cbidhbafbppopanlhekfpjjaicagjbci" target="_blank">Add Chrome Extension</a></p>
@@ -61,7 +61,7 @@
                 <p><img src="/gifs/embedded-cg.gif" alt="Challenge Galaxy embedded in Scratch website"/></p>
                 <p>Have fun!</p>
 
-                <h3 id="other-browsers" class="subtitle has-text-light">Use ChallengeGalaxy Side-by-Side with Scratch</h3>
+                <h3 id="other-browsers" class="subtitle has-text-light">Use Challenge Galaxy Side-by-Side with Scratch</h3>
                 <p>If you are not using Chrome and/or if your screen is wide enough, we recommend opening two windows side-by-side like this:</p>
                 <p><img src="/pngs/cgandscratch.png" alt="Challenge Galaxy and Scratch side-by-side"/></p>
                 <p>If you're using a display that doesn't easily fit both windows, try opening Challenge Galaxy in one window and Scratch in another and switch back and forth as needed. Some people prefer switch between browser tabs and others prefer having different windows. Maybe you're more comfortable one way or the other?</p>
@@ -77,7 +77,7 @@
                
                 <p>Each challenge is broken up in a number of steps. To open a step, click the step name.</p>
 
-                <p><img src="jpgs/open_step.jpg" alt="an image of a step open in ChallengeGalaxy"></p>
+                <p><img src="jpgs/open_step.jpg" alt="an image of a step open in Challenge Galaxy"></p>
 
                 <p>Maybe the step picture is enough to get you back to coding.  If not, you can open up clues. Click the "Give me a clue!"" button.</p>
 
@@ -100,7 +100,7 @@
                 <hr>
                 <h2 id="in-your-classroom" class="title has-text-light">In the Classroom</h2>
 
-                <p>We're still in the early iterations of ChallengeGalaxy, and we're hoping to get feedback from other teachers who begin using it in their classrooms. Here are a few different ways ChallengeGalaxy might be used in a classroom setting.</p>
+                <p>We're still in the early iterations of Challenge Galaxy, and we're hoping to get feedback from other teachers who begin using it in their classrooms. Here are a few different ways Challenge Galaxy might be used in a classroom setting.</p>
 
                 <h3 class="title has-text-light">As A Lesson Foundation</h3>
                 <p>Some series of challenges, such as the "Scratch Basics" series, are focused on helping students build and understand a particular programming concept to achieve a particular effect. In our experience, it can be engaging to work through a number of just-focus-on-the-concept projects before setting students to work on more open-ended or curriculum-connected projects. Here is a short sample lesson plan based on the <nuxt-link to="/challenges/learn-name">Teach an Elephant!</nuxt-link> challenge:</p>
@@ -151,7 +151,7 @@
                             <li>Make a sprite learn your name and say it back to you in a small conversation.</li>
                             <li>You can use the elephant, or choose another sprite</li>
                             <li>Try to put it together by searching for blocks and experimenting</li>
-                            <li>If you get stuck - try opening some hints on the ChallengeGalaxy challenge</li>
+                            <li>If you get stuck - try opening some hints on the Challenge Galaxy challenge</li>
                             <li>Once you get it working - publish it to the studio</li>
                             <li>Now, you can add more ideas of your own.  Do you want it to move it's mouth while it talks? What if it asked another question? What other ideas do you have?</li>
                         </ul>
@@ -178,7 +178,7 @@
                 <hr>
                 <h2 id="standards" class="title has-text-light">Computer Science Concepts and Curriculum Standards</h2>
 
-                <p>Broadly, we're hoping to demonstrate that ChallengeGalaxy aligns with the <a target="_blank" href="https://www.iste.org/standards/for-students">ISTE Standards for Students</a>.  In particular:</p>
+                <p>Broadly, we're hoping to demonstrate that Challenge Galaxy aligns with the <a target="_blank" href="https://www.iste.org/standards/for-students">ISTE Standards for Students</a>.  In particular:</p>
 
                 <ul>
                     <li>
