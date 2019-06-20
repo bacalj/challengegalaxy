@@ -5,7 +5,11 @@ export const state = () => ({
     goalText: 'Use a webcam with Scratch!',
     studio: 'https://scratch.mit.edu/studios/6050621/projects/',
     pdf: 'Video-Sensing.pdf',
-
+    standards: {
+        'DLCS-K-2-DTC': ['K-2.DTC.a'],
+        'DLCS-K-2-CT': ['K-2.CT.b', 'K-2.CT.c' ,'K-2.CT.d'],
+        'CSTA-K-2-AP': ['1A-AP-8', '1A-AP-10', '1A-AP-11', '1A-AP-14', '1A-AP-15']
+    },
     steps: [
         {
             id: 1,
