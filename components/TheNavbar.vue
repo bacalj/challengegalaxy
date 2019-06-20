@@ -1,6 +1,6 @@
 <template>
 <div class="header">
-    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation" :class="{ 'has-box-shadow' : shadowOn }">
         
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
@@ -21,9 +21,10 @@
                 <nuxt-link class="navbar-item" to="/collections/">Collections</nuxt-link>
                 
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <nuxt-link to="/about/" class="dropdown-trigger navbar-link">About</nuxt-link>
+                    <a href="#" class="dropdown-trigger navbar-link">About</a>
 
                     <div class="navbar-dropdown has-background-dark">
+                        <nuxt-link to="/about" class="navbar-item">Big Idea</nuxt-link>
                         <nuxt-link to="/contact" class="navbar-item">Contact</nuxt-link>
                     </div>
                 </div>
@@ -50,7 +51,8 @@ export default {
             mobileMenuOpen:false,
             clueMenuOpen: false,
             iconOpacity: 0,
-            aboutMenuOpen: false
+            aboutMenuOpen: false,
+            shadowOn: false
         }
     },
 
@@ -67,11 +69,17 @@ export default {
             this.aboutMenuOpen = !this.aboutMenuOpen;
         },
 
-        setIconOpacity(event){
+        scrollChanges(event){
             if ( window.scrollY > 650 ){
                 this.iconOpacity = 1;
             } else {
                 this.iconOpacity = 0;
+            }
+            
+            if ( window.scrollY < 50 ){
+                this.shadowOn = false;
+            } else {
+                this.shadowOn = true;
             }
         }
     },
@@ -82,21 +90,27 @@ export default {
         }
 
         if ( this.isHome() ){
-            window.addEventListener('scroll', this.setIconOpacity);
+            window.addEventListener('scroll', this.scrollChanges);
         }
     },
 
     destroyed(){
         if ( this.isHome() ){
-            window.removeEventListener('scroll', this.setIconOpacity);
+            window.removeEventListener('scroll', this.scrollChanges);
         }
     }
 }
 </script>
 
 <style scoped>
+
 .navbar {
+    transition-property: box-shadow;
+    transition-duration: .3s;
+}
+.navbar.has-box-shadow {
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+    z-index: 1001;
 }
 .navbar-start {
     flex-grow: 1;
