@@ -3,7 +3,7 @@
         <section class="featured section has-background-dark has-text-centered">
             <a name="featured" id="featured"></a>
             <h1 class="title is-1">Find a Challenge</h1>
-            <button @click="sortByTitle">Sort by title test</button>
+            <!-- <button @click="sortByTitle">Sort by title test</button> -->
             <div class="columns is-multiline">
                 <a-challenge
                     v-for="challenge in challenges"
@@ -38,9 +38,9 @@ export default {
         }
     },
 
-    // mounted(){
-    //     this.sortByTitle();
-    // }
+    mounted(){
+        this.sortByTitle();
+    }
 }
 </script>
 
