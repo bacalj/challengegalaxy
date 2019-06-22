@@ -12,8 +12,9 @@ export const mutations = {
     },
 
     applyFilters(state, payload){
-        console.log(payload.level);
-        console.log(payload.collecto);
+        const lvl = payload.level;
+        const col = payload.collecto;
+        console.log(lvl, col);
         console.log(state.challengeslist.published);
         console.log(state.collections.collectionslist);
     }

@@ -16,9 +16,7 @@
                 <div class="select">
                     <select v-model="collectionFilterVal">
                         <option value="All Collections">All Collections</option>
-                        <option>Scratch Basics</option>
-                        <option>Scratch Science</option>
-                        <option>Games</option>
+                        <option v-for="collection in collections" :key="collection.id">{{ collection.title }}</option>
                     </select>
                 </div>
             </div>
