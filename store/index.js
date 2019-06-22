@@ -11,9 +11,9 @@ export const mutations = {
         state.challengeslist.published = state.challengeslist.published.sort((a, b) => (a.title > b.title) ? 1 : -1);
     },
 
-    applyFilters(state, levelFilter, collectFilter){
-        console.log(levelFilter);
-        console.log(collectFilter);
+    applyFilters(state, payload){
+        console.log(payload.level);
+        console.log(payload.collecto);
         console.log(state.challengeslist.published);
         console.log(state.collections.collectionslist);
     }

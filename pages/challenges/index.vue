@@ -16,7 +16,9 @@
                 <div class="select">
                     <select v-model="collectionFilterVal">
                         <option value="All Collections">All Collections</option>
-                        <option :value="collection.title" :key="collection.id" v-for="collection in collectionOptions">{{ collection.title }}</option>
+                        <option>Scratch Basics</option>
+                        <option>Scratch Science</option>
+                        <option>Games</option>
                     </select>
                 </div>
             </div>
@@ -47,8 +49,7 @@ export default {
     data(){
         return {
             levelFilterVal: 'All Levels',
-            collectionFilterVal: 'All Collections',
-            collectionOptions: this.$store.state.collections.collectionslist.published
+            collectionFilterVal: 'All Collections'
         }
     },
 
@@ -65,7 +66,14 @@ export default {
         },
 
         applyTheFilters(){
-            this.$store.commit('applyFilters', this.levelFilterVal, this.collectionFilterVal);
+            const level = this.levelFilterVal;
+            const collecto = this.collectionFilterVal;
+            this.$store.commit('applyFilters',  
+                { 
+                    level: level,
+                    collecto: collecto
+                } 
+            );
         }
     },
 
