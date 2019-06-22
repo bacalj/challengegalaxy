@@ -52,11 +52,11 @@ export default {
     },
 
     watch: {
-        levelFilterVal: function() {
+        levelFilterVal(){
             this.applyTheFilters();
         },
 
-        collectionFilterVal: function(){
+        collectionFilterVal(){
             this.applyTheFilters();
         }
     },
