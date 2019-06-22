@@ -7,16 +7,21 @@
                 <div class="select">
                     <select v-model="levelFilterVal">
                         <option value="All Levels">All Levels</option>
-                        <option>Just Starting</option>
-                        <option>Some Experience</option>
-                        <option>Lots of Experience</option>
+                        <option value="0">Just Starting</option>
+                        <option value="1">Some Experience</option>
+                        <option value="2">Lots of Experience</option>
                     </select>
                 </div>
             
                 <div class="select">
                     <select v-model="collectionFilterVal">
                         <option value="All Collections">All Collections</option>
-                        <option v-for="collection in collections" :key="collection.id">{{ collection.title }}</option>
+                        <option 
+                            v-for="collection in collections" 
+                            :key="collection.id"
+                            :value="collection.id">
+                            {{ collection.title }}
+                        </option>
                     </select>
                 </div>
             </div>

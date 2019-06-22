@@ -15,7 +15,8 @@ export const mutations = {
         const lvl = payload.level;
         const col = payload.collecto;
         console.log(lvl, col);
-        console.log(state.challengeslist.published);
-        console.log(state.collections.collectionslist);
+        const foundChals = state.collections[col].challenges
+        console.log(foundChals);
+        state.challengeslist.published = state.challengeslist.published.filter( chal => foundChals.includes(chal.id) );
     }
 }
