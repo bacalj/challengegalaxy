@@ -20,7 +20,7 @@
                     </select>
                 </div>
             </div>
-            <button @click="applyTheFilters">apply them filters</button>
+           
             <div class="columns is-multiline">
                 <a-challenge
                     v-for="challenge in challenges"
@@ -48,6 +48,16 @@ export default {
         return {
             levelFilterVal: 'All Levels',
             collectionFilterVal: 'All Collections'
+        }
+    },
+
+    watch: {
+        levelFilterVal: function() {
+            this.applyTheFilters();
+        },
+
+        collectionFilterVal: function(){
+            this.applyTheFilters();
         }
     },
 
