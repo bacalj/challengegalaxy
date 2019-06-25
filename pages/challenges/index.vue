@@ -56,17 +56,6 @@ export default {
         }
     },
 
-    watch: {
-        // levelFilterVal(){
-        //     this.applyTheFilters();
-        // },
-
-        // collectionFilterVal(){
-        //     this.applyTheFilters();
-        // }
-    },
-       
-
     computed: {
         ...mapState({
             collections: state => state.collections.collectionslist.published
@@ -75,25 +64,12 @@ export default {
         gotChallenges(){
             return this.$store.state.challengeslist.published;
         }
-
-
     },
 
     methods: {
         sortByTitle(){
             this.$store.commit('sortChallengesByTitle');
-        },
-
-        // applyTheFilters(){
-        //     const level = this.levelFilterVal;
-        //     const collecto = this.collectionFilterVal;
-        //     this.$store.commit('applyFilters',  
-        //         { 
-        //             level: level,
-        //             collecto: collecto
-        //         } 
-        //     );
-        // }
+        }
     },
 
     created(){
