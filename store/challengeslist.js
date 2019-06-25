@@ -54,6 +54,11 @@ export const state = () => ({
             id: 'walk',
             link: 'challenges/walk',
             title: 'Walking Animation'
+        },
+        {
+            id: 'explore-the-atmosphere',
+            link: 'challenges/explore-the-atmosphere',
+            title: 'Explore the Atmosphere'
         }
     ],
 
