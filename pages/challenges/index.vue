@@ -40,7 +40,7 @@
 
 <script>
 import AChallenge from '~/components/AChallenge.vue'
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 
 export default {
     components:{
@@ -65,12 +65,13 @@ export default {
             this.applyTheFilters();
         }
     },
+       
 
     computed: {
         ...mapState({
             challenges: state => state.challengeslist.published,
             collections: state => state.collections.collectionslist.published
-        }),
+        })
     },
 
     methods: {
@@ -90,7 +91,7 @@ export default {
         }
     },
 
-    mounted(){
+    created(){
         this.sortByTitle();
     }
 }
