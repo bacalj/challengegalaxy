@@ -28,7 +28,7 @@
            
             <div class="columns is-multiline">
                 <a-challenge
-                    v-for="challenge in gotChallenges"
+                    v-for="challenge in challenges"
                     :id="challenge.id"
                     :key="challenge.id">
                 </a-challenge>
@@ -58,22 +58,19 @@ export default {
 
     computed: {
         ...mapState({
-            collections: state => state.collections.collectionslist.published
-        }),
-
-        gotChallenges(){
-            return this.$store.state.challengeslist.published;
-        }
+            collections: state => state.collections.collectionslist.published,
+            challenges: state => state.challengeslist.published
+        })
     },
 
     methods: {
-        sortByTitle(){
-            this.$store.commit('sortChallengesByTitle');
+        renderChals(){
+            this.$store.commit('sortFilterRenderChals');
         }
     },
 
     created(){
-        this.sortByTitle();
+        this.renderChals();
     }
 }
 </script>
