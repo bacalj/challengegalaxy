@@ -196,6 +196,7 @@ export default {
 }
 
 .clue.code .clue-cover:before {
+    //content: url('https://www.challengegalaxy.com/svgs/scratchblocksicon.svg');
     content: url('~static/svgs/scratchblocksicon.svg');
     position: relative;
     right: -8px;
