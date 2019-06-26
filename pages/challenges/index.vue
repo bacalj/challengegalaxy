@@ -28,7 +28,7 @@
            
             <div class="columns is-multiline">
                 <a-challenge
-                    v-for="challenge in gotZ"
+                    v-for="challenge in challengesToRender"
                     :id="challenge.id"
                     :key="challenge.id">
                 </a-challenge>
@@ -52,38 +52,30 @@ export default {
     data(){
         return {
             levelFilterVal: 'All Levels',
-            collectionFilterVal: 'scratch-basics'
+            collectionFilterVal: 'All Collections'
         }
     },
 
     computed: {
         ...mapState({
             collections: state => state.collections.collectionslist.published,
-            challenges: state => state.challengeslist.published
+            allchallenges: state => state.challengeslist.published
         }),
 
-        gotZ() {
+        challengesToRender(){
+            console.log(this.collectionFilterVal);
+            if ( this.collectionFilterVal == "All Collections"){
+                return this.allchallenges;
+            } else {
+                const foundChals = this.$store.state.collections[this.collectionFilterVal].challenges
+                return this.$store.getters.getChallenges(foundChals);
+            }
+            /*
             const foundChals = this.$store.state.collections[this.collectionFilterVal].challenges
-            return this.$store.getters.gotChals(foundChals);
+            return this.$store.getters.getChallenges(foundChals);
+            */
+            
         }
-    },
-
-    methods: {
-        renderChals(){
-            this.$store.commit('sortFilterRenderChals',{
-                colecto: this.collectionFilterVal
-            });
-        }
-    },
-
-    watch:{
-        collectionFilterVal(){
-           // this.renderChals();
-        }
-    },
-
-    created(){
-        //this.renderChals();
     }
 }
 </script>
