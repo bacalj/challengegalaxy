@@ -63,7 +63,7 @@ export default {
         }),
 
         gotZ() {
-            return this.$store.getters.gotChals
+            return this.$store.getters.gotChals(['hat-landing', 'walk']);
         }
     },
 

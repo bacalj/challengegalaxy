@@ -3,8 +3,8 @@ export const state = () => {
 }
 
 export const getters = {
-    gotChals: state => {
-        return state.challengeslist.published.filter(obj => ['hat-landing'].includes(obj.id))
+    gotChals: (state, getters) => (founds) => {
+        return state.challengeslist.published.filter(obj => founds.includes(obj.id))
     }
 }
 
