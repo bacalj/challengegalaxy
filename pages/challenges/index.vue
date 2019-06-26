@@ -70,12 +70,11 @@ export default {
                 const foundChals = this.$store.state.collections[this.collectionFilterVal].challenges
                 return this.$store.getters.getChallenges(foundChals);
             }
-            /*
-            const foundChals = this.$store.state.collections[this.collectionFilterVal].challenges
-            return this.$store.getters.getChallenges(foundChals);
-            */
-            
         }
+    },
+
+    created(){
+        this.$store.commit('sortChallengesByTitle');
     }
 }
 </script>
