@@ -28,7 +28,7 @@
            
             <div class="columns is-multiline">
                 <a-challenge
-                    v-for="challenge in challenges"
+                    v-for="challenge in challengesToRender"
                     :id="challenge.id"
                     :key="challenge.id">
                 </a-challenge>
@@ -56,43 +56,25 @@ export default {
         }
     },
 
-    watch: {
-        levelFilterVal(){
-            this.applyTheFilters();
-        },
-
-        collectionFilterVal(){
-            this.applyTheFilters();
-        }
-    },
-       
-
     computed: {
         ...mapState({
-            challenges: state => state.challengeslist.published,
-            collections: state => state.collections.collectionslist.published
-        })
-    },
+            collections: state => state.collections.collectionslist.published,
+            allchallenges: state => state.challengeslist.published
+        }),
 
-    methods: {
-        sortByTitle(){
-            this.$store.commit('sortChallengesByTitle');
-        },
-
-        applyTheFilters(){
-            const level = this.levelFilterVal;
-            const collecto = this.collectionFilterVal;
-            this.$store.commit('applyFilters',  
-                { 
-                    level: level,
-                    collecto: collecto
-                } 
-            );
+        challengesToRender(){
+            console.log(this.collectionFilterVal);
+            if ( this.collectionFilterVal == "All Collections"){
+                return this.allchallenges;
+            } else {
+                const foundChals = this.$store.state.collections[this.collectionFilterVal].challenges
+                return this.$store.getters.getChallenges(foundChals);
+            }
         }
     },
 
     created(){
-        this.sortByTitle();
+        this.$store.commit('sortChallengesByTitle');
     }
 }
 </script>
