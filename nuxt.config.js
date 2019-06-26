@@ -77,14 +77,6 @@ module.exports = {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-        ],
-        link: [
-            { 
-                rel: 'stylesheet', 
-                href:'https://use.fontawesome.com/releases/v5.7.2/css/all.css',  
-                integrity: 'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', 
-                crossorigin:'anonymous' 
-            }
         ]
     },
 
@@ -128,7 +120,6 @@ module.exports = {
     ** Build configuration
     */
     build: {
-        publicPath: 'https://www.challengegalaxy.com/_nuxt',
         extractCSS: {
             allChunks: true
         },

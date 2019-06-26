@@ -44,18 +44,19 @@
 
             <div class="columns is-multiline">
                 <a-challenge
-                    v-for="challenge in challenges"
+                    v-for="challenge in challengesToRender"
                     :id="challenge.id"
                     :key="challenge.id">
                 </a-challenge>
             </div>
+
         </section>
     </div>
 </template>
 
 <script>
 import AChallenge from '~/components/AChallenge.vue'
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 
 export default {
     components:{
@@ -74,7 +75,8 @@ export default {
 
     computed: {
         ...mapState({
-            challenges: state => state.challengeslist.published,
+            collections: state => state.collections.collectionslist.published,
+            allchallenges: state => state.challengeslist.published
         }),
 
         challengesToRender(){
@@ -99,6 +101,10 @@ export default {
             }
         }
     },
+
+    created(){
+        this.$store.commit('sortChallengesByTitle');
+    }
 }
 </script>
 

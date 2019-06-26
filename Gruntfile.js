@@ -19,8 +19,10 @@ module.exports = function(grunt) {
     dom_munger: {
         remove_scripts: {
           options: {
-            remove: 'script, link[rel="preload"]',
-            prefix: {selector:'img',attribute:'src', value:'https://www.challengegalaxy.com'},
+            remove: 'script, link:first-of-type, link[rel="preload"]',
+            prefix: [
+              {selector:'img',attribute:'src', value:'https://www.challengegalaxy.com'}, {selector:'link',attribute:'href', value:'https://www.challengegalaxy.com'}
+            ],
             append: {selector:'body',html:'<script src="../popup.js"></script>'}
           },
           src: 'dist/chrome-extension/popup/index.html',

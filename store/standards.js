@@ -169,6 +169,12 @@ export const state = () => ({
             description: 'Use a model to describe that animals receive different types of information through their senses, process the information in their brain, and respond to the information in different ways.'
         },
         {
+            id: '5-ESS2-1',
+            title: "Earth's Systems",
+            url: 'https://www.nextgenscience.org/pe/5-ess2-1-earths-systems',
+            description: 'Develop a model using an example to describe ways the geosphere, biosphere, hydrosphere, and/or atmosphere interact.'
+        },
+        {
             id: '5-PS2-1',
             title: 'Forces and Interactions',
             url: 'https://www.nextgenscience.org/pe/5-ps2-1-motion-and-stability-forces-and-interactions',

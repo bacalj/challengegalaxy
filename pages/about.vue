@@ -25,7 +25,7 @@
 
             </div>
             <div class="column is-one-fifth" style="padding-top:100px">
-                <nuxt-link class="button is-link" to="/contact">Contact Us</nuxt-link>
+                <nuxt-link class="button is-primary" to="/contact">Contact Us</nuxt-link>
             </div>
         </div>
     </section>
