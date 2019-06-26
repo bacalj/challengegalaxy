@@ -4,7 +4,9 @@ export const state = () => {
 
 export const getters = {
     gotChals: (state, getters) => (founds) => {
-        return state.challengeslist.published.filter(obj => founds.includes(obj.id))
+        return state.challengeslist.published
+            .filter(obj => founds.includes(obj.id))
+            .sort((a, b) => (a.title > b.title) ? 1 : -1);
     }
 }
 

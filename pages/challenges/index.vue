@@ -63,7 +63,8 @@ export default {
         }),
 
         gotZ() {
-            return this.$store.getters.gotChals(['hat-landing', 'walk']);
+            const foundChals = this.$store.state.collections[this.collectionFilterVal].challenges
+            return this.$store.getters.gotChals(foundChals);
         }
     },
 
