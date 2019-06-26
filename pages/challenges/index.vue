@@ -69,7 +69,7 @@ export default {
         return {
             levelFilterVal: 'All Levels',
             collectionFilterVal: 'All Challenges',
-            sortBy: 'easyFirst'
+            sortBy: 'alpha'
         }
     },
 
