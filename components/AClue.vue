@@ -147,7 +147,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .clue {
     flex-basis: auto;
@@ -248,7 +248,14 @@ export default {
 .flat-bottom {
     border-radius: 3px 3px 0px 0px;
 }
-
+blockquote {
+    padding-left: 20px;
+    font-style: italic;
+    border-left: 4px solid #ccc;
+}
+ol, ul {
+    margin-left: 20px;
+}
 /* about to enter */
 .fade-enter {
     opacity: 0;

@@ -70,7 +70,6 @@ export const state = () => ({
                 }
             ]
         },
-
         {
             id: 2,
             stepNum: '2',
@@ -131,7 +130,7 @@ export const state = () => ({
                     content: '<pre class="blocks">distance to [mouse pointer v]</pre>',
                 },
                 {
-                    cover: '<Why is it glitchy?',
+                    cover: 'Why is it glitchy?',
                     id: 2,
                     type: 'info',
                     content: '<pre class="blocks">&lt; () > () &gt;</pre>',

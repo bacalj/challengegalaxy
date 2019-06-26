@@ -5,5 +5,6 @@ export const state = () => ({
         'label-it',
         'reaction-time',
         'platformer',
+        'explore-the-atmosphere'
     ]
 })
