@@ -4,14 +4,14 @@
             <a name="featured" id="featured"></a>
             <h1 class="title is-1">Find a Challenge</h1>
             <div class="selects">
-                <div class="select">
+                <!-- <div class="select">
                     <select v-model="levelFilterVal">
                         <option value="All Levels">All Levels</option>
                         <option value="0">Just Starting</option>
                         <option value="1">Some Experience</option>
                         <option value="2">Lots of Experience</option>
                     </select>
-                </div>
+                </div> -->
             
                 <div class="select">
                     <select v-model="collectionFilterVal">
@@ -87,5 +87,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.selects {
+    margin-bottom:30px;
 }
 </style>
