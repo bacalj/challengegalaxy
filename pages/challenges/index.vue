@@ -3,7 +3,7 @@
         <section class="featured section has-background-dark has-text-centered">
             <a name="featured" id="featured"></a>
             <h1 class="title is-1">Find a Challenge</h1>
-            <div class="selects">
+            <section class="section selects">
                 <!-- <div class="select">
                     <select v-model="levelFilterVal">
                         <option value="All Levels">All Levels</option>
@@ -23,8 +23,6 @@
                         </option>
                     </select>
                 </div>
-            </div>
-            <div class="selects">
                 <div class="sorting">
                     Sort by
                     <div class="control">
@@ -40,7 +38,7 @@
                         <label for="hardFirst"><i class="fas fa-sort-amount-up"></i></label>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div class="columns is-multiline">
                 <a-challenge
@@ -128,10 +126,9 @@ export default {
     justify-content: center;
 }
 .selects {
-    margin-bottom:30px;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .sortLabel {
     display:inline-block;
