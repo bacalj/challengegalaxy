@@ -7,7 +7,11 @@ export const getters = {
 }
 
 export const mutations = {
-    sortFilterRenderChals( state, payload ){
-        state.challengeslist.published = state.challengeslist.published.sort((a, b) => (a.title > b.title) ? 1 : -1);
+    sortFilterRenderChals: ( state, pl ) => {
+        const col = pl.colecto
+        const foundChals = state.collections[col].challenges
+        state.challengeslist.published = state.challengeslist.published
+            .filter(obj => foundChals.includes(obj.id))
+            .sort((a, b) => (a.title > b.title) ? 1 : -1);
     }
 }

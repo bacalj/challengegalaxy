@@ -65,9 +65,8 @@ export default {
 
     methods: {
         renderChals(){
-            const collecto = 'scratch-basics';
             this.$store.commit('sortFilterRenderChals',{
-                collecto: collecto
+                colecto: 'scratch-basics'
             });
         }
     },
