@@ -3,7 +3,9 @@ export const state = () => {
 }
 
 export const getters = {
-    
+    gotChals: state => {
+        return state.challengeslist.published.filter(obj => ['hat-landing'].includes(obj.id))
+    }
 }
 
 export const mutations = {
