@@ -128,10 +128,20 @@ export default {
 .selects {
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .sortLabel {
     display:inline-block;
     margin-left: 15px;
+}
+
+.select, .sorting {
+    margin:6px;
+}
+
+.select {
+    position: relative;
+    top:7px;
+    left:-4px;
 }
 </style>
