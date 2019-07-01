@@ -184,10 +184,10 @@
                     <li>
                         <b>ISTE Standard 5: "Computational Thinker"<br></b>
                         <p><em>Students develop and employ strategies for understanding and solving problems in ways that leverage the power of technological methods to develop and test solutions.</em></p>
-                        
-                        <p>Challenges are structured so that students are encouraged to understand first the end goal, and then discover ways to make the end goal happen with the technological methods of computer programming.</p>
                     </li>
                 </ul>
+
+                <p>Challenges are structured so that students are encouraged to understand first the end goal, and then discover ways to make the end goal happen with the technological methods of computer programming.</p>
 
                 <p>In more detail, we're mapping out the connections between solutions to challenges and concepts and competencies in the CSTA K-12 Computer Science Standards, the Massachusetts Digital Literacy &amp; Computer Science (DLCS) Standards, and the Next Generation Science Standards.</p>
 
