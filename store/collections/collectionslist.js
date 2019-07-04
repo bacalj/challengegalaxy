@@ -8,7 +8,12 @@ export const state = () => ({
         { 
             id: 'first-games',
             title: 'Games',
-            subtitle: 'Games are a great way to put those basics to use.'
+            subtitle: 'Games are a great way to put basics to use.'
+        },
+        { 
+            id: 'next-steps',
+            title: 'Next Steps',
+            subtitle: 'If you are done with the basics, these are the next steps.'
         },
         {
             id: 'science',

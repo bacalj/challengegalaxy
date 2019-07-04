@@ -59,6 +59,11 @@ export const state = () => ({
             id: 'explore-the-atmosphere',
             link: 'challenges/explore-the-atmosphere',
             title: 'Explore the Atmosphere'
+        },
+        {
+            id: 'jump-how-high',
+            link:'challenges/jump-how-high',
+            title: 'Jump How High?'
         }
     ],
 

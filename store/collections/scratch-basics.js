@@ -5,6 +5,7 @@ export const state = () => ({
         'arrow-move',
         'walk',
         'learn-name',
-        'hat-landing'
+        'hat-landing',
+        'jump-how-high'
     ]
 })
