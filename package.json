@@ -2,7 +2,7 @@
   "name": "challengegalaxy",
   "version": "1.0.0",
   "description": "Learn to program in Scratch with challenges and hints",
-  "author": "Joe Bacal",
+  "author": "Joe Bacal and Andrew Pasquale",
   "private": true,
   "scripts": {
     "dev": "nuxt",
