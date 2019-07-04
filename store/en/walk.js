@@ -4,6 +4,7 @@ export const state = () => ({
     goalImg: '/gifs/walk.gif',
     goalText: 'Make a sprite look like it is walking',
     scratchprojid: 316774682,
+    pdf: 'walking_animation.pdf',
     standards: {
         'DLCS-K-2-DTC': ['K-2.DTC.a'],
         'DLCS-K-2-CT': ['K-2.CT.b', 'K-2.CT.d'],
