@@ -3,6 +3,7 @@ export const state = () => ({
     title: 'Teach An Elephant!',
     goalImg: '/gifs/name.gif',
     goalText: 'Save and use something typed in',
+    pdf: 'learn_name.pdf',
     scratchprojid: 316775974,
     studio:'https://scratch.mit.edu/studios/16682664/',
     standards: {
