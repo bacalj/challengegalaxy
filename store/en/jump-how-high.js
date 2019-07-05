@@ -4,6 +4,7 @@ export const state = () => ({
     goalImg: '/gifs/variable_jump_2.gif',
     goalText: 'Control how high it jumps',
     scratchprojid: 319343223,
+    pdf:'jump_how_high.pdf',
     studio: 'https://scratch.mit.edu/studios/19383775/',
     standards: {
         'DLCS-K-2-CT': ['K-2.CT.b', 'K-2.CT.d'],
