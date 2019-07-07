@@ -2,7 +2,7 @@
     <section class="container getting-started-page-container">
 
         <div class="columns">
-            <div class="column menu is-one-fifth has-text-light">
+            <div class="column menu is-hidden-mobile is-one-fifth has-text-light">
                 <aside>
                     <p class="menu-label has-text-light">
                         Getting Started
@@ -221,7 +221,7 @@ h3.subtitle {
     font-size: 1.4rem;
 }
 .column.menu {
-    display: none;
+    //display: none;
     padding-top: 60px;
 }
 @media screen and (min-width: 1088px) {
@@ -252,5 +252,15 @@ p img {
 
 .lesson > li {
     margin-top:40px;
+}
+
+@media (max-width:812px){
+    .content {
+        max-width:100vw;
+    }
+
+    .content img {
+        max-width:95vw;
+    }
 }
 </style>
