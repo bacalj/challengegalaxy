@@ -4,6 +4,7 @@ export const state = () => ({
     goalImg: '/gifs/hat_landing.gif',
     goalText: 'Make it land on something',
     scratchprojid: 316200322,
+    studio: 'https://scratch.mit.edu/studios/21876424/',
     pdf: 'hat_landing.pdf',
     standards: {
         'DLCS-K-2-DTC': ['K-2.DTC.a'],

@@ -5,6 +5,7 @@ export const state = () => ({
     goalText: 'Make a sprite look like it is walking',
     scratchprojid: 316774682,
     pdf: 'walking_animation.pdf',
+    studio: 'https://scratch.mit.edu/studios/21875620/',
     standards: {
         'DLCS-K-2-DTC': ['K-2.DTC.a'],
         'DLCS-K-2-CT': ['K-2.CT.b', 'K-2.CT.d'],
