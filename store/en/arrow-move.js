@@ -5,6 +5,7 @@ export const state = () => ({
     goalText: 'Move your sprite around with arrow keys',
     scratchprojid: 316679663,
     studio: 'https://scratch.mit.edu/studios/17326583/',
+    pdf:'arrow_move.pdf',
     standards: {
         'DLCS-K-2-DTC': ['K-2.DTC.a'],
         'DLCS-K-2-CT': ['K-2.CT.b', 'K-2.CT.d'],
