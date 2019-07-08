@@ -4,7 +4,13 @@
         <img src="/pngs/cglogo2.png"/>
     </section>
     
+    <section class="intro section has-background-dark">
+      <p>Challenge Galaxy helps people learn Scratch through problem solving and experimentation with just the right amount of help. Find out more about Challenge Galaxy at <a href="https://www.challengegalaxy.com" target="_blank">challengegalaxy.com</a>.</p>
+    </section>
+
     <section class="featured section has-background-dark has-text-centered">
+        <h3 class="title is-3">Find a Challenge</h3>
+        <i class="fas fa-chevron-down"></i>
         <div class="columns is-multiline">
             <a-challenge
                 v-for="challenge in challenges"
@@ -14,10 +20,6 @@
         </div>
     </section>
 
-    <div class="footer">
-      <h2>About Challenge Galaxy</h2>
-      <p>Challenge Galaxy helps people learn Scratch through problem solving and experimentation with just the right amount of help. Find out more about Challenge Galaxy and additional materials at <a href="https://www.challengegalaxy.com" target="_blank">challengegalaxy.com</a>.</p>
-    </div>
     <script src="../popup.js"></script>
   </div>
 </template>
@@ -54,10 +56,7 @@ body {
 .title {
   font-size: 1.4rem;
   margin: 0;
-}
-.subtitle {
-  font-size: 1rem;
-  margin: 10px 0;
+  color: white;
 }
 .section .column {
   max-width: 370px;
@@ -65,16 +64,10 @@ body {
 .button {
   margin-top: 10px;
 }
-.footer {
-  padding: 5px 20px 40px 20px;
-  background-color:#363636;
-  color: rgba(255, 255, 255, 0.8);
+.intro {
+  color: white;
+  padding: 1.5rem;
 
-  h2 {
-    font-family: 'Raleway', sans-serif;
-    color: #ffffff;
-    font-size: 1.6rem;
-  }
   a.button {
     -webkit-background-clip: unset;
     background-clip: unset;
@@ -94,5 +87,10 @@ body {
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0,#8204f0), color-stop(1, #a037fc) );
     background-image: gradient( linear, left top, right top, color-stop(0, #8204f0), color-stop(1, #a037fc) );
   }
+}
+i {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 1.5rem;
 }
 </style>
