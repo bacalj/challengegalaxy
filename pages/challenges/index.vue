@@ -24,13 +24,15 @@
                     </select>
                 </div>
                 <div class="sorting">
-                    Sort by
+                    <div>Sort by</div>
                     <div class="control">
                         <span class="sortLabel">Name</span>
                         <input type="radio" id="alpha" value="alpha" v-model="sortBy" checked>
                         <label for="alpha"><i class="fas fa-sort-alpha-down"></i></label>
                         <input type="radio" id="alphaReversed" value="alphaReversed" v-model="sortBy">
                         <label for="alphaReversed"><i class="fas fa-sort-alpha-up-alt"></i></label>
+                    </div>
+                    <div class="control">
                         <span class="sortLabel">Steps</span>
                         <input type="radio" id="easyFirst" value="easyFirst" v-model="sortBy">
                         <label for="easyFirst"><i class="fas fa-sort-amount-down-alt"></i></label>
@@ -132,9 +134,15 @@ export default {
 }
 .sortLabel {
     display:inline-block;
+}
+.sortLabel:nth-child(1) {
     margin-left: 15px;
 }
-
+@media only screen and (max-width: 450px) {
+    .control {
+        margin-left: 0;
+    }
+}
 .select, .sorting {
     margin:6px;
 }
