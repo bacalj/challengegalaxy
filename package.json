@@ -1,7 +1,7 @@
 {
   "name": "challengegalaxy",
   "version": "1.0.0",
-  "description": "Learn to program in Scratch with challenges and hints",
+  "description": "Learn to program in Scratch using challenges with interactive hints",
   "author": "Joe Bacal and Andrew Pasquale",
   "private": true,
   "scripts": {
