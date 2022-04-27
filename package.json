@@ -15,7 +15,7 @@
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/style-resources": "^0.1.2",
     "cross-env": "^5.2.0",
-    "grunt": "^1.0.4",
+    "grunt": "^1.5.2",
     "grunt-dom-munger": "^3.4.0",
     "grunt-move": "^1.0.2",
     "grunt-zip": "^0.18.2",
